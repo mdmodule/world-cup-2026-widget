@@ -84,6 +84,25 @@ LABEL_TRANSLATIONS = [
     (">LIVE<", ">直播中<"),
     (">QUALIFIED<", ">已晋级<"),
     (">ELIMINATED<", ">已淘汰<"),
+    (">qualified<", ">已晋级<"),
+    (">eliminated<", ">已淘汰<"),
+    ("Qualified", "已晋级"),
+    ("Eliminated", "已淘汰"),
+    ("qualified", "已晋级"),
+    ("eliminated", "已淘汰"),
+
+    # --- R32 specific ---
+    ("Qualification Cut", "晋级线"),
+    ("3rd place", "第三名"),
+    ("3rd", "第三"),
+    ("pts", "分"),
+    ("Pts", "分"),
+    ("Rank", "排名"),
+    ("Team", "球队"),
+    ("Played", "已赛"),
+    ("Won", "胜"),
+    ("Drawn", "平"),
+    ("Lost", "负"),
 
     # --- Misc ---
     ("Final ·", "决赛 ·"),
