@@ -6,6 +6,29 @@ import re
 from pathlib import Path
 
 # ============================================================
+# Bracket slot placeholder translations (pre-tournament)
+# These get replaced by actual team names once the tournament starts
+# ============================================================
+BRACKET_SLOTS = {
+    # Group winners
+    "1A": "A1", "1B": "B1", "1C": "C1", "1D": "D1",
+    "1E": "E1", "1F": "F1", "1G": "G1", "1H": "H1",
+    "1I": "I1", "1J": "J1", "1K": "K1", "1L": "L1",
+    # Group runners-up
+    "2A": "A2", "2B": "B2", "2C": "C2", "2D": "D2",
+    "2E": "E2", "2F": "F2", "2G": "G2", "2H": "H2",
+    "2I": "I2", "2J": "J2", "2K": "K2", "2L": "L2",
+    # Third-place allocation slots (complex combos)
+    "3A/B/C/D/F": "第三 A/B/C/D/F",
+    "3A/E/H/I/J": "第三 A/E/H/I/J",
+    "3B/E/F/I/J": "第三 B/E/F/I/J",
+    "3C/D/F/G/H": "第三 C/D/F/G/H",
+    "3C/E/F/H/I": "第三 C/E/F/H/I",
+    "3D/E/I/J/L": "第三 D/E/I/J/L",
+    "3E/F/G/I/J": "第三 E/F/G/I/J",
+    "3E/H/I/J/K": "第三 E/H/I/J/K",
+}
+# ============================================================
 # Team name translations: 3-letter FIFA code → Chinese
 # Covers all 48 participating nations + common football nations
 # ============================================================
@@ -92,6 +115,7 @@ LABEL_TRANSLATIONS = [
     ("eliminated", "已淘汰"),
 
     # --- R32 specific ---
+    ("3RD PLACE", "小组第三"),
     ("Qualification Cut", "晋级线"),
     ("3rd place", "第三名"),
     ("3rd", "第三"),
@@ -170,10 +194,28 @@ def translate_labels(content: str) -> str:
     return result
 
 
+def translate_bracket_slots(content: str) -> str:
+    """Replace bracket slot placeholders (1A, 2B, 3A/B/C...) with readable labels.
+    
+    Only replaces when the code appears as a standalone text node.
+    These are pre-tournament placeholders that get replaced by real team
+    names once group stage results come in.
+    """
+    result = content
+    for code, label in BRACKET_SLOTS.items():
+        result = re.sub(
+            rf'(<text[^>]*>)\s*{re.escape(code)}\s*(</text>)',
+            rf'\1{label}\2',
+            result
+        )
+    return result
+
+
 def translate_svg(content: str) -> str:
     """Apply all translations to SVG content."""
     result = translate_labels(content)
     result = translate_team_names(result)
+    result = translate_bracket_slots(result)
     return result
 
 
