@@ -23,6 +23,9 @@ jobs:
       - name: Translate SVGs to Chinese
         run: python scripts/translate_svg.py
 
+      - name: Fill bracket with team names
+        run: python scripts/fill_bracket.py
+
       - uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "chore: refresh World Cup 2026 widgets"
