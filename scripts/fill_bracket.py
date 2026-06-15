@@ -145,9 +145,9 @@ def fill_bracket_slots(bracket_svg, standings):
     
     for letter, teams in standings.items():
         if len(teams) >= 1:
-            slot_to_team[f"1{letter}"] = teams[0][0]  # 1st place
+            slot_to_team[f"{letter}1"] = teams[0][0]  # 1st place
         if len(teams) >= 2:
-            slot_to_team[f"2{letter}"] = teams[1][0]  # 2nd place
+            slot_to_team[f"{letter}2"] = teams[1][0]  # 2nd place
     
     # Replace group position placeholders in text elements
     # e.g., <text ...>A1</text> → <text ...>美国</text>
