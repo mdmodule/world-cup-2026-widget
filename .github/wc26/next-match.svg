@@ -1,67 +1,56 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 340">
 <rect x="0" y="0" width="500" height="340" fill="#0d1117"/>
 <rect x="10" y="8" width="480" height="324" fill="#161b22" rx="8"/>
-<text x="24" y="36" fill="#58a6ff" font-size="14" font-family="monospace" font-weight="bold">⚽ 接下来比赛 AI 预测 · Upcoming Predictions</text>
-<text x="24" y="56" fill="#8b949e" font-size="10" font-family="monospace">Elo + Dixon-Coles 泊松模型 · 主胜 / 平 / 客胜 · 北京时间</text>
+<text x="24" y="36" fill="#58a6ff" font-size="14" font-family="monospace" font-weight="bold">⚽ 接下来比赛预测 · Elo + 市场共识</text>
+<text x="24" y="56" fill="#8b949e" font-size="10" font-family="monospace">Elo + Dixon-Coles · 混入 Polymarket 赔率 (40/60) · 下次 Actions 刷新市场数据</text>
 
-<text x="24" y="86" fill="#8b949e" font-size="10" font-family="monospace">今夜 03:00</text>
-<text x="130" y="86" fill="#e6edf3" font-size="12" font-family="monospace">🇫🇷 法国  vs  🇸🇳 塞内加尔</text>
-<rect x="320" y="74" width="80" height="14" fill="#3fb950" rx="2"/>
-<rect x="401" y="74" width="28" height="14" fill="#d2991d"/>
-<rect x="430" y="74" width="42" height="14" fill="#f85149" rx="2"/>
-<text x="360" y="85" fill="#0d1117" font-size="9" font-family="monospace" font-weight="bold" text-anchor="middle">55%</text>
-<text x="415" y="85" fill="#0d1117" font-size="8" font-family="monospace" text-anchor="middle">19%</text>
-<text x="451" y="85" fill="#0d1117" font-size="9" font-family="monospace" font-weight="bold" text-anchor="middle">26%</text>
-<line x1="24" y1="98" x2="476" y2="98" stroke="#30363d" stroke-width="0.5"/>
+<text x="24" y="82" fill="#8b949e" font-size="9" font-family="monospace">6/17</text>
+<text x="80" y="82" fill="#e6edf3" font-size="11" font-family="monospace">🇫🇷 法国  vs  🇸🇳 塞内加尔</text>
+<rect x="310" y="70" width="80" height="14" fill="#3fb950" rx="3"/>
+<rect x="391" y="70" width="28" height="14" fill="#d2991d"/>
+<rect x="420" y="70" width="42" height="14" fill="#f85149" rx="3"/>
+<text x="310" y="92" fill="#e6edf3" font-size="8" font-family="monospace">Elo 55% / 19% / 26%</text>
+<text x="475" y="92" fill="#d2991d" font-size="8" font-family="monospace">← 混</text>
+<line x1="24" y1="104" x2="476" y2="104" stroke="#30363d" stroke-width="0.5"/>
 
-<text x="24" y="128" fill="#8b949e" font-size="10" font-family="monospace">凌晨 06:00</text>
-<text x="130" y="128" fill="#e6edf3" font-size="12" font-family="monospace">🇮🇶 伊拉克  vs  🇳🇴 挪威</text>
-<rect x="320" y="116" width="13" height="14" fill="#3fb950" rx="2"/>
-<rect x="334" y="116" width="68" height="14" fill="#d2991d"/>
-<rect x="403" y="116" width="69" height="14" fill="#f85149" rx="2"/>
-<text x="326" y="127" fill="#0d1117" font-size="9" font-family="monospace" font-weight="bold" text-anchor="middle">9%</text>
-<text x="368" y="127" fill="#0d1117" font-size="8" font-family="monospace" text-anchor="middle">22%</text>
-<text x="437" y="127" fill="#0d1117" font-size="9" font-family="monospace" font-weight="bold" text-anchor="middle">69%</text>
-<line x1="24" y1="140" x2="476" y2="140" stroke="#30363d" stroke-width="0.5"/>
+<text x="24" y="128" fill="#8b949e" font-size="9" font-family="monospace">6/17</text>
+<text x="80" y="128" fill="#e6edf3" font-size="11" font-family="monospace">🇮🇶 伊拉克  vs  🇳🇴 挪威</text>
+<rect x="310" y="116" width="13" height="14" fill="#3fb950" rx="3"/>
+<rect x="324" y="116" width="68" height="14" fill="#d2991d"/>
+<rect x="393" y="116" width="69" height="14" fill="#f85149" rx="3"/>
+<text x="310" y="138" fill="#e6edf3" font-size="8" font-family="monospace">Elo 9% / 22% / 69%</text>
+<line x1="24" y1="150" x2="476" y2="150" stroke="#30363d" stroke-width="0.5"/>
 
-<text x="24" y="170" fill="#8b949e" font-size="10" font-family="monospace">上午 09:00</text>
-<text x="130" y="170" fill="#e6edf3" font-size="12" font-family="monospace">🇦🇷 阿根廷  vs  🇩🇿 阿尔及利亚</text>
-<rect x="320" y="158" width="100" height="14" fill="#3fb950" rx="2"/>
-<rect x="421" y="158" width="15" height="14" fill="#d2991d"/>
-<rect x="437" y="158" width="35" height="14" fill="#f85149" rx="2"/>
-<text x="370" y="169" fill="#0d1117" font-size="9" font-family="monospace" font-weight="bold" text-anchor="middle">68%</text>
-<text x="428" y="169" fill="#0d1117" font-size="8" font-family="monospace" text-anchor="middle">10%</text>
-<text x="454" y="169" fill="#0d1117" font-size="8" font-family="monospace" text-anchor="middle">22%</text>
-<line x1="24" y1="182" x2="476" y2="182" stroke="#30363d" stroke-width="0.5"/>
+<text x="24" y="174" fill="#8b949e" font-size="9" font-family="monospace">6/17</text>
+<text x="80" y="174" fill="#e6edf3" font-size="11" font-family="monospace">🇦🇷 阿根廷  vs  🇩🇿 阿尔及利亚</text>
+<rect x="310" y="162" width="100" height="14" fill="#3fb950" rx="3"/>
+<rect x="411" y="162" width="15" height="14" fill="#d2991d"/>
+<rect x="427" y="162" width="35" height="14" fill="#f85149" rx="3"/>
+<text x="310" y="184" fill="#e6edf3" font-size="8" font-family="monospace">Elo 68% / 10% / 22%</text>
+<line x1="24" y1="196" x2="476" y2="196" stroke="#30363d" stroke-width="0.5"/>
 
-<text x="24" y="212" fill="#8b949e" font-size="10" font-family="monospace">中午 12:00</text>
-<text x="130" y="212" fill="#e6edf3" font-size="12" font-family="monospace">🇦🇹 奥地利  vs  🇯🇴 约旦</text>
-<rect x="320" y="200" width="82" height="14" fill="#3fb950" rx="2"/>
-<rect x="403" y="200" width="26" height="14" fill="#d2991d"/>
-<rect x="430" y="200" width="42" height="14" fill="#f85149" rx="2"/>
-<text x="361" y="211" fill="#0d1117" font-size="9" font-family="monospace" font-weight="bold" text-anchor="middle">56%</text>
-<text x="416" y="211" fill="#0d1117" font-size="8" font-family="monospace" text-anchor="middle">18%</text>
-<text x="451" y="211" fill="#0d1117" font-size="9" font-family="monospace" text-anchor="middle">26%</text>
-<line x1="24" y1="224" x2="476" y2="224" stroke="#30363d" stroke-width="0.5"/>
+<text x="24" y="220" fill="#8b949e" font-size="9" font-family="monospace">6/17</text>
+<text x="80" y="220" fill="#e6edf3" font-size="11" font-family="monospace">🇦🇹 奥地利  vs  🇯🇴 约旦</text>
+<rect x="310" y="208" width="82" height="14" fill="#3fb950" rx="3"/>
+<rect x="393" y="208" width="26" height="14" fill="#d2991d"/>
+<rect x="420" y="208" width="42" height="14" fill="#f85149" rx="3"/>
+<text x="310" y="230" fill="#e6edf3" font-size="8" font-family="monospace">Elo 56% / 18% / 26%</text>
+<line x1="24" y1="242" x2="476" y2="242" stroke="#30363d" stroke-width="0.5"/>
 
-<text x="24" y="254" fill="#8b949e" font-size="10" font-family="monospace">明晨 01:00</text>
-<text x="130" y="254" fill="#e6edf3" font-size="12" font-family="monospace">🇵🇹 葡萄牙  vs  🇨🇩 刚果(金)</text>
-<rect x="320" y="242" width="104" height="14" fill="#3fb950" rx="2"/>
-<rect x="425" y="242" width="13" height="14" fill="#d2991d"/>
-<rect x="439" y="242" width="33" height="14" fill="#f85149" rx="2"/>
-<text x="372" y="253" fill="#0d1117" font-size="9" font-family="monospace" font-weight="bold" text-anchor="middle">71%</text>
-<text x="431" y="253" fill="#0d1117" font-size="8" font-family="monospace" text-anchor="middle">9%</text>
-<text x="455" y="253" fill="#0d1117" font-size="8" font-family="monospace" text-anchor="middle">20%</text>
-<line x1="24" y1="266" x2="476" y2="266" stroke="#30363d" stroke-width="0.5"/>
+<text x="24" y="266" fill="#8b949e" font-size="9" font-family="monospace">6/18</text>
+<text x="80" y="266" fill="#e6edf3" font-size="11" font-family="monospace">🇵🇹 葡萄牙  vs  🇨🇩 刚果(金)</text>
+<rect x="310" y="254" width="104" height="14" fill="#3fb950" rx="3"/>
+<rect x="415" y="254" width="13" height="14" fill="#d2991d"/>
+<rect x="429" y="254" width="33" height="14" fill="#f85149" rx="3"/>
+<text x="310" y="276" fill="#e6edf3" font-size="8" font-family="monospace">Elo 71% / 9% / 20%</text>
+<line x1="24" y1="288" x2="476" y2="288" stroke="#30363d" stroke-width="0.5"/>
 
-<text x="24" y="296" fill="#8b949e" font-size="10" font-family="monospace">明晨 04:00</text>
-<text x="130" y="296" fill="#e6edf3" font-size="12" font-family="monospace">🏴󠁧󠁢󠁥󠁮󠁧󠁿 英格兰  vs  🇭🇷 克罗地亚</text>
-<rect x="320" y="284" width="76" height="14" fill="#3fb950" rx="2"/>
-<rect x="397" y="284" width="31" height="14" fill="#d2991d"/>
-<rect x="429" y="284" width="43" height="14" fill="#f85149" rx="2"/>
-<text x="358" y="295" fill="#0d1117" font-size="9" font-family="monospace" font-weight="bold" text-anchor="middle">52%</text>
-<text x="412" y="295" fill="#0d1117" font-size="8" font-family="monospace" text-anchor="middle">21%</text>
-<text x="450" y="295" fill="#0d1117" font-size="8" font-family="monospace" text-anchor="middle">27%</text>
+<text x="24" y="312" fill="#8b949e" font-size="9" font-family="monospace">6/18</text>
+<text x="80" y="312" fill="#e6edf3" font-size="11" font-family="monospace">🏴󠁧󠁢󠁥󠁮󠁧󠁿 英格兰  vs  🇭🇷 克罗地亚</text>
+<rect x="310" y="300" width="76" height="14" fill="#3fb950" rx="3"/>
+<rect x="387" y="300" width="31" height="14" fill="#d2991d"/>
+<rect x="419" y="300" width="43" height="14" fill="#f85149" rx="3"/>
+<text x="310" y="322" fill="#e6edf3" font-size="8" font-family="monospace">Elo 52% / 21% / 27%</text>
 
-<text x="476" y="324" fill="#8b949e" font-size="8" font-family="monospace" text-anchor="end">2026-06-16 更新 · cup26matches.com</text>
+<text x="476" y="324" fill="#8b949e" font-size="7" font-family="monospace" text-anchor="end">2026-06-16 · 下次 Actions 混入市场数据</text>
 </svg>
