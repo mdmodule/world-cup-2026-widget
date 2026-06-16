@@ -15,14 +15,14 @@
 | ⚽ Match | 正在进行的比赛 / 下一场 | Live or next match |
 | 📅 Today | 今日全部赛程（北京时间）| Today's fixtures (Asia/Shanghai) |
 | 🏆 R32 | 48 队晋级 32 强追踪 | Round-of-32 qualification tracker |
-| 🌲 Bracket | 淘汰赛对阵树 | Knockout bracket |
+| 📋 Record | 模型战绩（比分 vs 预测）| Model scorecard (results vs predictions) |
 
 <!-- WC26:START -->
 <img src=".github/wc26/countdown.svg" alt="World Cup 2026 — countdown" />
 <img src=".github/wc26/match.svg" alt="World Cup 2026 — match" />
 <img src=".github/wc26/today.svg" alt="World Cup 2026 — today" />
 <img src=".github/wc26/r32.svg" alt="World Cup 2026 — r32" />
-<img src=".github/wc26/bracket.svg" alt="World Cup 2026 — bracket" />
+<img src=".github/wc26/record.svg" alt="World Cup 2026 — model scorecard" />
 <!-- WC26:END -->
 
 ---
@@ -36,7 +36,7 @@
 |---|---|---|
 | 🏆 Championship | 夺冠概率 TOP 10 | Championship odds top 10 |
 | 🛤️ Path to Final | 通往决赛之路晋级概率 | Stage-by-stage advancement % |
-| ⚽ Next Match | 接下来5场胜平负预测 | Next 5 matches W/D/L % |
+| ⚽ Next Match | 接下来6场胜平负预测 | Next 6 matches W/D/L % |
 | 📊 Qualification | 小组赛出线概率 | Group qualification odds |
 
 <!-- WC26-PREDICTIONS:START -->
