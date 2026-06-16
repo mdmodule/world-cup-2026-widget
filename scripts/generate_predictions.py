@@ -720,14 +720,6 @@ def main():
         print(f"[predictions] Failed to fetch cup26matches data: {e}")
         teams = []
 
-    print("[predictions] Generating championship.svg...")
-    with open(os.path.join(OUT_DIR, "championship.svg"), "w", encoding="utf-8") as f:
-        f.write(generate_championship(teams))
-
-    print("[predictions] Generating path-to-final.svg...")
-    with open(os.path.join(OUT_DIR, "path-to-final.svg"), "w", encoding="utf-8") as f:
-        f.write(generate_path_to_final(teams))
-
     print("[predictions] Computing match predictions...")
     matches = generate_match_data(teams)
     upcoming = [m for m in matches if m["date_short"] >= datetime.now(TZ).strftime("%m/%d")]
@@ -735,6 +727,14 @@ def main():
     print("[predictions] Generating next-match.svg...")
     with open(os.path.join(OUT_DIR, "next-match.svg"), "w", encoding="utf-8") as f:
         f.write(generate_next_match(teams, upcoming[:1]))
+
+    print("[predictions] Generating championship.svg...")
+    with open(os.path.join(OUT_DIR, "championship.svg"), "w", encoding="utf-8") as f:
+        f.write(generate_championship(teams))
+
+    print("[predictions] Generating path-to-final.svg...")
+    with open(os.path.join(OUT_DIR, "path-to-final.svg"), "w", encoding="utf-8") as f:
+        f.write(generate_path_to_final(teams))
 
     print("[predictions] Generating upcoming.svg...")
     with open(os.path.join(OUT_DIR, "upcoming.svg"), "w", encoding="utf-8") as f:
@@ -754,7 +754,7 @@ def main():
         f.write(record_svg)
 
     print(f"[predictions] ✅ All SVGs generated in {OUT_DIR}")
-    for fname in ["championship.svg", "path-to-final.svg", "next-match.svg", "upcoming.svg", "record.svg"]:
+    for fname in ["day-tracker.svg", "record.svg", "next-match.svg", "championship.svg", "path-to-final.svg", "upcoming.svg"]:
         fpath = os.path.join(OUT_DIR, fname)
         if os.path.exists(fpath):
             size = os.path.getsize(fpath)
