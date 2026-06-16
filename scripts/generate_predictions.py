@@ -498,16 +498,194 @@ def generate_match_data(teams_data: list[dict]):
 
 
 # ═══════════════════════════════════════════════════════════════
+# MATCH RESULTS (from openfootball)
+# ═══════════════════════════════════════════════════════════════
+
+OPENFOOTBALL_URL = "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json"
+
+# openfootball team name → our slug
+OF_NAME_MAP = {
+    "Mexico": "mexico", "South Africa": "south-africa", "South Korea": "south-korea",
+    "Czech Republic": "czech-republic", "Canada": "canada",
+    "Bosnia and Herzegovina": "bosnia-and-herzegovina", "Qatar": "qatar",
+    "Switzerland": "switzerland", "Brazil": "brazil", "Morocco": "morocco",
+    "United States": "usa", "Paraguay": "paraguay", "Haiti": "haiti",
+    "Scotland": "scotland", "Germany": "germany", "Curaçao": "curacao",
+    "Ivory Coast": "ivory-coast", "Ecuador": "ecuador", "Netherlands": "netherlands",
+    "Japan": "japan", "Australia": "australia", "Turkey": "turkey",
+    "Sweden": "sweden", "Tunisia": "tunisia", "Spain": "spain",
+    "Cape Verde": "cape-verde", "Belgium": "belgium", "Egypt": "egypt",
+    "Saudi Arabia": "saudi-arabia", "Uruguay": "uruguay", "Iran": "iran",
+    "New Zealand": "new-zealand", "France": "france", "Senegal": "senegal",
+    "Iraq": "iraq", "Norway": "norway", "Argentina": "argentina",
+    "Algeria": "algeria", "Austria": "austria", "Jordan": "jordan",
+    "Portugal": "portugal", "DR Congo": "dr-congo",
+    "England": "england", "Croatia": "croatia", "Ghana": "ghana",
+    "Panama": "panama", "Uzbekistan": "uzbekistan", "Colombia": "colombia",
+}
+
+
+def fetch_match_results():
+    """Fetch completed match results from openfootball."""
+    req = urllib.request.Request(OPENFOOTBALL_URL, headers={"User-Agent": "wc-widget/1.0"})
+    results = []
+    try:
+        with urllib.request.urlopen(req, timeout=30) as resp:
+            data = json.loads(resp.read().decode("utf-8"))
+        for m in data.get("matches", []):
+            score = m.get("score", {})
+            ft = score.get("ft")
+            if ft and len(ft) == 2:
+                home_slug = OF_NAME_MAP.get(m.get("team1", ""))
+                away_slug = OF_NAME_MAP.get(m.get("team2", ""))
+                if home_slug and away_slug:
+                    results.append({
+                        "date": m.get("date", "")[-5:],  # "MM-DD"
+                        "home": home_slug,
+                        "away": away_slug,
+                        "hg": ft[0],
+                        "ag": ft[1],
+                    })
+    except Exception as e:
+        print(f"[record] Failed to fetch openfootball data: {e}")
+    return results
+
+
+def generate_record(match_results):
+    """Generate record.svg — model predictions vs actual results."""
+    if not match_results:
+        return '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 100"><rect width="500" height="100" fill="#0d1117"/><text x="20" y="40" fill="#8b949e" font-size="14" font-family="monospace">暂无比赛数据</text></svg>'
+
+    # Load Elo ratings and run walk-forward
+    ratings_path = os.path.join(os.path.dirname(__file__), "..", "data", "elo-calibrated.json")
+    ratings = {}
+    if os.path.exists(ratings_path):
+        with open(ratings_path) as f:
+            ratings = json.load(f).get("ratings", {})
+
+    # Walk-forward: for each match in chronological order, predict then update
+    items = []
+    temp_ratings = dict(ratings)  # start from pre-tournament ratings
+    hit, miss = 0, 0
+
+    for m in match_results:
+        ra = temp_ratings.get(m["home"], 1500)
+        rb = temp_ratings.get(m["away"], 1500)
+        hb = HOME_ADV if m["home"] in HOSTS else 0
+        wa, d, wb = match_prob(ra, rb, hb)
+
+        # Determine model's pick (highest probability)
+        probs = [("home", wa), ("draw", d), ("away", wb)]
+        probs.sort(key=lambda x: x[1], reverse=True)
+        pick = probs[0][0]
+        pick_pct = probs[0][1]
+
+        # Determine actual result
+        if m["hg"] > m["ag"]:
+            actual = "home"
+        elif m["hg"] < m["ag"]:
+            actual = "away"
+        else:
+            actual = "draw"
+
+        correct = pick == actual
+        if correct:
+            hit += 1
+        else:
+            miss += 1
+
+        # Pick display name
+        if pick == "home":
+            pick_name = lbl(m["home"]).split(" ", 1)[-1] if " " in lbl(m["home"]) else m["home"]
+        elif pick == "away":
+            pick_name = lbl(m["away"]).split(" ", 1)[-1] if " " in lbl(m["away"]) else m["away"]
+        else:
+            pick_name = "平局"
+
+        items.append({
+            "date": m["date"],
+            "home": m["home"],
+            "away": m["away"],
+            "score": f"{m['hg']}-{m['ag']}",
+            "pick": f"{pick_name} {pick_pct*100:.0f}%",
+            "correct": correct,
+        })
+
+        # Update Elo after the match
+        exp = expected_score(ra, rb, hb)
+        score_val = 1.0 if m["hg"] > m["ag"] else (0.0 if m["hg"] < m["ag"] else 0.5)
+        gd = abs(m["hg"] - m["ag"])
+        g = 1.0 if gd <= 1 else (1.5 if gd == 2 else (11 + gd) / 8)
+        delta = 60 * g * (score_val - exp)
+        temp_ratings[m["home"]] = ra + delta
+        temp_ratings[m["away"]] = rb - delta
+
+    total = hit + miss
+    pct = hit / total * 100 if total > 0 else 0
+
+    # Build SVG
+    row_h = 20
+    header_h = 50
+    H = header_h + len(items) * row_h + 65
+    W = 500
+
+    parts = [svg_header(W, H)]
+    parts.append(svg_rect(0, 0, W, H, DARK_BG))
+    parts.append(svg_rect(10, 8, W - 20, H - 16, CARD_BG, 8))
+
+    parts.append(svg_text(24, 34, "📋 模型战绩 · Model Scorecard", ACCENT, 14, bold=True))
+    parts.append(svg_text(24, 52, f"已完赛 {total}/104 场 · 预测正确 {hit} 场 · 准确率 {pct:.0f}%", MUTED, 10))
+
+    # Summary badges
+    parts.append(svg_rect(24, 62, 48, 18, GREEN, 3))
+    parts.append(svg_text(48, 75, f"{hit} ✅", DARK_BG, 10, "middle", bold=True))
+    parts.append(svg_rect(84, 62, 48, 18, RED, 3))
+    parts.append(svg_text(108, 75, f"{miss} ❌", DARK_BG, 10, "middle", bold=True))
+
+    # Table header
+    ty = 100
+    parts.append(svg_text(24, ty, "日期", MUTED, 9, bold=True))
+    parts.append(svg_text(68, ty, "主队", MUTED, 9, bold=True))
+    parts.append(svg_text(172, ty, "比分", MUTED, 9, "middle", bold=True))
+    parts.append(svg_text(220, ty, "客队", MUTED, 9, bold=True))
+    parts.append(svg_text(315, ty, "模型预测", MUTED, 9, bold=True))
+    parts.append(svg_text(435, ty, "结果", MUTED, 9, "middle", bold=True))
+    parts.append(f'<line x1="24" y1="{ty+8}" x2="{W-24}" y2="{ty+8}" stroke="{BORDER}" stroke-width="1"/>')
+
+    for i, item in enumerate(items[-20:]):  # show last 20
+        y = ty + 20 + i * row_h
+        parts.append(svg_text(24, y, item["date"], MUTED, 9))
+        parts.append(svg_text(68, y, lbl(item["home"]), TEXT_PRIMARY, 10))
+        parts.append(svg_text(172, y, item["score"], TEXT_PRIMARY, 10, "middle", bold=True))
+        parts.append(svg_text(220, y, lbl(item["away"]), TEXT_PRIMARY, 10))
+        parts.append(svg_text(315, y, item["pick"], MUTED, 10))
+        mark = "✅" if item["correct"] else "❌"
+        color = GREEN if item["correct"] else RED
+        parts.append(svg_text(435, y, mark, color, 11, "middle"))
+
+    parts.append(f'<line x1="24" y1="{ty + 20 + len(items[-20:]) * row_h + 2}" x2="{W-24}" y2="{ty + 20 + len(items[-20:]) * row_h + 2}" stroke="{BORDER}" stroke-width="0.5"/>')
+    parts.append(svg_text(24, H - 30, "RPS 0.175 · walk-forward 预测 · 数据 openfootball + cup26matches.com", MUTED, 9))
+    now_str = datetime.now(TZ).strftime("%Y-%m-%d %H:%M")
+    parts.append(svg_text(W - 24, H - 16, f"更新 {now_str} CST", MUTED, 8, "end"))
+    parts.append("</svg>")
+    return "\n".join(parts)
+
+
+# ═══════════════════════════════════════════════════════════════
 # MAIN
 # ═══════════════════════════════════════════════════════════════
 
 def main():
-    print("[predictions] Fetching data from cup26matches.com...")
-    data = fetch_data()
-    teams = data["teams"]
-    print(f"[predictions] Got {len(teams)} teams, {data['trials']} trials")
-
     os.makedirs(OUT_DIR, exist_ok=True)
+
+    print("[predictions] Fetching data from cup26matches.com...")
+    try:
+        data = fetch_data()
+        teams = data["teams"]
+        print(f"[predictions] Got {len(teams)} teams, {data['trials']} trials")
+    except Exception as e:
+        print(f"[predictions] Failed to fetch cup26matches data: {e}")
+        teams = []
 
     print("[predictions] Generating championship.svg...")
     with open(os.path.join(OUT_DIR, "championship.svg"), "w", encoding="utf-8") as f:
@@ -529,11 +707,23 @@ def main():
     with open(os.path.join(OUT_DIR, "upcoming.svg"), "w", encoding="utf-8") as f:
         f.write(generate_upcoming(teams, upcoming))
 
+    print("[predictions] Fetching match results from openfootball...")
+    results = fetch_match_results()
+    print(f"[predictions] Got {len(results)} completed matches")
+
+    print("[predictions] Generating record.svg...")
+    record_svg = generate_record(results)
+    with open(os.path.join(OUT_DIR, "record.svg"), "w", encoding="utf-8") as f:
+        f.write(record_svg)
+
     print(f"[predictions] ✅ All SVGs generated in {OUT_DIR}")
-    for fname in ["championship.svg", "path-to-final.svg", "next-match.svg", "upcoming.svg"]:
+    for fname in ["championship.svg", "path-to-final.svg", "next-match.svg", "upcoming.svg", "record.svg"]:
         fpath = os.path.join(OUT_DIR, fname)
-        size = os.path.getsize(fpath)
-        print(f"  {fname}: {size:,} bytes")
+        if os.path.exists(fpath):
+            size = os.path.getsize(fpath)
+            print(f"  {fname}: {size:,} bytes")
+        else:
+            print(f"  {fname}: MISSING")
 
 
 if __name__ == "__main__":
