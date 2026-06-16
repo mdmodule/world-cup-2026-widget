@@ -235,51 +235,44 @@ def generate_path_to_final(teams):
 # PANEL 3: 下一场预测
 # ═══════════════════════════════════════════════════════════════
 
-def generate_next_match(teams, match_data=None):
-    """Match data: list of {home, away, winA%, draw%, winB%, date, time}"""
-    W, H = 520, 180
+def generate_next_match(teams, match_data=None, pm_odds=None):
+    """Match data: list of {home, away, winA, draw, winB, blendA, blendD, blendB, ...}"""
+    if not match_data:
+        match_data = []
+    W, H = 500, 340
 
     parts = [svg_header(W, H)]
     parts.append(svg_rect(0, 0, W, H, DARK_BG))
     parts.append(svg_rect(12, 10, W - 24, H - 20, CARD_BG, 8))
 
-    parts.append(svg_text(30, 38, "⚽ 下一场 AI 预测 / Next Match", ACCENT, 14, bold=True))
+    parts.append(svg_text(24, 36, "⚽ 接下来比赛预测 · Elo + 市场共识", ACCENT, 14, bold=True))
+    parts.append(svg_text(24, 54, "Elo + Dixon-Coles 模型 · 混入 Polymarket 赔率 (40/60) · 胜/平/负", MUTED, 10))
 
     if not match_data:
-        parts.append(svg_text(30, 80, "暂无赛程数据", TEXT_SECONDARY, 13))
+        parts.append(svg_text(24, 90, "暂无赛程数据", MUTED, 12))
     else:
-        m = match_data[0]
-        parts.append(svg_text(30, 65, f"{m.get('date', '')}  {m.get('time', '')}", TEXT_SECONDARY, 11))
+        sy = 72
+        for i, m in enumerate(match_data[:6]):
+            y = sy + i * 38
+            wa = m.get("blendA", m.get("winA", 0))
+            wd = m.get("blendD", m.get("draw", 0))
+            wb = m.get("blendB", m.get("winB", 0))
+            has_blend = "blendA" in m
 
-        # Team names
-        home_flag, home_name = TEAM_NAMES.get(m["home"], (m["home"], ""))
-        away_flag, away_name = TEAM_NAMES.get(m["away"], (m["away"], ""))
-        home_full = f"{home_flag} {home_name}"
-        away_full = f"{away_flag} {away_name}"
+            parts.append(svg_text(24, y + 16, m.get("date_short", ""), MUTED, 10))
+            parts.append(svg_text(100, y + 16, f"{team_label(m['home'])}  vs  {team_label(m['away'])}", TEXT_PRIMARY, 11))
 
-        parts.append(svg_text(60, 95, home_full, TEXT_PRIMARY, 15, bold=True))
-        parts.append(svg_text(250, 95, "vs", TEXT_SECONDARY, 13, "middle"))
-        parts.append(svg_text(310, 95, away_full, TEXT_PRIMARY, 15, bold=True))
+            # Bar: home | draw | away
+            bx, bw, bh = 300, 170, 14
+            parts.append(svg_rect(bx, y + 2, int(bw * wa), bh, GREEN, 3))
+            parts.append(svg_rect(bx + int(bw * wa), y + 2, int(bw * wd), bh, GOLD, 0))
+            parts.append(svg_rect(bx + int(bw * (wa + wd)), y + 2, int(bw * wb), bh, RED, 3))
 
-        # Win/Draw/Loss bars
-        wa, d, wb = m.get("winA", 0), m.get("draw", 0), m.get("winB", 0)
-        bar_y = 115
-        bar_w = 380
-        bar_x = 70
+            label = f"混{wa*100:.0f}% / {wd*100:.0f}% / {wb*100:.0f}%" if has_blend else f"Elo {wa*100:.0f}% / {wd*100:.0f}% / {wb*100:.0f}%"
+            parts.append(svg_text(bx, y + 26, label, TEXT_PRIMARY, 8))
 
-        parts.append(svg_rect(bar_x, bar_y, int(bar_w * wa), 18, GREEN, 4))
-        parts.append(svg_text(bar_x + 6, bar_y + 14, f"主胜 {wa*100:.0f}%", DARK_BG, 10, bold=True))
-
-        draw_start = bar_x + int(bar_w * wa)
-        draw_w = int(bar_w * d)
-        parts.append(svg_rect(draw_start, bar_y, draw_w, 18, GOLD, 0))
-        if d > 0.1:
-            parts.append(svg_text(draw_start + draw_w // 2, bar_y + 14, f"平 {d*100:.0f}%", DARK_BG, 10, "middle", True))
-
-        away_start = draw_start + draw_w
-        parts.append(svg_rect(away_start, bar_y, int(bar_w * wb), 18, RED, 4))
-        if wb > 0.1:
-            parts.append(svg_text(away_start + 6, bar_y + 14, f"客胜 {wb*100:.0f}%", DARK_BG, 10, bold=True))
+            if has_blend:
+                parts.append(svg_text(bx + bw + 8, y + 26, "← 混", GOLD, 8))
 
     now_str = datetime.now(TZ).strftime("%Y-%m-%d %H:%M")
     parts.append(svg_text(W - 30, H - 20, f"更新 {now_str} CST", TEXT_SECONDARY, 9, "end"))
@@ -397,6 +390,116 @@ def match_prob(rating_a, rating_b, home_bonus=0):
                 draw += p
     total = win_a + draw + win_b
     return win_a / total, draw / total, win_b / total
+
+
+POLYMARKET_GAMMA = "https://gamma-api.polymarket.com"
+
+# Polymarket search alias for each team
+PM_SEARCH = {
+    "south-korea": ["South Korea", "Korea Republic"],
+    "usa": ["United States", "USA"],
+    "bosnia-and-herzegovina": ["Bosnia and Herzegovina"],
+    "ivory-coast": ["Ivory Coast", "Côte d'Ivoire"],
+    "turkey": ["Turkey", "Türkiye"],
+    "dr-congo": ["DR Congo", "Democratic Republic of the Congo"],
+    "cape-verde": ["Cape Verde", "Cabo Verde"],
+    "curacao": ["Curacao", "Curaçao"],
+    "czech-republic": ["Czech Republic", "Czechia"],
+    "saudi-arabia": ["Saudi Arabia"],
+    "south-africa": ["South Africa"],
+    "new-zealand": ["New Zealand"],
+    "bosnia-and-herzegovina": ["Bosnia and Herzegovina"],
+}
+
+
+def _pm_search_names(slug):
+    return PM_SEARCH.get(slug, [slug.replace("-", " ").title()])
+
+
+def fetch_polymarket_odds(home, away, match_date_str):
+    """Fetch (home_p, draw_p, away_p) from Polymarket for one fixture.
+    Returns (None, None, None) if not found."""
+    home_names = [n.lower() for n in _pm_search_names(home)]
+    away_names = [n.lower() for n in _pm_search_names(away)]
+
+    queries = [f"{home} {away}", f"{home_names[0]} {away_names[0]}"]
+    event = None
+
+    for q in queries:
+        try:
+            url = f"{POLYMARKET_GAMMA}/public-search?q={urllib.parse.quote(q)}"
+            req = urllib.request.Request(url, headers={"User-Agent": "wc-widget/1.0"})
+            with urllib.request.urlopen(req, timeout=15) as resp:
+                data = json.loads(resp.read().decode("utf-8"))
+        except Exception:
+            continue
+
+        for ev in data.get("events", []):
+            title = (ev.get("title") or "").lower()
+            if all(n in title for n in [home_names[0], away_names[0]]) and " vs" in title:
+                slug = ev.get("slug", "")
+                if match_date_str.replace("/", "-") in slug or match_date_str.replace("/", "") in slug:
+                    event = ev
+                    break
+        if event:
+            break
+
+    if not event:
+        return None, None, None
+
+    home_p = draw_p = away_p = None
+    for market in event.get("markets", []):
+        q = (market.get("question") or "").lower()
+        prices = market.get("outcomePrices")
+        if not prices:
+            continue
+        try:
+            prices = [float(p) for p in (json.loads(prices) if isinstance(prices, str) else prices)]
+            yes = prices[0] if prices else None
+        except (json.JSONDecodeError, ValueError, IndexError):
+            continue
+        if yes is None:
+            continue
+
+        if "draw" in q or "tie" in q:
+            draw_p = yes
+        elif "win on" in q or "will win" in q:
+            if any(n in q for n in home_names):
+                home_p = yes
+            elif any(n in q for n in away_names):
+                away_p = yes
+
+    return home_p, draw_p, away_p
+
+
+def fetch_all_polymarket_odds(matches):
+    """Fetch Polymarket odds for all upcoming matches (max 6)."""
+    pm_data = {}
+    for m in matches[:6]:
+        date_iso = f"2026-{m['date_short'].replace('/', '-')}"
+        hp, dp, ap = fetch_polymarket_odds(m["home"], m["away"], m["date_short"])
+        if hp is not None:
+            # Normalize: Polymarket gives "Yes" prices that may not sum to 1
+            total = (hp or 0) + (dp or 0) + (ap or 0)
+            if total > 0:
+                pm_data[(m["home"], m["away"])] = {
+                    "home": (hp or 0) / total,
+                    "draw": (dp or 0) / total,
+                    "away": (ap or 0) / total,
+                }
+        # Small delay to avoid rate limiting
+        import time
+        time.sleep(0.3)
+    return pm_data
+
+
+def blend_odds(elo_h, elo_d, elo_a, market_h, market_d, market_a, elo_weight=0.4):
+    """Blend Elo predictions with market odds. Market gets 60% weight."""
+    return (
+        elo_weight * elo_h + (1 - elo_weight) * market_h,
+        elo_weight * elo_d + (1 - elo_weight) * market_d,
+        elo_weight * elo_a + (1 - elo_weight) * market_a,
+    )
 
 
 # ═══════════════════════════════════════════════════════════════
@@ -724,9 +827,30 @@ def main():
     matches = generate_match_data(teams)
     upcoming = [m for m in matches if m["date_short"] >= datetime.now(TZ).strftime("%m/%d")]
 
+    print("[predictions] Fetching Polymarket odds...")
+    try:
+        pm_odds = fetch_all_polymarket_odds(upcoming[:6])
+        print(f"[predictions] Got Polymarket odds for {len(pm_odds)} matches")
+    except Exception as e:
+        print(f"[predictions] Polymarket fetch failed: {e}")
+        pm_odds = {}
+
+    # Blend Elo + market odds into match data
+    for m in upcoming[:6]:
+        key = (m["home"], m["away"])
+        if key in pm_odds:
+            pm = pm_odds[key]
+            bh, bd, ba = blend_odds(m["winA"], m["draw"], m["winB"], pm["home"], pm["draw"], pm["away"])
+            m["blendA"] = bh
+            m["blendD"] = bd
+            m["blendB"] = ba
+            m["pmA"] = pm["home"]
+            m["pmD"] = pm["draw"]
+            m["pmB"] = pm["away"]
+
     print("[predictions] Generating next-match.svg...")
     with open(os.path.join(OUT_DIR, "next-match.svg"), "w", encoding="utf-8") as f:
-        f.write(generate_next_match(teams, upcoming[:1]))
+        f.write(generate_next_match(teams, upcoming, pm_odds))
 
     print("[predictions] Generating championship.svg...")
     with open(os.path.join(OUT_DIR, "championship.svg"), "w", encoding="utf-8") as f:
