@@ -24,17 +24,17 @@
 
 | 面板 Panel | 中文 | English |
 |---|---|---|
+| ⚽ Next Match | 接下来6场胜平负预测 | Next 6 matches W/D/L % |
 | 🏆 Championship | 夺冠概率 TOP 10 | Championship odds top 10 |
 | 🛤️ Path to Final | 通往决赛之路晋级概率 | Stage-by-stage advancement % |
-| ⚽ Next Match | 接下来6场胜平负预测 | Next 6 matches W/D/L % |
 | 📊 Qualification | 小组赛出线概率 | Group qualification odds |
 
 <!-- WC26-PREDICTIONS:START -->
+<img src=".github/wc26/next-match.svg" alt="World Cup 2026 — next match prediction" />
+
 <img src=".github/wc26/championship.svg" alt="World Cup 2026 — AI championship odds" />
 
 <img src=".github/wc26/path-to-final.svg" alt="World Cup 2026 — path to final" />
-
-<img src=".github/wc26/next-match.svg" alt="World Cup 2026 — next match prediction" />
 
 <img src=".github/wc26/upcoming.svg" alt="World Cup 2026 — group qualification" />
 <!-- WC26-PREDICTIONS:END -->
