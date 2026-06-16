@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 300">
+<rect x="0" y="0" width="500" height="300" fill="#0d1117"/>
+<rect x="10" y="8" width="480" height="284" fill="#161b22" rx="8"/>
+<text x="24" y="36" fill="#58a6ff" font-size="14" font-family="monospace" font-weight="bold">⚽ 接下来比赛 AI 预测 · Upcoming Predictions</text>
+<text x="24" y="54" fill="#8b949e" font-size="10" font-family="monospace">Elo + Dixon-Coles 泊松模型 · 主胜 / 平 / 客胜</text>
+<text x="24" y="78" fill="#8b949e" font-size="10" font-family="monospace">6/17 03:00</text>
+<text x="130" y="78" fill="#e6edf3" font-size="12" font-family="monospace">🇫🇷 法国  vs  🇸🇳 塞内加尔</text>
+<rect x="320" y="66" width="80" height="14" fill="#3fb950" rx="2"/>
+<rect x="401" y="66" width="28" height="14" fill="#d2991d"/>
+<rect x="430" y="66" width="42" height="14" fill="#f85149" rx="2"/>
+<text x="360" y="77" fill="#0d1117" font-size="9" font-family="monospace" font-weight="bold" text-anchor="middle">55%</text>
+<text x="415" y="77" fill="#0d1117" font-size="8" font-family="monospace" text-anchor="middle">19%</text>
+<text x="451" y="77" fill="#0d1117" font-size="9" font-family="monospace" font-weight="bold" text-anchor="middle">26%</text>
+<line x1="24" y1="90" x2="476" y2="90" stroke="#30363d" stroke-width="0.5"/>
+<text x="24" y="114" fill="#8b949e" font-size="10" font-family="monospace">6/17 06:00</text>
+<text x="130" y="114" fill="#e6edf3" font-size="12" font-family="monospace">🇮🇶 伊拉克  vs  🇳🇴 挪威</text>
+<rect x="320" y="102" width="13" height="14" fill="#3fb950" rx="2"/>
+<rect x="334" y="102" width="68" height="14" fill="#d2991d"/>
+<rect x="403" y="102" width="69" height="14" fill="#f85149" rx="2"/>
+<text x="326" y="113" fill="#0d1117" font-size="9" font-family="monospace" font-weight="bold" text-anchor="middle">9%</text>
+<text x="368" y="113" fill="#0d1117" font-size="8" font-family="monospace" text-anchor="middle">22%</text>
+<text x="437" y="113" fill="#0d1117" font-size="9" font-family="monospace" font-weight="bold" text-anchor="middle">69%</text>
+<line x1="24" y1="126" x2="476" y2="126" stroke="#30363d" stroke-width="0.5"/>
+<text x="24" y="150" fill="#8b949e" font-size="10" font-family="monospace">6/17 09:00</text>
+<text x="130" y="150" fill="#e6edf3" font-size="12" font-family="monospace">🇦🇷 阿根廷  vs  🇩🇿 阿尔及利亚</text>
+<rect x="320" y="138" width="100" height="14" fill="#3fb950" rx="2"/>
+<rect x="421" y="138" width="25" height="14" fill="#d2991d"/>
+<rect x="447" y="138" width="25" height="14" fill="#f85149" rx="2"/>
+<text x="370" y="149" fill="#0d1117" font-size="9" font-family="monospace" font-weight="bold" text-anchor="middle">68%</text>
+<text x="433" y="149" fill="#0d1117" font-size="8" font-family="monospace" text-anchor="middle">10%</text>
+<text x="459" y="149" fill="#0d1117" font-size="8" font-family="monospace" text-anchor="middle">22%</text>
+<line x1="24" y1="162" x2="476" y2="162" stroke="#30363d" stroke-width="0.5"/>
+<text x="24" y="186" fill="#8b949e" font-size="10" font-family="monospace">6/17 12:00</text>
+<text x="130" y="186" fill="#e6edf3" font-size="12" font-family="monospace">🇦🇹 奥地利  vs  🇯🇴 约旦</text>
+<rect x="320" y="174" width="82" height="14" fill="#3fb950" rx="2"/>
+<rect x="403" y="174" width="26" height="14" fill="#d2991d"/>
+<rect x="430" y="174" width="42" height="14" fill="#f85149" rx="2"/>
+<text x="361" y="185" fill="#0d1117" font-size="9" font-family="monospace" font-weight="bold" text-anchor="middle">56%</text>
+<text x="416" y="185" fill="#0d1117" font-size="8" font-family="monospace" text-anchor="middle">18%</text>
+<text x="451" y="185" fill="#0d1117" font-size="9" font-family="monospace" text-anchor="middle">26%</text>
+<line x1="24" y1="198" x2="476" y2="198" stroke="#30363d" stroke-width="0.5"/>
+<text x="24" y="222" fill="#8b949e" font-size="10" font-family="monospace">6/18 01:00</text>
+<text x="130" y="222" fill="#e6edf3" font-size="12" font-family="monospace">🇵🇹 葡萄牙  vs  🇨🇩 刚果(金)</text>
+<rect x="320" y="210" width="104" height="14" fill="#3fb950" rx="2"/>
+<rect x="425" y="210" width="13" height="14" fill="#d2991d"/>
+<rect x="439" y="210" width="33" height="14" fill="#f85149" rx="2"/>
+<text x="372" y="221" fill="#0d1117" font-size="9" font-family="monospace" font-weight="bold" text-anchor="middle">71%</text>
+<text x="431" y="221" fill="#0d1117" font-size="8" font-family="monospace" text-anchor="middle">9%</text>
+<text x="455" y="221" fill="#0d1117" font-size="8" font-family="monospace" text-anchor="middle">20%</text>
+<text x="476" y="284" fill="#8b949e" font-size="8" font-family="monospace" text-anchor="end">2026-06-16 · 数据 cup26matches.com</text>
+</svg>

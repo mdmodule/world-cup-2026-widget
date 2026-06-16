@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 580 340">
+<rect x="0" y="0" width="580" height="340" fill="#0d1117"/>
+<rect x="10" y="8" width="560" height="324" fill="#161b22" rx="8"/>
+<text x="24" y="36" fill="#d2991d" font-size="14" font-family="monospace" font-weight="bold">🛤️ 通往决赛之路 / Path to the Final</text>
+<text x="24" y="54" fill="#8b949e" font-size="10" font-family="monospace">晋级概率 → 从左到右递减 · 50,000 次蒙卡模拟</text>
+<text x="24" y="80" fill="#8b949e" font-size="11" font-family="monospace" font-weight="bold">球队</text>
+<text x="140" y="80" fill="#8b949e" font-size="10" font-family="monospace" text-anchor="middle">32强</text>
+<text x="204" y="80" fill="#8b949e" font-size="10" font-family="monospace" text-anchor="middle">16强</text>
+<text x="268" y="80" fill="#8b949e" font-size="10" font-family="monospace" text-anchor="middle">8强</text>
+<text x="332" y="80" fill="#8b949e" font-size="10" font-family="monospace" text-anchor="middle">4强</text>
+<text x="396" y="80" fill="#8b949e" font-size="10" font-family="monospace" text-anchor="middle">决赛</text>
+<text x="470" y="80" fill="#d2991d" font-size="11" font-family="monospace" font-weight="bold" text-anchor="middle">🏆冠军</text>
+<line x1="24" y1="88" x2="556" y2="88" stroke="#30363d" stroke-width="1"/>
+<text x="24" y="112" fill="#e6edf3" font-size="11" font-family="monospace">🇫🇷 法国</text>
+<text x="140" y="112" fill="#e6edf3" font-size="11" font-family="monospace" text-anchor="middle">96%</text>
+<text x="204" y="112" fill="#e6edf3" font-size="11" font-family="monospace" text-anchor="middle">78%</text>
+<text x="268" y="112" fill="#e6edf3" font-size="11" font-family="monospace" text-anchor="middle">55%</text>
+<text x="332" y="112" fill="#e6edf3" font-size="11" font-family="monospace" text-anchor="middle">38%</text>
+<text x="396" y="112" fill="#e6edf3" font-size="11" font-family="monospace" text-anchor="middle">25%</text>
+<text x="470" y="112" fill="#d2991d" font-size="12" font-family="monospace" font-weight="bold" text-anchor="middle">15%</text>
+<line x1="24" y1="120" x2="556" y2="120" stroke="#30363d" stroke-width="0.5"/>
+<text x="24" y="144" fill="#e6edf3" font-size="11" font-family="monospace">🇪🇸 西班牙</text>
+<text x="140" y="144" fill="#e6edf3" font-size="11" font-family="monospace" text-anchor="middle">94%</text>
+<text x="204" y="144" fill="#e6edf3" font-size="11" font-family="monospace" text-anchor="middle">72%</text>
+<text x="268" y="144" fill="#e6edf3" font-size="11" font-family="monospace" text-anchor="middle">51%</text>
+<text x="332" y="144" fill="#e6edf3" font-size="11" font-family="monospace" text-anchor="middle">38%</text>
+<text x="396" y="144" fill="#e6edf3" font-size="11" font-family="monospace" text-anchor="middle">24%</text>
+<text x="470" y="144" fill="#d2991d" font-size="12" font-family="monospace" font-weight="bold" text-anchor="middle">15%</text>
+<line x1="24" y1="152" x2="556" y2="152" stroke="#30363d" stroke-width="0.5"/>
+<text x="24" y="176" fill="#e6edf3" font-size="11" font-family="monospace">🏴󠁧󠁢󠁥󠁮󠁧󠁿 英格兰</text>
+<text x="140" y="176" fill="#e6edf3" font-size="11" font-family="monospace" text-anchor="middle">98%</text>
+<text x="204" y="176" fill="#e6edf3" font-size="11" font-family="monospace" text-anchor="middle">76%</text>
+<text x="268" y="176" fill="#e6edf3" font-size="11" font-family="monospace" text-anchor="middle">53%</text>
+<text x="332" y="176" fill="#e6edf3" font-size="11" font-family="monospace" text-anchor="middle">35%</text>
+<text x="396" y="176" fill="#e6edf3" font-size="11" font-family="monospace" text-anchor="middle">21%</text>
+<text x="470" y="176" fill="#d2991d" font-size="12" font-family="monospace" font-weight="bold" text-anchor="middle">13%</text>
+<line x1="24" y1="184" x2="556" y2="184" stroke="#30363d" stroke-width="0.5"/>
+<text x="24" y="208" fill="#e6edf3" font-size="11" font-family="monospace">🇦🇷 阿根廷</text>
+<text x="140" y="208" fill="#e6edf3" font-size="11" font-family="monospace" text-anchor="middle">98%</text>
+<text x="204" y="208" fill="#e6edf3" font-size="11" font-family="monospace" text-anchor="middle">70%</text>
+<text x="268" y="208" fill="#e6edf3" font-size="11" font-family="monospace" text-anchor="middle">52%</text>
+<text x="332" y="208" fill="#e6edf3" font-size="11" font-family="monospace" text-anchor="middle">34%</text>
+<text x="396" y="208" fill="#e6edf3" font-size="11" font-family="monospace" text-anchor="middle">20%</text>
+<text x="470" y="208" fill="#d2991d" font-size="12" font-family="monospace" font-weight="bold" text-anchor="middle">11%</text>
+<line x1="24" y1="216" x2="556" y2="216" stroke="#30363d" stroke-width="0.5"/>
+<text x="24" y="240" fill="#e6edf3" font-size="11" font-family="monospace">🇧🇷 巴西</text>
+<text x="140" y="240" fill="#e6edf3" font-size="11" font-family="monospace" text-anchor="middle">98%</text>
+<text x="204" y="240" fill="#e6edf3" font-size="11" font-family="monospace" text-anchor="middle">67%</text>
+<text x="268" y="240" fill="#e6edf3" font-size="11" font-family="monospace" text-anchor="middle">44%</text>
+<text x="332" y="240" fill="#e6edf3" font-size="11" font-family="monospace" text-anchor="middle">25%</text>
+<text x="396" y="240" fill="#e6edf3" font-size="11" font-family="monospace" text-anchor="middle">14%</text>
+<text x="470" y="240" fill="#d2991d" font-size="12" font-family="monospace" font-weight="bold" text-anchor="middle">7.4%</text>
+<text x="556" y="324" fill="#8b949e" font-size="8" font-family="monospace" text-anchor="end">2026-06-16 · cup26matches.com</text>
+</svg>

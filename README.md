@@ -4,11 +4,10 @@
 > Self-updating FIFA World Cup 2026 panels — auto-refreshed every 6 hours via GitHub Actions.
 
 基于 / Powered by [moose25/world-cup-2026-readme-widget](https://github.com/moose25/world-cup-2026-readme-widget)
-AI 预测数据 / Prediction data [cup26matches.com](https://cup26matches.com) (Elo + Dixon-Coles + Monte Carlo)
 
 ---
 
-## 📊 面板 / Panels
+## 📊 比赛面板 / Match Panels
 
 | 面板 Panel | 中文 | English |
 |---|---|---|
@@ -17,12 +16,6 @@ AI 预测数据 / Prediction data [cup26matches.com](https://cup26matches.com) (
 | 📅 Today | 今日全部赛程（北京时间）| Today's fixtures (Asia/Shanghai) |
 | 🏆 R32 | 48 队晋级 32 强追踪 | Round-of-32 qualification tracker |
 | 🌲 Bracket | 淘汰赛对阵树 | Knockout bracket |
-| 🎯 Championship | AI 夺冠概率 TOP 10 | AI championship odds |
-| 🛤️ Path to Final | 晋级概率表（32强→冠军）| Stage-by-stage advancement % |
-| ⚽ Next Match | 下一场 AI 预测（胜/平/负%）| Next match W/D/L prediction |
-| 📅 Upcoming | 未来 5 场预测 | Next 5 matches with predictions |
-
-### 比赛面板 / Match Panels
 
 <!-- WC26:START -->
 <img src=".github/wc26/countdown.svg" alt="World Cup 2026 — countdown" />
@@ -32,20 +25,33 @@ AI 预测数据 / Prediction data [cup26matches.com](https://cup26matches.com) (
 <img src=".github/wc26/bracket.svg" alt="World Cup 2026 — bracket" />
 <!-- WC26:END -->
 
-### AI 预测面板 / AI Prediction Panels
+---
+
+## 🧠 AI 预测面板 / AI Prediction Panels
+
+> 数据来源：**cup26matches.com** — Elo 评级 + Dixon-Coles 双变量泊松 + 50,000 次蒙特卡洛模拟
+> Data: cup26matches.com (CC BY 4.0) — Elo + Dixon-Coles bivariate Poisson + 50k Monte Carlo
+
+| 面板 Panel | 中文 | English |
+|---|---|---|
+| 🏆 Championship | 夺冠概率 TOP 10 | Championship odds top 10 |
+| 🛤️ Path to Final | 通往决赛之路晋级概率 | Stage-by-stage advancement % |
+| ⚽ Next Match | 接下来5场胜平负预测 | Next 5 matches W/D/L % |
+| 📊 Qualification | 小组赛出线概率 | Group qualification odds |
 
 <!-- WC26-PREDICTIONS:START -->
 <img src=".github/wc26/championship.svg" alt="World Cup 2026 — AI championship odds" />
+
 <img src=".github/wc26/path-to-final.svg" alt="World Cup 2026 — path to final" />
+
 <img src=".github/wc26/next-match.svg" alt="World Cup 2026 — next match prediction" />
-<img src=".github/wc26/upcoming.svg" alt="World Cup 2026 — upcoming predictions" />
+
+<img src=".github/wc26/upcoming.svg" alt="World Cup 2026 — group qualification" />
 <!-- WC26-PREDICTIONS:END -->
 
 ---
 
-## 🧠 AI 预测模型 / Prediction Model
-
-夺冠概率和比赛预测来自 **cup26matches.com** 的开源模型，基于：
+## 🧠 预测模型 / Prediction Model
 
 | 组件 | 说明 |
 |------|------|
@@ -53,8 +59,6 @@ AI 预测数据 / Prediction data [cup26matches.com](https://cup26matches.com) (
 | **Dixon-Coles 泊松** | 双变量泊松模型 + ρ=-0.13 修正低比分平局 |
 | **蒙特卡洛** | 50,000 次锦标赛模拟，锁定已完赛结果 |
 | **回测验证** | Walk-forward RPS=0.175, ECE=2.3%, 准确率 62% |
-
-数据协议：CC BY 4.0 · 需注明来源 cup26matches.com
 
 ---
 
@@ -78,7 +82,7 @@ AI 预测数据 / Prediction data [cup26matches.com](https://cup26matches.com) (
     R32          R16          QF           SF              Final
 ```
 
-每场比赛的**胜者**沿连线进入下一轮。连线的交汇点就是下一轮的比赛。
+每场比赛的**胜者**沿连线进入下一轮。
 
 > The **winner** of each match advances along the connecting line to the next round.
 
@@ -95,10 +99,8 @@ AI 预测数据 / Prediction data [cup26matches.com](https://cup26matches.com) (
 
 ## 🔧 工作原理 / How It Works
 
-- **赛程数据 / Fixtures**: [openfootball/worldcup.json](https://github.com/openfootball/worldcup.json)（公共领域，无需 API Key）
-- **预测数据 / Predictions**: [cup26matches.com/data/probabilities.json](https://cup26matches.com/data/probabilities.json) (CC BY 4.0)
-- **渲染 / Render**: 每个面板是一个 SVG 图片，直接嵌入 Markdown
-- **更新 / Update**: GitHub Actions 每 6 小时运行 → 拉取最新数据 → 生成 SVG → 中文化翻译 → 自动提交
+- **赛程数据 / Fixtures**: [openfootball/worldcup.json](https://github.com/openfootball/worldcup.json)
+- **预测数据 / Predictions**: [cup26matches.com/data/probabilities.json](https://cup26matches.com/data/probabilities.json)
+- **渲染 / Render**: SVG 图片直接嵌入 Markdown
+- **更新 / Update**: GitHub Actions 每 6 小时自动运行
 - **时区 / Timezone**: `Asia/Shanghai`（北京时间 UTC+8）
-- **翻译 / Translation**: `scripts/translate_svg.py` 对标签、队名、状态进行中文化处理
-- **预测引擎 / Prediction Engine**: `scripts/generate_predictions.py` 调用 cup26matches API + 本地 Elo-Dixon-Coles 模型

@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 270">
+<rect x="0" y="0" width="500" height="270" fill="#0d1117"/>
+<rect x="10" y="8" width="480" height="254" fill="#161b22" rx="8"/>
+<text x="24" y="36" fill="#58a6ff" font-size="14" font-family="monospace" font-weight="bold">📊 小组赛出线概率 · Group Qualification Odds</text>
+<text x="24" y="54" fill="#8b949e" font-size="10" font-family="monospace">Top 10 球队 · 32强晋级率 + 小组平均积分</text>
+<text x="24" y="82" fill="#8b949e" font-size="10" font-family="monospace" font-weight="bold">球队 Team</text>
+<text x="200" y="82" fill="#8b949e" font-size="10" font-family="monospace" font-weight="bold" text-anchor="middle">32强晋级</text>
+<text x="320" y="82" fill="#8b949e" font-size="10" font-family="monospace" font-weight="bold" text-anchor="middle">小组均分</text>
+<text x="440" y="82" fill="#8b949e" font-size="10" font-family="monospace" font-weight="bold" text-anchor="middle">小组淘汰</text>
+<line x1="24" y1="90" x2="476" y2="90" stroke="#30363d" stroke-width="1"/>
+<text x="24" y="114" fill="#e6edf3" font-size="11" font-family="monospace">🇫🇷 法国</text>
+<text x="200" y="114" fill="#3fb950" font-size="12" font-family="monospace" font-weight="bold" text-anchor="middle">96%</text>
+<text x="320" y="114" fill="#e6edf3" font-size="11" font-family="monospace" text-anchor="middle">6.4</text>
+<text x="440" y="114" fill="#8b949e" font-size="11" font-family="monospace" text-anchor="middle">4.1%</text>
+<line x1="24" y1="120" x2="476" y2="120" stroke="#30363d" stroke-width="0.5"/>
+<text x="24" y="144" fill="#e6edf3" font-size="11" font-family="monospace">🇪🇸 西班牙</text>
+<text x="200" y="144" fill="#3fb950" font-size="12" font-family="monospace" font-weight="bold" text-anchor="middle">94%</text>
+<text x="320" y="144" fill="#e6edf3" font-size="11" font-family="monospace" text-anchor="middle">5.5</text>
+<text x="440" y="144" fill="#f85149" font-size="11" font-family="monospace" text-anchor="middle">6.2%</text>
+<line x1="24" y1="150" x2="476" y2="150" stroke="#30363d" stroke-width="0.5"/>
+<text x="24" y="174" fill="#e6edf3" font-size="11" font-family="monospace">🏴󠁧󠁢󠁥󠁮󠁧󠁿 英格兰</text>
+<text x="200" y="174" fill="#3fb950" font-size="12" font-family="monospace" font-weight="bold" text-anchor="middle">98%</text>
+<text x="320" y="174" fill="#e6edf3" font-size="11" font-family="monospace" text-anchor="middle">6.9</text>
+<text x="440" y="174" fill="#8b949e" font-size="11" font-family="monospace" text-anchor="middle">2.4%</text>
+<line x1="24" y1="180" x2="476" y2="180" stroke="#30363d" stroke-width="0.5"/>
+<text x="24" y="204" fill="#e6edf3" font-size="11" font-family="monospace">🇦🇷 阿根廷</text>
+<text x="200" y="204" fill="#3fb950" font-size="12" font-family="monospace" font-weight="bold" text-anchor="middle">98%</text>
+<text x="320" y="204" fill="#e6edf3" font-size="11" font-family="monospace" text-anchor="middle">7.2</text>
+<text x="440" y="204" fill="#8b949e" font-size="11" font-family="monospace" text-anchor="middle">1.6%</text>
+<line x1="24" y1="210" x2="476" y2="210" stroke="#30363d" stroke-width="0.5"/>
+<text x="24" y="234" fill="#e6edf3" font-size="11" font-family="monospace">🇧🇷 巴西</text>
+<text x="200" y="234" fill="#3fb950" font-size="12" font-family="monospace" font-weight="bold" text-anchor="middle">98%</text>
+<text x="320" y="234" fill="#e6edf3" font-size="11" font-family="monospace" text-anchor="middle">6.0</text>
+<text x="440" y="234" fill="#8b949e" font-size="11" font-family="monospace" text-anchor="middle">2.4%</text>
+<text x="476" y="254" fill="#8b949e" font-size="8" font-family="monospace" text-anchor="end">2026-06-16 · 数据 cup26matches.com</text>
+</svg>
