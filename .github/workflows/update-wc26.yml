@@ -2,8 +2,8 @@ name: Update World Cup 2026 Widgets
 
 on:
   schedule:
-    - cron: "0 * * * *"  # 每小时刷新（比赛日几乎实时）
-  workflow_dispatch: {}     # 支持手动触发
+    - cron: "0 * * * *"
+  workflow_dispatch: {}
 
 permissions:
   contents: write
@@ -13,18 +13,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-
-      - uses: moose25/world-cup-2026-readme-widget@v1.0.0
-        with:
-          panels: "countdown,match,today,r32,bracket"
-          tz: "Asia/Shanghai"
-          theme: "dark"
-
-      - name: Translate SVGs to Chinese
-        run: python scripts/translate_svg.py
-
-      - name: Fill bracket with team names
-        run: python scripts/fill_bracket.py
 
       - name: Generate AI prediction panels
         run: python scripts/generate_predictions.py

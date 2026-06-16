@@ -88,6 +88,39 @@ def pct_str(v):
     return f"{v * 100:.1f}%"
 
 
+# ═══════════════════════════════════════════════════════════════
+# DAY TRACKER
+# ═══════════════════════════════════════════════════════════════
+
+WC_START = datetime(2026, 6, 11, tzinfo=TZ)
+WC_END = datetime(2026, 7, 19, tzinfo=TZ)
+WC_TOTAL_DAYS = (WC_END - WC_START).days + 1
+
+
+def generate_day_tracker():
+    W, H = 500, 120
+    now = datetime.now(TZ)
+    day_num = (now.date() - WC_START.date()).days + 1
+    day_num = max(1, min(day_num, WC_TOTAL_DAYS))
+    pct = day_num / WC_TOTAL_DAYS
+
+    parts = [svg_header(W, H)]
+    parts.append(svg_rect(0, 0, W, H, DARK_BG))
+    parts.append(svg_rect(10, 8, W - 20, H - 16, CARD_BG, 8))
+    parts.append(svg_text(24, 36, "🗓️ 世界杯进行中 · World Cup 2026", ACCENT, 14, bold=True))
+    parts.append(svg_text(24, 58, f"第 {day_num} 天 / 共 {WC_TOTAL_DAYS} 天  ·  Day {day_num} of {WC_TOTAL_DAYS}", TEXT_PRIMARY, 16, bold=True))
+    parts.append(svg_rect(24, 76, 452, 14, BORDER, 3))
+    bar_w = int(452 * pct)
+    if bar_w > 0:
+        parts.append(svg_rect(24, 76, bar_w, 14, ACCENT, 3))
+        parts.append(svg_text(24 + bar_w // 2, 86, f"{pct*100:.0f}%", DARK_BG, 10, "middle"))
+    parts.append(svg_text(24, 106, "6/11 开幕 — 7/19 决赛", MUTED, 9))
+    now_str = datetime.now(TZ).strftime("%Y-%m-%d %H:%M")
+    parts.append(svg_text(W - 24, H - 12, f"更新 {now_str} CST", MUTED, 8, "end"))
+    parts.append("</svg>")
+    return "\n".join(parts)
+
+
 def team_label(slug):
     cn, flag = TEAM_NAMES.get(slug, (slug, ""))
     return f"{flag} {cn}"
@@ -706,6 +739,10 @@ def main():
     print("[predictions] Generating upcoming.svg...")
     with open(os.path.join(OUT_DIR, "upcoming.svg"), "w", encoding="utf-8") as f:
         f.write(generate_upcoming(teams, upcoming))
+
+    print("[predictions] Generating day-tracker.svg...")
+    with open(os.path.join(OUT_DIR, "day-tracker.svg"), "w", encoding="utf-8") as f:
+        f.write(generate_day_tracker())
 
     print("[predictions] Fetching match results from openfootball...")
     results = fetch_match_results()

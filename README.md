@@ -3,25 +3,15 @@
 > 自动更新的 FIFA 2026 世界杯面板，每小时通过 GitHub Actions 刷新。
 > Self-updating FIFA World Cup 2026 panels — auto-refreshed every hour via GitHub Actions.
 
-基于 / Powered by [moose25/world-cup-2026-readme-widget](https://github.com/moose25/world-cup-2026-readme-widget)
+数据 / Data: [openfootball](https://github.com/openfootball/worldcup.json) · [cup26matches.com](https://cup26matches.com)
 
 ---
 
-## 📊 比赛面板 / Match Panels
-
-| 面板 Panel | 中文 | English |
-|---|---|---|
-| 🕐 Countdown | 距开幕倒计时 | Days to kickoff |
-| ⚽ Match | 正在进行的比赛 / 下一场 | Live or next match |
-| 📅 Today | 今日全部赛程（北京时间）| Today's fixtures (Asia/Shanghai) |
-| 🏆 R32 | 48 队晋级 32 强追踪 | Round-of-32 qualification tracker |
-| 📋 Record | 模型战绩（比分 vs 预测）| Model scorecard (results vs predictions) |
+## 📊 世界杯进度 / World Cup Progress
 
 <!-- WC26:START -->
-<img src=".github/wc26/countdown.svg" alt="World Cup 2026 — countdown" />
-<img src=".github/wc26/match.svg" alt="World Cup 2026 — match" />
-<img src=".github/wc26/today.svg" alt="World Cup 2026 — today" />
-<img src=".github/wc26/r32.svg" alt="World Cup 2026 — r32" />
+<img src=".github/wc26/day-tracker.svg" alt="World Cup 2026 — day tracker" />
+
 <img src=".github/wc26/record.svg" alt="World Cup 2026 — model scorecard" />
 <!-- WC26:END -->
 
@@ -48,17 +38,6 @@
 
 <img src=".github/wc26/upcoming.svg" alt="World Cup 2026 — group qualification" />
 <!-- WC26-PREDICTIONS:END -->
-
----
-
-## 🧠 预测模型 / Prediction Model
-
-| 组件 | 说明 |
-|------|------|
-| **Elo 评级** | 48 队基于 913 场国际赛校准的动态评分 |
-| **Dixon-Coles 泊松** | 双变量泊松模型 + ρ=-0.13 修正低比分平局 |
-| **蒙特卡洛** | 50,000 次锦标赛模拟，锁定已完赛结果 |
-| **回测验证** | Walk-forward RPS=0.175, ECE=2.3%, 准确率 62% |
 
 ---
 
