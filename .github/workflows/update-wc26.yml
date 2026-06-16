@@ -26,6 +26,9 @@ jobs:
       - name: Fill bracket with team names
         run: python scripts/fill_bracket.py
 
+      - name: Generate AI prediction panels
+        run: python scripts/generate_predictions.py
+
       - uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "chore: refresh World Cup 2026 widgets"
