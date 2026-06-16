@@ -2,7 +2,7 @@ name: Update World Cup 2026 Widgets
 
 on:
   schedule:
-    - cron: "0 */6 * * *"  # 每 6 小时刷新
+    - cron: "0 * * * *"  # 每小时刷新（比赛日几乎实时）
   workflow_dispatch: {}     # 支持手动触发
 
 permissions:
