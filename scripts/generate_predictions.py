@@ -73,9 +73,12 @@ ORANGE = "#d2991d"
 BAR_COLORS = ["#58a6ff", "#3fb950", "#d2991d", "#f78166", "#a371f7",
               "#79c0ff", "#56d364", "#e3b341", "#f0883e", "#bc8cff"]
 
+SCALE = 1.5  # display scale factor
+
 
 def svg_header(w, h):
-    return f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {w} {h}" width="{w}" height="{h}">'
+    dw, dh = int(w * SCALE), int(h * SCALE)
+    return f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {w} {h}" width="{dw}" height="{dh}">'
 
 
 def svg_rect(x, y, w, h, fill, rx=0):
