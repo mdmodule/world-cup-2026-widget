@@ -12,15 +12,15 @@
 <text x="478" y="98" fill="#d2991d" font-size="8" font-family="monospace" text-anchor="start">← 混</text>
 <text x="24" y="126" fill="#8b949e" font-size="10" font-family="monospace" text-anchor="start">6/17</text>
 <text x="100" y="126" fill="#e6edf3" font-size="11" font-family="monospace" text-anchor="start">🇵🇹 葡萄牙  vs  🇨🇩 刚果(金)</text>
-<rect x="300" y="112" width="124" height="14" fill="#3fb950" rx="3"/>
-<rect x="424" y="112" width="31" height="14" fill="#d2991d"/>
+<rect x="300" y="112" width="125" height="14" fill="#3fb950" rx="3"/>
+<rect x="425" y="112" width="30" height="14" fill="#d2991d"/>
 <rect x="456" y="112" width="13" height="14" fill="#f85149" rx="3"/>
-<text x="300" y="136" fill="#e6edf3" font-size="8" font-family="monospace" text-anchor="start">混73% / 19% / 8%</text>
+<text x="300" y="136" fill="#e6edf3" font-size="8" font-family="monospace" text-anchor="start">混74% / 18% / 8%</text>
 <text x="478" y="136" fill="#d2991d" font-size="8" font-family="monospace" text-anchor="start">← 混</text>
 <text x="24" y="164" fill="#8b949e" font-size="10" font-family="monospace" text-anchor="start">6/17</text>
 <text x="100" y="164" fill="#e6edf3" font-size="11" font-family="monospace" text-anchor="start">🏴󠁧󠁢󠁥󠁮󠁧󠁿 英格兰  vs  🇭🇷 克罗地亚</text>
-<rect x="300" y="150" width="93" height="14" fill="#3fb950" rx="3"/>
-<rect x="393" y="150" width="44" height="14" fill="#d2991d"/>
+<rect x="300" y="150" width="94" height="14" fill="#3fb950" rx="3"/>
+<rect x="394" y="150" width="44" height="14" fill="#d2991d"/>
 <rect x="438" y="150" width="31" height="14" fill="#f85149" rx="3"/>
 <text x="300" y="174" fill="#e6edf3" font-size="8" font-family="monospace" text-anchor="start">混55% / 26% / 19%</text>
 <text x="478" y="174" fill="#d2991d" font-size="8" font-family="monospace" text-anchor="start">← 混</text>
@@ -44,5 +44,5 @@
 <rect x="372" y="264" width="48" height="14" fill="#d2991d"/>
 <rect x="421" y="264" width="48" height="14" fill="#f85149" rx="3"/>
 <text x="300" y="288" fill="#e6edf3" font-size="8" font-family="monospace" text-anchor="start">Elo 43% / 29% / 29%</text>
-<text x="570" y="380" fill="#8b949e" font-size="9" font-family="monospace" text-anchor="end">更新 2026-06-17 17:55 CST</text>
+<text x="570" y="380" fill="#8b949e" font-size="9" font-family="monospace" text-anchor="end">更新 2026-06-17 21:44 CST</text>
 </svg>
