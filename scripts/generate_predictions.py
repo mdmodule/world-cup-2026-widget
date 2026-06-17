@@ -102,7 +102,7 @@ WC_TOTAL_DAYS = (WC_END - WC_START).days + 1
 
 
 def generate_day_tracker():
-    W, H = 500, 120
+    W, H = 600, 150
     now = datetime.now(TZ)
     day_num = (now.date() - WC_START.date()).days + 1
     day_num = max(1, min(day_num, WC_TOTAL_DAYS))
@@ -111,8 +111,8 @@ def generate_day_tracker():
     parts = [svg_header(W, H)]
     parts.append(svg_rect(0, 0, W, H, DARK_BG))
     parts.append(svg_rect(10, 8, W - 20, H - 16, CARD_BG, 8))
-    parts.append(svg_text(24, 36, "🗓️ 世界杯进行中 · World Cup 2026", ACCENT, 14, bold=True))
-    parts.append(svg_text(24, 58, f"第 {day_num} 天 / 共 {WC_TOTAL_DAYS} 天  ·  Day {day_num} of {WC_TOTAL_DAYS}", TEXT_PRIMARY, 16, bold=True))
+    parts.append(svg_text(24, 36, "🗓️ 世界杯进行中 · World Cup 2026", ACCENT, 18, bold=True))
+    parts.append(svg_text(24, 60, f"第 {day_num} 天 / 共 {WC_TOTAL_DAYS} 天  ·  Day {day_num} of {WC_TOTAL_DAYS}", TEXT_PRIMARY, 20, bold=True))
     parts.append(svg_rect(24, 76, 452, 14, BORDER, 3))
     bar_w = int(452 * pct)
     if bar_w > 0:
@@ -135,7 +135,7 @@ def team_label(slug):
 # ═══════════════════════════════════════════════════════════════
 
 def generate_championship(teams):
-    W, H = 520, 480
+    W, H = 660, 560
     top10 = sorted(teams, key=lambda t: t["pChampion"], reverse=True)[:10]
 
     parts = [svg_header(W, H)]
@@ -144,8 +144,8 @@ def generate_championship(teams):
     parts.append(svg_rect(12, 10, W - 24, 1, BORDER))
 
     # Title
-    parts.append(svg_text(30, 38, "🏆 2026世界杯夺冠概率 TOP 10", GOLD, 16, bold=True))
-    parts.append(svg_text(30, 56, "Championship Odds · 50,000 Monte Carlo", TEXT_SECONDARY, 11))
+    parts.append(svg_text(30, 38, "🏆 2026世界杯夺冠概率 TOP 10", GOLD, 20, bold=True))
+    parts.append(svg_text(30, 60, "Championship Odds · 50,000 Monte Carlo", TEXT_SECONDARY, 12))
 
     # Bar chart
     bar_x = 170
@@ -185,10 +185,10 @@ def generate_path_to_final(teams):
         ("32强", "pRound32"), ("16强", "pRound16"), ("8强", "pQuarterfinal"),
         ("4强", "pSemifinal"), ("决赛", "pFinal"), ("🏆冠军", "pChampion"),
     ]
-    col_w = 68
-    name_w = 130
-    row_h = 28
-    header_h = 36
+    col_w = 78
+    name_w = 150
+    row_h = 30
+    header_h = 40
     W = name_w + len(stages) * col_w + 60
     H = header_h + len(top8) * row_h + 70
 
@@ -243,14 +243,14 @@ def generate_next_match(teams, match_data=None, pm_odds=None):
     """Match data: list of {home, away, winA, draw, winB, blendA, blendD, blendB, ...}"""
     if not match_data:
         match_data = []
-    W, H = 500, 340
+    W, H = 600, 400
 
     parts = [svg_header(W, H)]
     parts.append(svg_rect(0, 0, W, H, DARK_BG))
     parts.append(svg_rect(12, 10, W - 24, H - 20, CARD_BG, 8))
 
-    parts.append(svg_text(24, 36, "⚽ 接下来比赛预测 · Elo + 市场共识", ACCENT, 14, bold=True))
-    parts.append(svg_text(24, 54, "Elo + Dixon-Coles 模型 · 混入 Polymarket 赔率 (40/60) · 胜/平/负", TEXT_SECONDARY, 10))
+    parts.append(svg_text(24, 36, "⚽ 接下来比赛预测 · Elo + 市场共识", ACCENT, 18, bold=True))
+    parts.append(svg_text(24, 58, "Elo + Dixon-Coles 模型 · 混入 Polymarket 赔率 (40/60) · 胜/平/负", TEXT_SECONDARY, 12))
 
     if not match_data:
         parts.append(svg_text(24, 90, "暂无赛程数据", TEXT_SECONDARY, 12))
@@ -295,7 +295,7 @@ def generate_upcoming(teams, match_data=None):
     parts.append(svg_rect(0, 0, W, H, DARK_BG))
     parts.append(svg_rect(12, 10, W - 24, H - 20, CARD_BG, 8))
 
-    parts.append(svg_text(30, 38, "📅 即将到来 / Upcoming Predictions", ACCENT, 14, bold=True))
+    parts.append(svg_text(30, 38, "📅 即将到来 / Upcoming Predictions", ACCENT, 18, bold=True))
 
     if not match_data or len(match_data) < 2:
         parts.append(svg_text(30, 80, "暂无赛程数据", TEXT_SECONDARY, 13))
@@ -774,8 +774,8 @@ def generate_record(match_results):
     parts.append(svg_rect(0, 0, W, H, DARK_BG))
     parts.append(svg_rect(10, 8, W - 20, H - 16, CARD_BG, 8))
 
-    parts.append(svg_text(24, 34, "📋 模型战绩 · Model Scorecard", ACCENT, 14, bold=True))
-    parts.append(svg_text(24, 52, f"已完赛 {total}/104 场 · 预测正确 {hit} 场 · 准确率 {pct:.0f}%", TEXT_SECONDARY, 10))
+    parts.append(svg_text(24, 34, "📋 模型战绩 · Model Scorecard", ACCENT, 18, bold=True))
+    parts.append(svg_text(24, 56, f"已完赛 {total}/104 场 · 预测正确 {hit} 场 · 准确率 {pct:.0f}%", TEXT_SECONDARY, 12))
 
     # Summary badges
     parts.append(svg_rect(24, 62, 48, 18, GREEN, 3))
