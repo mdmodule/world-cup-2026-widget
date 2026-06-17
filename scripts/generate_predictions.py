@@ -47,8 +47,12 @@ TEAM_NAMES: dict[str, tuple[str, str]] = {
 
 def fetch_data():
     """Fetch probabilities.json from cup26matches.com."""
+    import ssl
+    ctx = ssl.create_default_context()
+    ctx.check_hostname = False
+    ctx.verify_mode = ssl.CERT_NONE
     req = urllib.request.Request(API_URL, headers={"User-Agent": "world-cup-2026-widget/1.0"})
-    with urllib.request.urlopen(req, timeout=30) as resp:
+    with urllib.request.urlopen(req, timeout=30, context=ctx) as resp:
         return json.loads(resp.read().decode("utf-8"))
 
 
@@ -114,9 +118,9 @@ def generate_day_tracker():
     if bar_w > 0:
         parts.append(svg_rect(24, 76, bar_w, 14, ACCENT, 3))
         parts.append(svg_text(24 + bar_w // 2, 86, f"{pct*100:.0f}%", DARK_BG, 10, "middle"))
-    parts.append(svg_text(24, 106, "6/11 开幕 — 7/19 决赛", MUTED, 9))
+    parts.append(svg_text(24, 106, "6/11 开幕 — 7/19 决赛", TEXT_SECONDARY, 9))
     now_str = datetime.now(TZ).strftime("%Y-%m-%d %H:%M")
-    parts.append(svg_text(W - 24, H - 12, f"更新 {now_str} CST", MUTED, 8, "end"))
+    parts.append(svg_text(W - 24, H - 12, f"更新 {now_str} CST", TEXT_SECONDARY, 8, "end"))
     parts.append("</svg>")
     return "\n".join(parts)
 
@@ -246,10 +250,10 @@ def generate_next_match(teams, match_data=None, pm_odds=None):
     parts.append(svg_rect(12, 10, W - 24, H - 20, CARD_BG, 8))
 
     parts.append(svg_text(24, 36, "⚽ 接下来比赛预测 · Elo + 市场共识", ACCENT, 14, bold=True))
-    parts.append(svg_text(24, 54, "Elo + Dixon-Coles 模型 · 混入 Polymarket 赔率 (40/60) · 胜/平/负", MUTED, 10))
+    parts.append(svg_text(24, 54, "Elo + Dixon-Coles 模型 · 混入 Polymarket 赔率 (40/60) · 胜/平/负", TEXT_SECONDARY, 10))
 
     if not match_data:
-        parts.append(svg_text(24, 90, "暂无赛程数据", MUTED, 12))
+        parts.append(svg_text(24, 90, "暂无赛程数据", TEXT_SECONDARY, 12))
     else:
         sy = 72
         for i, m in enumerate(match_data[:6]):
@@ -259,7 +263,7 @@ def generate_next_match(teams, match_data=None, pm_odds=None):
             wb = m.get("blendB", m.get("winB", 0))
             has_blend = "blendA" in m
 
-            parts.append(svg_text(24, y + 16, m.get("date_short", ""), MUTED, 10))
+            parts.append(svg_text(24, y + 16, m.get("date_short", ""), TEXT_SECONDARY, 10))
             parts.append(svg_text(100, y + 16, f"{team_label(m['home'])}  vs  {team_label(m['away'])}", TEXT_PRIMARY, 11))
 
             # Bar: home | draw | away
@@ -688,7 +692,8 @@ def fetch_match_results():
 
 
 def generate_record(match_results):
-    """Generate record.svg — model predictions vs actual results."""
+    """Generate record.svg — model prediction accuracy tracker."""
+    lbl = team_label  # local alias
     if not match_results:
         return '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 100"><rect width="500" height="100" fill="#0d1117"/><text x="20" y="40" fill="#8b949e" font-size="14" font-family="monospace">暂无比赛数据</text></svg>'
 
@@ -770,7 +775,7 @@ def generate_record(match_results):
     parts.append(svg_rect(10, 8, W - 20, H - 16, CARD_BG, 8))
 
     parts.append(svg_text(24, 34, "📋 模型战绩 · Model Scorecard", ACCENT, 14, bold=True))
-    parts.append(svg_text(24, 52, f"已完赛 {total}/104 场 · 预测正确 {hit} 场 · 准确率 {pct:.0f}%", MUTED, 10))
+    parts.append(svg_text(24, 52, f"已完赛 {total}/104 场 · 预测正确 {hit} 场 · 准确率 {pct:.0f}%", TEXT_SECONDARY, 10))
 
     # Summary badges
     parts.append(svg_rect(24, 62, 48, 18, GREEN, 3))
@@ -780,29 +785,29 @@ def generate_record(match_results):
 
     # Table header
     ty = 100
-    parts.append(svg_text(24, ty, "日期", MUTED, 9, bold=True))
-    parts.append(svg_text(68, ty, "主队", MUTED, 9, bold=True))
-    parts.append(svg_text(172, ty, "比分", MUTED, 9, "middle", bold=True))
-    parts.append(svg_text(220, ty, "客队", MUTED, 9, bold=True))
-    parts.append(svg_text(315, ty, "模型预测", MUTED, 9, bold=True))
-    parts.append(svg_text(435, ty, "结果", MUTED, 9, "middle", bold=True))
+    parts.append(svg_text(24, ty, "日期", TEXT_SECONDARY, 9, bold=True))
+    parts.append(svg_text(68, ty, "主队", TEXT_SECONDARY, 9, bold=True))
+    parts.append(svg_text(172, ty, "比分", TEXT_SECONDARY, 9, "middle", bold=True))
+    parts.append(svg_text(220, ty, "客队", TEXT_SECONDARY, 9, bold=True))
+    parts.append(svg_text(315, ty, "模型预测", TEXT_SECONDARY, 9, bold=True))
+    parts.append(svg_text(435, ty, "结果", TEXT_SECONDARY, 9, "middle", bold=True))
     parts.append(f'<line x1="24" y1="{ty+8}" x2="{W-24}" y2="{ty+8}" stroke="{BORDER}" stroke-width="1"/>')
 
     for i, item in enumerate(items[-20:]):  # show last 20
         y = ty + 20 + i * row_h
-        parts.append(svg_text(24, y, item["date"], MUTED, 9))
+        parts.append(svg_text(24, y, item["date"], TEXT_SECONDARY, 9))
         parts.append(svg_text(68, y, lbl(item["home"]), TEXT_PRIMARY, 10))
         parts.append(svg_text(172, y, item["score"], TEXT_PRIMARY, 10, "middle", bold=True))
         parts.append(svg_text(220, y, lbl(item["away"]), TEXT_PRIMARY, 10))
-        parts.append(svg_text(315, y, item["pick"], MUTED, 10))
+        parts.append(svg_text(315, y, item["pick"], TEXT_SECONDARY, 10))
         mark = "✅" if item["correct"] else "❌"
         color = GREEN if item["correct"] else RED
         parts.append(svg_text(435, y, mark, color, 11, "middle"))
 
     parts.append(f'<line x1="24" y1="{ty + 20 + len(items[-20:]) * row_h + 2}" x2="{W-24}" y2="{ty + 20 + len(items[-20:]) * row_h + 2}" stroke="{BORDER}" stroke-width="0.5"/>')
-    parts.append(svg_text(24, H - 30, "RPS 0.175 · walk-forward 预测 · 数据 openfootball + cup26matches.com", MUTED, 9))
+    parts.append(svg_text(24, H - 30, "RPS 0.175 · walk-forward 预测 · 数据 openfootball + cup26matches.com", TEXT_SECONDARY, 9))
     now_str = datetime.now(TZ).strftime("%Y-%m-%d %H:%M")
-    parts.append(svg_text(W - 24, H - 16, f"更新 {now_str} CST", MUTED, 8, "end"))
+    parts.append(svg_text(W - 24, H - 16, f"更新 {now_str} CST", TEXT_SECONDARY, 8, "end"))
     parts.append("</svg>")
     return "\n".join(parts)
 

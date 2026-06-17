@@ -1,47 +1,49 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 440">
-<rect x="0" y="0" width="500" height="440" fill="#0d1117"/>
-<rect x="10" y="8" width="480" height="424" fill="#161b22" rx="8"/>
-<text x="24" y="36" fill="#d2991d" font-size="15" font-family="monospace" font-weight="bold">🏆 夺冠概率 TOP 10 · Championship Odds</text>
-<text x="24" y="54" fill="#8b949e" font-size="10" font-family="monospace">50,000 次蒙特卡洛模拟 · Elo + Dixon-Coles 泊松模型</text>
-<text x="20" y="90" fill="#8b949e" font-size="11" font-family="monospace" text-anchor="end">1.</text>
-<text x="32" y="90" fill="#e6edf3" font-size="11" font-family="monospace">🇫🇷 法国</text>
-<rect x="140" y="77" width="310" height="18" fill="#58a6ff" rx="3"/>
-<text x="456" y="91" fill="#e6edf3" font-size="12" font-family="monospace" font-weight="bold">15.4%</text>
-<text x="20" y="118" fill="#8b949e" font-size="11" font-family="monospace" text-anchor="end">2.</text>
-<text x="32" y="118" fill="#e6edf3" font-size="11" font-family="monospace">🇪🇸 西班牙</text>
-<rect x="140" y="105" width="302" height="18" fill="#3fb950" rx="3"/>
-<text x="448" y="119" fill="#e6edf3" font-size="12" font-family="monospace" font-weight="bold">15.0%</text>
-<text x="20" y="146" fill="#8b949e" font-size="11" font-family="monospace" text-anchor="end">3.</text>
-<text x="32" y="146" fill="#e6edf3" font-size="11" font-family="monospace">🏴󠁧󠁢󠁥󠁮󠁧󠁿 英格兰</text>
-<rect x="140" y="133" width="254" height="18" fill="#d2991d" rx="3"/>
-<text x="400" y="147" fill="#e6edf3" font-size="12" font-family="monospace" font-weight="bold">12.6%</text>
-<text x="20" y="174" fill="#8b949e" font-size="11" font-family="monospace" text-anchor="end">4.</text>
-<text x="32" y="174" fill="#e6edf3" font-size="11" font-family="monospace">🇦🇷 阿根廷</text>
-<rect x="140" y="161" width="224" height="18" fill="#f78166" rx="3"/>
-<text x="370" y="175" fill="#e6edf3" font-size="12" font-family="monospace" font-weight="bold">11.1%</text>
-<text x="20" y="202" fill="#8b949e" font-size="11" font-family="monospace" text-anchor="end">5.</text>
-<text x="32" y="202" fill="#e6edf3" font-size="11" font-family="monospace">🇧🇷 巴西</text>
-<rect x="140" y="189" width="150" height="18" fill="#a371f7" rx="3"/>
-<text x="296" y="203" fill="#e6edf3" font-size="12" font-family="monospace" font-weight="bold">7.4%</text>
-<text x="20" y="230" fill="#8b949e" font-size="11" font-family="monospace" text-anchor="end">6.</text>
-<text x="32" y="230" fill="#e6edf3" font-size="11" font-family="monospace">🇵🇹 葡萄牙</text>
-<rect x="140" y="217" width="147" height="18" fill="#79c0ff" rx="3"/>
-<text x="293" y="231" fill="#e6edf3" font-size="12" font-family="monospace" font-weight="bold">7.2%</text>
-<text x="20" y="258" fill="#8b949e" font-size="11" font-family="monospace" text-anchor="end">7.</text>
-<text x="32" y="258" fill="#e6edf3" font-size="11" font-family="monospace">🇩🇪 德国</text>
-<rect x="140" y="245" width="116" height="18" fill="#56d364" rx="3"/>
-<text x="262" y="259" fill="#e6edf3" font-size="12" font-family="monospace" font-weight="bold">5.7%</text>
-<text x="20" y="286" fill="#8b949e" font-size="11" font-family="monospace" text-anchor="end">8.</text>
-<text x="32" y="286" fill="#e6edf3" font-size="11" font-family="monospace">🇳🇱 荷兰</text>
-<rect x="140" y="273" width="56" height="18" fill="#e3b341" rx="3"/>
-<text x="202" y="287" fill="#e6edf3" font-size="12" font-family="monospace" font-weight="bold">2.8%</text>
-<text x="20" y="314" fill="#8b949e" font-size="11" font-family="monospace" text-anchor="end">9.</text>
-<text x="32" y="314" fill="#e6edf3" font-size="11" font-family="monospace">🇧🇪 比利时</text>
-<rect x="140" y="301" width="54" height="18" fill="#f0883e" rx="3"/>
-<text x="200" y="315" fill="#e6edf3" font-size="12" font-family="monospace" font-weight="bold">2.7%</text>
-<text x="20" y="342" fill="#8b949e" font-size="11" font-family="monospace" text-anchor="end">10.</text>
-<text x="32" y="342" fill="#e6edf3" font-size="11" font-family="monospace">🇨🇴 哥伦比亚</text>
-<rect x="140" y="329" width="52" height="18" fill="#bc8cff" rx="3"/>
-<text x="198" y="343" fill="#e6edf3" font-size="12" font-family="monospace" font-weight="bold">2.6%</text>
-<text x="476" y="420" fill="#8b949e" font-size="8" font-family="monospace" text-anchor="end">2026-06-16 · cup26matches.com CC BY 4.0</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 480" width="520" height="480">
+<rect x="0" y="0" width="520" height="480" fill="#0d1117"/>
+<rect x="12" y="10" width="496" height="460" fill="#161b22" rx="8"/>
+<rect x="12" y="10" width="496" height="1" fill="#30363d"/>
+<text x="30" y="38" fill="#d2991d" font-size="16" font-family="monospace" text-anchor="start" font-weight="bold">🏆 2026世界杯夺冠概率 TOP 10</text>
+<text x="30" y="56" fill="#8b949e" font-size="11" font-family="monospace" text-anchor="start">Championship Odds · 50,000 Monte Carlo</text>
+<text x="30" y="96" fill="#8b949e" font-size="12" font-family="monospace" text-anchor="end">1.</text>
+<text x="40" y="96" fill="#e6edf3" font-size="12" font-family="monospace" text-anchor="start">🇫🇷 法国</text>
+<rect x="170" y="80" width="270" height="22" fill="#58a6ff" rx="3"/>
+<text x="446" y="96" fill="#e6edf3" font-size="13" font-family="monospace" text-anchor="start" font-weight="bold">15.7%</text>
+<text x="30" y="128" fill="#8b949e" font-size="12" font-family="monospace" text-anchor="end">2.</text>
+<text x="40" y="128" fill="#e6edf3" font-size="12" font-family="monospace" text-anchor="start">🇪🇸 西班牙</text>
+<rect x="170" y="112" width="260" height="22" fill="#3fb950" rx="3"/>
+<text x="436" y="128" fill="#e6edf3" font-size="13" font-family="monospace" text-anchor="start" font-weight="bold">15.1%</text>
+<text x="30" y="160" fill="#8b949e" font-size="12" font-family="monospace" text-anchor="end">3.</text>
+<text x="40" y="160" fill="#e6edf3" font-size="12" font-family="monospace" text-anchor="start">🏴󠁧󠁢󠁥󠁮󠁧󠁿 英格兰</text>
+<rect x="170" y="144" width="218" height="22" fill="#d2991d" rx="3"/>
+<text x="394" y="160" fill="#e6edf3" font-size="13" font-family="monospace" text-anchor="start" font-weight="bold">12.7%</text>
+<text x="30" y="192" fill="#8b949e" font-size="12" font-family="monospace" text-anchor="end">4.</text>
+<text x="40" y="192" fill="#e6edf3" font-size="12" font-family="monospace" text-anchor="start">🇦🇷 阿根廷</text>
+<rect x="170" y="176" width="192" height="22" fill="#f78166" rx="3"/>
+<text x="368" y="192" fill="#e6edf3" font-size="13" font-family="monospace" text-anchor="start" font-weight="bold">11.2%</text>
+<text x="30" y="224" fill="#8b949e" font-size="12" font-family="monospace" text-anchor="end">5.</text>
+<text x="40" y="224" fill="#e6edf3" font-size="12" font-family="monospace" text-anchor="start">🇧🇷 巴西</text>
+<rect x="170" y="208" width="126" height="22" fill="#a371f7" rx="3"/>
+<text x="302" y="224" fill="#e6edf3" font-size="13" font-family="monospace" text-anchor="start" font-weight="bold">7.4%</text>
+<text x="30" y="256" fill="#8b949e" font-size="12" font-family="monospace" text-anchor="end">6.</text>
+<text x="40" y="256" fill="#e6edf3" font-size="12" font-family="monospace" text-anchor="start">🇵🇹 葡萄牙</text>
+<rect x="170" y="240" width="124" height="22" fill="#79c0ff" rx="3"/>
+<text x="300" y="256" fill="#e6edf3" font-size="13" font-family="monospace" text-anchor="start" font-weight="bold">7.3%</text>
+<text x="30" y="288" fill="#8b949e" font-size="12" font-family="monospace" text-anchor="end">7.</text>
+<text x="40" y="288" fill="#e6edf3" font-size="12" font-family="monospace" text-anchor="start">🇩🇪 德国</text>
+<rect x="170" y="272" width="90" height="22" fill="#56d364" rx="3"/>
+<text x="266" y="288" fill="#e6edf3" font-size="13" font-family="monospace" text-anchor="start" font-weight="bold">5.3%</text>
+<text x="30" y="320" fill="#8b949e" font-size="12" font-family="monospace" text-anchor="end">8.</text>
+<text x="40" y="320" fill="#e6edf3" font-size="12" font-family="monospace" text-anchor="start">🇳🇴 挪威</text>
+<rect x="170" y="304" width="48" height="22" fill="#e3b341" rx="3"/>
+<text x="224" y="320" fill="#e6edf3" font-size="13" font-family="monospace" text-anchor="start" font-weight="bold">2.8%</text>
+<text x="30" y="352" fill="#8b949e" font-size="12" font-family="monospace" text-anchor="end">9.</text>
+<text x="40" y="352" fill="#e6edf3" font-size="12" font-family="monospace" text-anchor="start">🇨🇴 哥伦比亚</text>
+<rect x="170" y="336" width="45" height="22" fill="#f0883e" rx="3"/>
+<text x="221" y="352" fill="#e6edf3" font-size="13" font-family="monospace" text-anchor="start" font-weight="bold">2.6%</text>
+<text x="30" y="384" fill="#8b949e" font-size="12" font-family="monospace" text-anchor="end">10.</text>
+<text x="40" y="384" fill="#e6edf3" font-size="12" font-family="monospace" text-anchor="start">🇧🇪 比利时</text>
+<rect x="170" y="368" width="44" height="22" fill="#bc8cff" rx="3"/>
+<text x="220" y="384" fill="#e6edf3" font-size="13" font-family="monospace" text-anchor="start" font-weight="bold">2.6%</text>
+<text x="490" y="456" fill="#8b949e" font-size="10" font-family="monospace" text-anchor="end">更新 2026-06-17 08:34 CST</text>
+<text x="30" y="456" fill="#8b949e" font-size="9" font-family="monospace" text-anchor="start">数据来源 cup26matches.com · CC BY 4.0</text>
 </svg>

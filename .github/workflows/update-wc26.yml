@@ -2,11 +2,14 @@ name: Update World Cup 2026 Widgets
 
 on:
   schedule:
-    - cron: "0 * * * *"
+    - cron: "0 * * * *"  # 每小时刷新
   workflow_dispatch: {}
 
 permissions:
   contents: write
+
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 
 jobs:
   update:

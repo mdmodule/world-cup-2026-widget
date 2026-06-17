@@ -1,56 +1,48 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 340">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 340" width="500" height="340">
 <rect x="0" y="0" width="500" height="340" fill="#0d1117"/>
-<rect x="10" y="8" width="480" height="324" fill="#161b22" rx="8"/>
-<text x="24" y="36" fill="#58a6ff" font-size="14" font-family="monospace" font-weight="bold">⚽ 接下来比赛预测 · Elo + 市场共识</text>
-<text x="24" y="56" fill="#8b949e" font-size="10" font-family="monospace">Elo + Dixon-Coles · 混入 Polymarket 赔率 (40/60) · 下次 Actions 刷新市场数据</text>
-
-<text x="24" y="82" fill="#8b949e" font-size="9" font-family="monospace">6/17</text>
-<text x="80" y="82" fill="#e6edf3" font-size="11" font-family="monospace">🇫🇷 法国  vs  🇸🇳 塞内加尔</text>
-<rect x="310" y="70" width="80" height="14" fill="#3fb950" rx="3"/>
-<rect x="391" y="70" width="28" height="14" fill="#d2991d"/>
-<rect x="420" y="70" width="42" height="14" fill="#f85149" rx="3"/>
-<text x="310" y="92" fill="#e6edf3" font-size="8" font-family="monospace">Elo 55% / 19% / 26%</text>
-<text x="475" y="92" fill="#d2991d" font-size="8" font-family="monospace">← 混</text>
-<line x1="24" y1="104" x2="476" y2="104" stroke="#30363d" stroke-width="0.5"/>
-
-<text x="24" y="128" fill="#8b949e" font-size="9" font-family="monospace">6/17</text>
-<text x="80" y="128" fill="#e6edf3" font-size="11" font-family="monospace">🇮🇶 伊拉克  vs  🇳🇴 挪威</text>
-<rect x="310" y="116" width="13" height="14" fill="#3fb950" rx="3"/>
-<rect x="324" y="116" width="68" height="14" fill="#d2991d"/>
-<rect x="393" y="116" width="69" height="14" fill="#f85149" rx="3"/>
-<text x="310" y="138" fill="#e6edf3" font-size="8" font-family="monospace">Elo 9% / 22% / 69%</text>
-<line x1="24" y1="150" x2="476" y2="150" stroke="#30363d" stroke-width="0.5"/>
-
-<text x="24" y="174" fill="#8b949e" font-size="9" font-family="monospace">6/17</text>
-<text x="80" y="174" fill="#e6edf3" font-size="11" font-family="monospace">🇦🇷 阿根廷  vs  🇩🇿 阿尔及利亚</text>
-<rect x="310" y="162" width="100" height="14" fill="#3fb950" rx="3"/>
-<rect x="411" y="162" width="15" height="14" fill="#d2991d"/>
-<rect x="427" y="162" width="35" height="14" fill="#f85149" rx="3"/>
-<text x="310" y="184" fill="#e6edf3" font-size="8" font-family="monospace">Elo 68% / 10% / 22%</text>
-<line x1="24" y1="196" x2="476" y2="196" stroke="#30363d" stroke-width="0.5"/>
-
-<text x="24" y="220" fill="#8b949e" font-size="9" font-family="monospace">6/17</text>
-<text x="80" y="220" fill="#e6edf3" font-size="11" font-family="monospace">🇦🇹 奥地利  vs  🇯🇴 约旦</text>
-<rect x="310" y="208" width="82" height="14" fill="#3fb950" rx="3"/>
-<rect x="393" y="208" width="26" height="14" fill="#d2991d"/>
-<rect x="420" y="208" width="42" height="14" fill="#f85149" rx="3"/>
-<text x="310" y="230" fill="#e6edf3" font-size="8" font-family="monospace">Elo 56% / 18% / 26%</text>
-<line x1="24" y1="242" x2="476" y2="242" stroke="#30363d" stroke-width="0.5"/>
-
-<text x="24" y="266" fill="#8b949e" font-size="9" font-family="monospace">6/18</text>
-<text x="80" y="266" fill="#e6edf3" font-size="11" font-family="monospace">🇵🇹 葡萄牙  vs  🇨🇩 刚果(金)</text>
-<rect x="310" y="254" width="104" height="14" fill="#3fb950" rx="3"/>
-<rect x="415" y="254" width="13" height="14" fill="#d2991d"/>
-<rect x="429" y="254" width="33" height="14" fill="#f85149" rx="3"/>
-<text x="310" y="276" fill="#e6edf3" font-size="8" font-family="monospace">Elo 71% / 9% / 20%</text>
-<line x1="24" y1="288" x2="476" y2="288" stroke="#30363d" stroke-width="0.5"/>
-
-<text x="24" y="312" fill="#8b949e" font-size="9" font-family="monospace">6/18</text>
-<text x="80" y="312" fill="#e6edf3" font-size="11" font-family="monospace">🏴󠁧󠁢󠁥󠁮󠁧󠁿 英格兰  vs  🇭🇷 克罗地亚</text>
-<rect x="310" y="300" width="76" height="14" fill="#3fb950" rx="3"/>
-<rect x="387" y="300" width="31" height="14" fill="#d2991d"/>
-<rect x="419" y="300" width="43" height="14" fill="#f85149" rx="3"/>
-<text x="310" y="322" fill="#e6edf3" font-size="8" font-family="monospace">Elo 52% / 21% / 27%</text>
-
-<text x="476" y="324" fill="#8b949e" font-size="7" font-family="monospace" text-anchor="end">2026-06-16 · 下次 Actions 混入市场数据</text>
+<rect x="12" y="10" width="476" height="320" fill="#161b22" rx="8"/>
+<text x="24" y="36" fill="#58a6ff" font-size="14" font-family="monospace" text-anchor="start" font-weight="bold">⚽ 接下来比赛预测 · Elo + 市场共识</text>
+<text x="24" y="54" fill="#8b949e" font-size="10" font-family="monospace" text-anchor="start">Elo + Dixon-Coles 模型 · 混入 Polymarket 赔率 (40/60) · 胜/平/负</text>
+<text x="24" y="88" fill="#8b949e" font-size="10" font-family="monospace" text-anchor="start">6/17</text>
+<text x="100" y="88" fill="#e6edf3" font-size="11" font-family="monospace" text-anchor="start">🇦🇹 奥地利  vs  🇯🇴 约旦</text>
+<rect x="300" y="74" width="110" height="14" fill="#3fb950" rx="3"/>
+<rect x="410" y="74" width="36" height="14" fill="#d2991d"/>
+<rect x="447" y="74" width="22" height="14" fill="#f85149" rx="3"/>
+<text x="300" y="98" fill="#e6edf3" font-size="8" font-family="monospace" text-anchor="start">混65% / 22% / 14%</text>
+<text x="478" y="98" fill="#d2991d" font-size="8" font-family="monospace" text-anchor="start">← 混</text>
+<text x="24" y="126" fill="#8b949e" font-size="10" font-family="monospace" text-anchor="start">6/17</text>
+<text x="100" y="126" fill="#e6edf3" font-size="11" font-family="monospace" text-anchor="start">🇵🇹 葡萄牙  vs  🇨🇩 刚果(金)</text>
+<rect x="300" y="112" width="125" height="14" fill="#3fb950" rx="3"/>
+<rect x="425" y="112" width="31" height="14" fill="#d2991d"/>
+<rect x="456" y="112" width="13" height="14" fill="#f85149" rx="3"/>
+<text x="300" y="136" fill="#e6edf3" font-size="8" font-family="monospace" text-anchor="start">混74% / 18% / 8%</text>
+<text x="478" y="136" fill="#d2991d" font-size="8" font-family="monospace" text-anchor="start">← 混</text>
+<text x="24" y="164" fill="#8b949e" font-size="10" font-family="monospace" text-anchor="start">6/17</text>
+<text x="100" y="164" fill="#e6edf3" font-size="11" font-family="monospace" text-anchor="start">🏴󠁧󠁢󠁥󠁮󠁧󠁿 英格兰  vs  🇭🇷 克罗地亚</text>
+<rect x="300" y="150" width="92" height="14" fill="#3fb950" rx="3"/>
+<rect x="392" y="150" width="44" height="14" fill="#d2991d"/>
+<rect x="437" y="150" width="32" height="14" fill="#f85149" rx="3"/>
+<text x="300" y="174" fill="#e6edf3" font-size="8" font-family="monospace" text-anchor="start">混55% / 26% / 19%</text>
+<text x="478" y="174" fill="#d2991d" font-size="8" font-family="monospace" text-anchor="start">← 混</text>
+<text x="24" y="202" fill="#8b949e" font-size="10" font-family="monospace" text-anchor="start">6/17</text>
+<text x="100" y="202" fill="#e6edf3" font-size="11" font-family="monospace" text-anchor="start">🇬🇭 加纳  vs  🇵🇦 巴拿马</text>
+<rect x="300" y="188" width="70" height="14" fill="#3fb950" rx="3"/>
+<rect x="370" y="188" width="49" height="14" fill="#d2991d"/>
+<rect x="420" y="188" width="49" height="14" fill="#f85149" rx="3"/>
+<text x="300" y="212" fill="#e6edf3" font-size="8" font-family="monospace" text-anchor="start">混42% / 29% / 29%</text>
+<text x="478" y="212" fill="#d2991d" font-size="8" font-family="monospace" text-anchor="start">← 混</text>
+<text x="24" y="240" fill="#8b949e" font-size="10" font-family="monospace" text-anchor="start">6/17</text>
+<text x="100" y="240" fill="#e6edf3" font-size="11" font-family="monospace" text-anchor="start">🇺🇿 乌兹别克斯坦  vs  🇨🇴 哥伦比亚</text>
+<rect x="300" y="226" width="17" height="14" fill="#3fb950" rx="3"/>
+<rect x="317" y="226" width="35" height="14" fill="#d2991d"/>
+<rect x="353" y="226" width="116" height="14" fill="#f85149" rx="3"/>
+<text x="300" y="250" fill="#e6edf3" font-size="8" font-family="monospace" text-anchor="start">混10% / 21% / 69%</text>
+<text x="478" y="250" fill="#d2991d" font-size="8" font-family="monospace" text-anchor="start">← 混</text>
+<text x="24" y="278" fill="#8b949e" font-size="10" font-family="monospace" text-anchor="start">6/18</text>
+<text x="100" y="278" fill="#e6edf3" font-size="11" font-family="monospace" text-anchor="start">🇨🇿 捷克  vs  🇿🇦 南非</text>
+<rect x="300" y="264" width="72" height="14" fill="#3fb950" rx="3"/>
+<rect x="372" y="264" width="48" height="14" fill="#d2991d"/>
+<rect x="421" y="264" width="48" height="14" fill="#f85149" rx="3"/>
+<text x="300" y="288" fill="#e6edf3" font-size="8" font-family="monospace" text-anchor="start">Elo 43% / 29% / 29%</text>
+<text x="470" y="320" fill="#8b949e" font-size="9" font-family="monospace" text-anchor="end">更新 2026-06-17 08:34 CST</text>
 </svg>
