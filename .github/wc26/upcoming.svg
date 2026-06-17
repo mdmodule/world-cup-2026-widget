@@ -2,39 +2,39 @@
 <rect x="0" y="0" width="520" height="320" fill="#0d1117"/>
 <rect x="12" y="10" width="496" height="300" fill="#161b22" rx="8"/>
 <text x="30" y="38" fill="#58a6ff" font-size="18" font-family="monospace" text-anchor="start" font-weight="bold">📅 即将到来 / Upcoming Predictions</text>
-<text x="30" y="80" fill="#8b949e" font-size="10" font-family="monospace" text-anchor="start">6/17</text>
-<text x="80" y="80" fill="#e6edf3" font-size="12" font-family="monospace" text-anchor="start">葡萄牙 🇵🇹 vs 刚果(金) 🇨🇩</text>
-<rect x="310" y="70" width="127" height="10" fill="#3fb950" rx="2"/>
-<rect x="437" y="70" width="37" height="10" fill="#d2991d"/>
-<rect x="474" y="70" width="15" height="10" fill="#f85149" rx="2"/>
-<text x="310" y="88" fill="#8b949e" font-size="9" font-family="monospace" text-anchor="start">主71% / 平21% / 客9%</text>
+<text x="30" y="80" fill="#8b949e" font-size="10" font-family="monospace" text-anchor="start">6/18</text>
+<text x="80" y="80" fill="#e6edf3" font-size="12" font-family="monospace" text-anchor="start">瑞士 🇨🇭 vs 波黑 🇧🇦</text>
+<rect x="310" y="70" width="109" height="10" fill="#3fb950" rx="2"/>
+<rect x="419" y="70" width="44" height="10" fill="#d2991d"/>
+<rect x="463" y="70" width="26" height="10" fill="#f85149" rx="2"/>
+<text x="310" y="88" fill="#8b949e" font-size="9" font-family="monospace" text-anchor="start">主61% / 平25% / 客15%</text>
 <line x1="30" y1="94" x2="490" y2="94" stroke="#30363d" stroke-width="0.5"/>
-<text x="30" y="118" fill="#8b949e" font-size="10" font-family="monospace" text-anchor="start">6/17</text>
-<text x="80" y="118" fill="#e6edf3" font-size="12" font-family="monospace" text-anchor="start">英格兰 🏴󠁧󠁢󠁥󠁮󠁧󠁿 vs 克罗地亚 🇭🇷</text>
-<rect x="310" y="108" width="94" height="10" fill="#3fb950" rx="2"/>
-<rect x="404" y="108" width="48" height="10" fill="#d2991d"/>
-<rect x="452" y="108" width="37" height="10" fill="#f85149" rx="2"/>
-<text x="310" y="126" fill="#8b949e" font-size="9" font-family="monospace" text-anchor="start">主52% / 平27% / 客21%</text>
+<text x="30" y="118" fill="#8b949e" font-size="10" font-family="monospace" text-anchor="start">6/18</text>
+<text x="80" y="118" fill="#e6edf3" font-size="12" font-family="monospace" text-anchor="start">加拿大 🇨🇦 vs 卡塔尔 🇶🇦</text>
+<rect x="310" y="108" width="107" height="10" fill="#3fb950" rx="2"/>
+<rect x="417" y="108" width="43" height="10" fill="#d2991d"/>
+<rect x="461" y="108" width="28" height="10" fill="#f85149" rx="2"/>
+<text x="310" y="126" fill="#8b949e" font-size="9" font-family="monospace" text-anchor="start">主60% / 平24% / 客16%</text>
 <line x1="30" y1="132" x2="490" y2="132" stroke="#30363d" stroke-width="0.5"/>
-<text x="30" y="156" fill="#8b949e" font-size="10" font-family="monospace" text-anchor="start">6/17</text>
-<text x="80" y="156" fill="#e6edf3" font-size="12" font-family="monospace" text-anchor="start">加纳 🇬🇭 vs 巴拿马 🇵🇦</text>
-<rect x="310" y="146" width="73" height="10" fill="#3fb950" rx="2"/>
-<rect x="383" y="146" width="51" height="10" fill="#d2991d"/>
-<rect x="435" y="146" width="54" height="10" fill="#f85149" rx="2"/>
-<text x="310" y="164" fill="#8b949e" font-size="9" font-family="monospace" text-anchor="start">主41% / 平29% / 客31%</text>
+<text x="30" y="156" fill="#8b949e" font-size="10" font-family="monospace" text-anchor="start">6/18</text>
+<text x="80" y="156" fill="#e6edf3" font-size="12" font-family="monospace" text-anchor="start">墨西哥 🇲🇽 vs 韩国 🇰🇷</text>
+<rect x="310" y="146" width="92" height="10" fill="#3fb950" rx="2"/>
+<rect x="402" y="146" width="48" height="10" fill="#d2991d"/>
+<rect x="450" y="146" width="39" height="10" fill="#f85149" rx="2"/>
+<text x="310" y="164" fill="#8b949e" font-size="9" font-family="monospace" text-anchor="start">主51% / 平27% / 客22%</text>
 <line x1="30" y1="170" x2="490" y2="170" stroke="#30363d" stroke-width="0.5"/>
-<text x="30" y="194" fill="#8b949e" font-size="10" font-family="monospace" text-anchor="start">6/17</text>
-<text x="80" y="194" fill="#e6edf3" font-size="12" font-family="monospace" text-anchor="start">乌兹别克斯坦 🇺🇿 vs 哥伦比亚 🇨🇴</text>
-<rect x="310" y="184" width="21" height="10" fill="#3fb950" rx="2"/>
-<rect x="331" y="184" width="41" height="10" fill="#d2991d"/>
-<rect x="373" y="184" width="116" height="10" fill="#f85149" rx="2"/>
-<text x="310" y="202" fill="#8b949e" font-size="9" font-family="monospace" text-anchor="start">主12% / 平23% / 客65%</text>
+<text x="30" y="194" fill="#8b949e" font-size="10" font-family="monospace" text-anchor="start">6/19</text>
+<text x="80" y="194" fill="#e6edf3" font-size="12" font-family="monospace" text-anchor="start">苏格兰 🏴 vs 摩洛哥 🇲🇦</text>
+<rect x="310" y="184" width="26" height="10" fill="#3fb950" rx="2"/>
+<rect x="336" y="184" width="44" height="10" fill="#d2991d"/>
+<rect x="380" y="184" width="109" height="10" fill="#f85149" rx="2"/>
+<text x="310" y="202" fill="#8b949e" font-size="9" font-family="monospace" text-anchor="start">主15% / 平25% / 客61%</text>
 <line x1="30" y1="208" x2="490" y2="208" stroke="#30363d" stroke-width="0.5"/>
-<text x="30" y="232" fill="#8b949e" font-size="10" font-family="monospace" text-anchor="start">6/18</text>
-<text x="80" y="232" fill="#e6edf3" font-size="12" font-family="monospace" text-anchor="start">捷克 🇨🇿 vs 南非 🇿🇦</text>
-<rect x="310" y="222" width="76" height="10" fill="#3fb950" rx="2"/>
-<rect x="386" y="222" width="51" height="10" fill="#d2991d"/>
-<rect x="438" y="222" width="51" height="10" fill="#f85149" rx="2"/>
-<text x="310" y="240" fill="#8b949e" font-size="9" font-family="monospace" text-anchor="start">主43% / 平29% / 客29%</text>
-<text x="490" y="300" fill="#8b949e" font-size="9" font-family="monospace" text-anchor="end">更新 2026-06-17 21:44 CST</text>
+<text x="30" y="232" fill="#8b949e" font-size="10" font-family="monospace" text-anchor="start">6/19</text>
+<text x="80" y="232" fill="#e6edf3" font-size="12" font-family="monospace" text-anchor="start">海地 🇭🇹 vs 巴西 🇧🇷</text>
+<rect x="310" y="222" width="4" height="10" fill="#3fb950" rx="2"/>
+<rect x="314" y="222" width="25" height="10" fill="#d2991d"/>
+<rect x="339" y="222" width="150" height="10" fill="#f85149" rx="2"/>
+<text x="310" y="240" fill="#8b949e" font-size="9" font-family="monospace" text-anchor="start">主3% / 平14% / 客83%</text>
+<text x="490" y="300" fill="#8b949e" font-size="9" font-family="monospace" text-anchor="end">更新 2026-06-18 00:56 CST</text>
 </svg>
