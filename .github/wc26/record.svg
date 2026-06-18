@@ -1,10 +1,10 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 495" width="750" height="742">
-<rect x="0" y="0" width="500" height="495" fill="#0d1117"/>
-<rect x="10" y="8" width="480" height="479" fill="#161b22" rx="8"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 515" width="750" height="772">
+<rect x="0" y="0" width="500" height="515" fill="#0d1117"/>
+<rect x="10" y="8" width="480" height="499" fill="#161b22" rx="8"/>
 <text x="24" y="34" fill="#58a6ff" font-size="18" font-family="monospace" text-anchor="start" font-weight="bold">📋 模型战绩 · Model Scorecard</text>
-<text x="24" y="56" fill="#8b949e" font-size="12" font-family="monospace" text-anchor="start">已完赛 19/104 场 · 预测正确 10 场 · 准确率 53%</text>
+<text x="24" y="56" fill="#8b949e" font-size="12" font-family="monospace" text-anchor="start">已完赛 20/104 场 · 预测正确 11 场 · 准确率 55%</text>
 <rect x="24" y="62" width="48" height="18" fill="#3fb950" rx="3"/>
-<text x="48" y="75" fill="#0d1117" font-size="10" font-family="monospace" text-anchor="middle" font-weight="bold">10 ✅</text>
+<text x="48" y="75" fill="#0d1117" font-size="10" font-family="monospace" text-anchor="middle" font-weight="bold">11 ✅</text>
 <rect x="84" y="62" width="48" height="18" fill="#f85149" rx="3"/>
 <text x="108" y="75" fill="#0d1117" font-size="10" font-family="monospace" text-anchor="middle" font-weight="bold">9 ❌</text>
 <text x="24" y="100" fill="#8b949e" font-size="9" font-family="monospace" text-anchor="start" font-weight="bold">日期</text>
@@ -128,7 +128,13 @@
 <text x="220" y="480" fill="#e6edf3" font-size="10" font-family="monospace" text-anchor="start">🇨🇩 刚果(金)</text>
 <text x="315" y="480" fill="#8b949e" font-size="10" font-family="monospace" text-anchor="start">葡萄牙 71%</text>
 <text x="435" y="480" fill="#f85149" font-size="11" font-family="monospace" text-anchor="middle">❌</text>
-<line x1="24" y1="502" x2="476" y2="502" stroke="#30363d" stroke-width="0.5"/>
-<text x="24" y="465" fill="#8b949e" font-size="9" font-family="monospace" text-anchor="start">RPS 0.175 · walk-forward 预测 · 数据 openfootball + cup26matches.com</text>
-<text x="476" y="479" fill="#8b949e" font-size="8" font-family="monospace" text-anchor="end">更新 2026-06-18 06:03 CST</text>
+<text x="24" y="500" fill="#8b949e" font-size="9" font-family="monospace" text-anchor="start">06-17</text>
+<text x="68" y="500" fill="#e6edf3" font-size="10" font-family="monospace" text-anchor="start">🏴󠁧󠁢󠁥󠁮󠁧󠁿 英格兰</text>
+<text x="172" y="500" fill="#e6edf3" font-size="10" font-family="monospace" text-anchor="middle" font-weight="bold">4-2</text>
+<text x="220" y="500" fill="#e6edf3" font-size="10" font-family="monospace" text-anchor="start">🇭🇷 克罗地亚</text>
+<text x="315" y="500" fill="#8b949e" font-size="10" font-family="monospace" text-anchor="start">英格兰 52%</text>
+<text x="435" y="500" fill="#3fb950" font-size="11" font-family="monospace" text-anchor="middle">✅</text>
+<line x1="24" y1="522" x2="476" y2="522" stroke="#30363d" stroke-width="0.5"/>
+<text x="24" y="485" fill="#8b949e" font-size="9" font-family="monospace" text-anchor="start">RPS 0.175 · walk-forward 预测 · 数据 openfootball + cup26matches.com</text>
+<text x="476" y="499" fill="#8b949e" font-size="8" font-family="monospace" text-anchor="end">更新 2026-06-18 08:18 CST</text>
 </svg>
