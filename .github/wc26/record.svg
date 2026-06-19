@@ -1,10 +1,10 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 575" width="750" height="862">
-<rect x="0" y="0" width="500" height="575" fill="#0d1117"/>
-<rect x="10" y="8" width="480" height="559" fill="#161b22" rx="8"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 615" width="750" height="922">
+<rect x="0" y="0" width="500" height="615" fill="#0d1117"/>
+<rect x="10" y="8" width="480" height="599" fill="#161b22" rx="8"/>
 <text x="24" y="34" fill="#58a6ff" font-size="18" font-family="monospace" text-anchor="start" font-weight="bold">📋 模型战绩 · Model Scorecard</text>
-<text x="24" y="56" fill="#8b949e" font-size="12" font-family="monospace" text-anchor="start">已完赛 23/104 场 · 预测正确 13 场 · 准确率 57%</text>
+<text x="24" y="56" fill="#8b949e" font-size="12" font-family="monospace" text-anchor="start">已完赛 25/104 场 · 预测正确 15 场 · 准确率 60%</text>
 <rect x="24" y="62" width="48" height="18" fill="#3fb950" rx="3"/>
-<text x="48" y="75" fill="#0d1117" font-size="10" font-family="monospace" text-anchor="middle" font-weight="bold">13 ✅</text>
+<text x="48" y="75" fill="#0d1117" font-size="10" font-family="monospace" text-anchor="middle" font-weight="bold">15 ✅</text>
 <rect x="84" y="62" width="48" height="18" fill="#f85149" rx="3"/>
 <text x="108" y="75" fill="#0d1117" font-size="10" font-family="monospace" text-anchor="middle" font-weight="bold">10 ❌</text>
 <text x="24" y="100" fill="#8b949e" font-size="9" font-family="monospace" text-anchor="start" font-weight="bold">日期</text>
@@ -14,12 +14,12 @@
 <text x="315" y="100" fill="#8b949e" font-size="9" font-family="monospace" text-anchor="start" font-weight="bold">模型预测</text>
 <text x="435" y="100" fill="#8b949e" font-size="9" font-family="monospace" text-anchor="middle" font-weight="bold">结果</text>
 <line x1="24" y1="108" x2="476" y2="108" stroke="#30363d" stroke-width="1"/>
-<text x="24" y="120" fill="#8b949e" font-size="9" font-family="monospace" text-anchor="start">06-13</text>
-<text x="68" y="120" fill="#e6edf3" font-size="10" font-family="monospace" text-anchor="start">🇶🇦 卡塔尔</text>
-<text x="172" y="120" fill="#e6edf3" font-size="10" font-family="monospace" text-anchor="middle" font-weight="bold">1-1</text>
-<text x="220" y="120" fill="#e6edf3" font-size="10" font-family="monospace" text-anchor="start">🇨🇭 瑞士</text>
-<text x="315" y="120" fill="#8b949e" font-size="10" font-family="monospace" text-anchor="start">瑞士 62%</text>
-<text x="435" y="120" fill="#f85149" font-size="11" font-family="monospace" text-anchor="middle">❌</text>
+<text x="24" y="120" fill="#8b949e" font-size="9" font-family="monospace" text-anchor="start">06-18</text>
+<text x="68" y="120" fill="#e6edf3" font-size="10" font-family="monospace" text-anchor="start">🇨🇦 加拿大</text>
+<text x="172" y="120" fill="#e6edf3" font-size="10" font-family="monospace" text-anchor="middle" font-weight="bold">6-0</text>
+<text x="220" y="120" fill="#e6edf3" font-size="10" font-family="monospace" text-anchor="start">🇶🇦 卡塔尔</text>
+<text x="315" y="120" fill="#8b949e" font-size="10" font-family="monospace" text-anchor="start">加拿大 58%</text>
+<text x="435" y="120" fill="#3fb950" font-size="11" font-family="monospace" text-anchor="middle">✅</text>
 <text x="24" y="140" fill="#8b949e" font-size="9" font-family="monospace" text-anchor="start">06-13</text>
 <text x="68" y="140" fill="#e6edf3" font-size="10" font-family="monospace" text-anchor="start">🇧🇷 巴西</text>
 <text x="172" y="140" fill="#e6edf3" font-size="10" font-family="monospace" text-anchor="middle" font-weight="bold">1-1</text>
@@ -135,6 +135,6 @@
 <text x="315" y="500" fill="#8b949e" font-size="10" font-family="monospace" text-anchor="start">加纳 41%</text>
 <text x="435" y="500" fill="#3fb950" font-size="11" font-family="monospace" text-anchor="middle">✅</text>
 <line x1="24" y1="522" x2="476" y2="522" stroke="#30363d" stroke-width="0.5"/>
-<text x="24" y="545" fill="#8b949e" font-size="9" font-family="monospace" text-anchor="start">RPS 0.175 · walk-forward 预测 · 数据 openfootball + cup26matches.com</text>
-<text x="476" y="559" fill="#8b949e" font-size="8" font-family="monospace" text-anchor="end">更新 2026-06-19 07:47 CST</text>
+<text x="24" y="585" fill="#8b949e" font-size="9" font-family="monospace" text-anchor="start">RPS 0.175 · walk-forward 预测 · 数据 openfootball + cup26matches.com</text>
+<text x="476" y="599" fill="#8b949e" font-size="8" font-family="monospace" text-anchor="end">更新 2026-06-19 12:48 CST</text>
 </svg>
