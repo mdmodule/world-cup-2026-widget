@@ -1,12 +1,12 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 655" width="750" height="982">
-<rect x="0" y="0" width="500" height="655" fill="#0d1117"/>
-<rect x="10" y="8" width="480" height="639" fill="#161b22" rx="8"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 675" width="750" height="1012">
+<rect x="0" y="0" width="500" height="675" fill="#0d1117"/>
+<rect x="10" y="8" width="480" height="659" fill="#161b22" rx="8"/>
 <text x="24" y="34" fill="#58a6ff" font-size="18" font-family="monospace" text-anchor="start" font-weight="bold">📋 模型战绩 · Model Scorecard</text>
-<text x="24" y="56" fill="#8b949e" font-size="12" font-family="monospace" text-anchor="start">已完赛 27/104 场 · 预测正确 17 场 · 准确率 63%</text>
+<text x="24" y="56" fill="#8b949e" font-size="12" font-family="monospace" text-anchor="start">已完赛 28/104 场 · 预测正确 17 场 · 准确率 61%</text>
 <rect x="24" y="62" width="48" height="18" fill="#3fb950" rx="3"/>
 <text x="48" y="75" fill="#0d1117" font-size="10" font-family="monospace" text-anchor="middle" font-weight="bold">17 ✅</text>
 <rect x="84" y="62" width="48" height="18" fill="#f85149" rx="3"/>
-<text x="108" y="75" fill="#0d1117" font-size="10" font-family="monospace" text-anchor="middle" font-weight="bold">10 ❌</text>
+<text x="108" y="75" fill="#0d1117" font-size="10" font-family="monospace" text-anchor="middle" font-weight="bold">11 ❌</text>
 <text x="24" y="100" fill="#8b949e" font-size="9" font-family="monospace" text-anchor="start" font-weight="bold">日期</text>
 <text x="68" y="100" fill="#8b949e" font-size="9" font-family="monospace" text-anchor="start" font-weight="bold">主队</text>
 <text x="172" y="100" fill="#8b949e" font-size="9" font-family="monospace" text-anchor="middle" font-weight="bold">比分</text>
@@ -14,30 +14,30 @@
 <text x="315" y="100" fill="#8b949e" font-size="9" font-family="monospace" text-anchor="start" font-weight="bold">模型预测</text>
 <text x="435" y="100" fill="#8b949e" font-size="9" font-family="monospace" text-anchor="middle" font-weight="bold">结果</text>
 <line x1="24" y1="108" x2="476" y2="108" stroke="#30363d" stroke-width="1"/>
-<text x="24" y="120" fill="#8b949e" font-size="9" font-family="monospace" text-anchor="start">06-13</text>
-<text x="68" y="120" fill="#e6edf3" font-size="10" font-family="monospace" text-anchor="start">🇭🇹 海地</text>
+<text x="24" y="120" fill="#8b949e" font-size="9" font-family="monospace" text-anchor="start">06-19</text>
+<text x="68" y="120" fill="#e6edf3" font-size="10" font-family="monospace" text-anchor="start">🏴 苏格兰</text>
 <text x="172" y="120" fill="#e6edf3" font-size="10" font-family="monospace" text-anchor="middle" font-weight="bold">0-1</text>
-<text x="220" y="120" fill="#e6edf3" font-size="10" font-family="monospace" text-anchor="start">🏴 苏格兰</text>
-<text x="315" y="120" fill="#8b949e" font-size="10" font-family="monospace" text-anchor="start">苏格兰 51%</text>
+<text x="220" y="120" fill="#e6edf3" font-size="10" font-family="monospace" text-anchor="start">🇲🇦 摩洛哥</text>
+<text x="315" y="120" fill="#8b949e" font-size="10" font-family="monospace" text-anchor="start">摩洛哥 59%</text>
 <text x="435" y="120" fill="#3fb950" font-size="11" font-family="monospace" text-anchor="middle">✅</text>
 <text x="24" y="140" fill="#8b949e" font-size="9" font-family="monospace" text-anchor="start">06-19</text>
-<text x="68" y="140" fill="#e6edf3" font-size="10" font-family="monospace" text-anchor="start">🏴 苏格兰</text>
-<text x="172" y="140" fill="#e6edf3" font-size="10" font-family="monospace" text-anchor="middle" font-weight="bold">0-1</text>
-<text x="220" y="140" fill="#e6edf3" font-size="10" font-family="monospace" text-anchor="start">🇲🇦 摩洛哥</text>
-<text x="315" y="140" fill="#8b949e" font-size="10" font-family="monospace" text-anchor="start">摩洛哥 59%</text>
+<text x="68" y="140" fill="#e6edf3" font-size="10" font-family="monospace" text-anchor="start">🇧🇷 巴西</text>
+<text x="172" y="140" fill="#e6edf3" font-size="10" font-family="monospace" text-anchor="middle" font-weight="bold">3-0</text>
+<text x="220" y="140" fill="#e6edf3" font-size="10" font-family="monospace" text-anchor="start">🇭🇹 海地</text>
+<text x="315" y="140" fill="#8b949e" font-size="10" font-family="monospace" text-anchor="start">巴西 84%</text>
 <text x="435" y="140" fill="#3fb950" font-size="11" font-family="monospace" text-anchor="middle">✅</text>
-<text x="24" y="160" fill="#8b949e" font-size="9" font-family="monospace" text-anchor="start">06-19</text>
-<text x="68" y="160" fill="#e6edf3" font-size="10" font-family="monospace" text-anchor="start">🇧🇷 巴西</text>
-<text x="172" y="160" fill="#e6edf3" font-size="10" font-family="monospace" text-anchor="middle" font-weight="bold">3-0</text>
-<text x="220" y="160" fill="#e6edf3" font-size="10" font-family="monospace" text-anchor="start">🇭🇹 海地</text>
-<text x="315" y="160" fill="#8b949e" font-size="10" font-family="monospace" text-anchor="start">巴西 84%</text>
+<text x="24" y="160" fill="#8b949e" font-size="9" font-family="monospace" text-anchor="start">06-13</text>
+<text x="68" y="160" fill="#e6edf3" font-size="10" font-family="monospace" text-anchor="start">🇦🇺 澳大利亚</text>
+<text x="172" y="160" fill="#e6edf3" font-size="10" font-family="monospace" text-anchor="middle" font-weight="bold">2-0</text>
+<text x="220" y="160" fill="#e6edf3" font-size="10" font-family="monospace" text-anchor="start">🇹🇷 土耳其</text>
+<text x="315" y="160" fill="#8b949e" font-size="10" font-family="monospace" text-anchor="start">澳大利亚 40%</text>
 <text x="435" y="160" fill="#3fb950" font-size="11" font-family="monospace" text-anchor="middle">✅</text>
-<text x="24" y="180" fill="#8b949e" font-size="9" font-family="monospace" text-anchor="start">06-13</text>
-<text x="68" y="180" fill="#e6edf3" font-size="10" font-family="monospace" text-anchor="start">🇦🇺 澳大利亚</text>
-<text x="172" y="180" fill="#e6edf3" font-size="10" font-family="monospace" text-anchor="middle" font-weight="bold">2-0</text>
-<text x="220" y="180" fill="#e6edf3" font-size="10" font-family="monospace" text-anchor="start">🇹🇷 土耳其</text>
-<text x="315" y="180" fill="#8b949e" font-size="10" font-family="monospace" text-anchor="start">澳大利亚 40%</text>
-<text x="435" y="180" fill="#3fb950" font-size="11" font-family="monospace" text-anchor="middle">✅</text>
+<text x="24" y="180" fill="#8b949e" font-size="9" font-family="monospace" text-anchor="start">06-19</text>
+<text x="68" y="180" fill="#e6edf3" font-size="10" font-family="monospace" text-anchor="start">🇹🇷 土耳其</text>
+<text x="172" y="180" fill="#e6edf3" font-size="10" font-family="monospace" text-anchor="middle" font-weight="bold">0-1</text>
+<text x="220" y="180" fill="#e6edf3" font-size="10" font-family="monospace" text-anchor="start">🇵🇾 巴拉圭</text>
+<text x="315" y="180" fill="#8b949e" font-size="10" font-family="monospace" text-anchor="start">土耳其 37%</text>
+<text x="435" y="180" fill="#f85149" font-size="11" font-family="monospace" text-anchor="middle">❌</text>
 <text x="24" y="200" fill="#8b949e" font-size="9" font-family="monospace" text-anchor="start">06-14</text>
 <text x="68" y="200" fill="#e6edf3" font-size="10" font-family="monospace" text-anchor="start">🇩🇪 德国</text>
 <text x="172" y="200" fill="#e6edf3" font-size="10" font-family="monospace" text-anchor="middle" font-weight="bold">7-1</text>
@@ -135,6 +135,6 @@
 <text x="315" y="500" fill="#8b949e" font-size="10" font-family="monospace" text-anchor="start">加纳 41%</text>
 <text x="435" y="500" fill="#3fb950" font-size="11" font-family="monospace" text-anchor="middle">✅</text>
 <line x1="24" y1="522" x2="476" y2="522" stroke="#30363d" stroke-width="0.5"/>
-<text x="24" y="625" fill="#8b949e" font-size="9" font-family="monospace" text-anchor="start">RPS 0.175 · walk-forward 预测 · 数据 openfootball + cup26matches.com</text>
-<text x="476" y="639" fill="#8b949e" font-size="8" font-family="monospace" text-anchor="end">更新 2026-06-20 13:18 CST</text>
+<text x="24" y="645" fill="#8b949e" font-size="9" font-family="monospace" text-anchor="start">RPS 0.175 · walk-forward 预测 · 数据 openfootball + cup26matches.com</text>
+<text x="476" y="659" fill="#8b949e" font-size="8" font-family="monospace" text-anchor="end">更新 2026-06-20 17:23 CST</text>
 </svg>
