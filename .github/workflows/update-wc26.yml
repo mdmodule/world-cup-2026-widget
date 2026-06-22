@@ -20,6 +20,9 @@ jobs:
       - name: Generate AI prediction panels
         run: python scripts/generate_predictions.py
 
+      - name: Bust README cache
+        run: python scripts/bust_cache.py
+
       - uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "chore: refresh World Cup 2026 widgets"
