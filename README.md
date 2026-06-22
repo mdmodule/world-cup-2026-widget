@@ -10,9 +10,9 @@
 ## 📊 世界杯进度 / World Cup Progress
 
 <!-- WC26:START -->
-<img src=".github/wc26/day-tracker.svg" alt="World Cup 2026 — day tracker" />
+<img src=".github/wc26/day-tracker.svg?v=06221728" alt="World Cup 2026 — day tracker" />
 
-<img src=".github/wc26/record.svg" alt="World Cup 2026 — model scorecard" />
+<img src=".github/wc26/record.svg?v=06221728" alt="World Cup 2026 — model scorecard" />
 <!-- WC26:END -->
 
 ---
@@ -30,13 +30,13 @@
 | 📊 Qualification | 小组赛出线概率 | Group qualification odds |
 
 <!-- WC26-PREDICTIONS:START -->
-<img src=".github/wc26/next-match.svg" alt="World Cup 2026 — next match prediction" />
+<img src=".github/wc26/next-match.svg?v=06221728" alt="World Cup 2026 — next match prediction" />
 
-<img src=".github/wc26/championship.svg" alt="World Cup 2026 — AI championship odds" />
+<img src=".github/wc26/championship.svg?v=06221728" alt="World Cup 2026 — AI championship odds" />
 
-<img src=".github/wc26/path-to-final.svg" alt="World Cup 2026 — path to final" />
+<img src=".github/wc26/path-to-final.svg?v=06221728" alt="World Cup 2026 — path to final" />
 
-<img src=".github/wc26/upcoming.svg" alt="World Cup 2026 — group qualification" />
+<img src=".github/wc26/upcoming.svg?v=06221728" alt="World Cup 2026 — group qualification" />
 <!-- WC26-PREDICTIONS:END -->
 
 ---
