@@ -3,29 +3,6 @@
 <rect x="12" y="10" width="576" height="380" fill="#161b22" rx="8"/>
 <text x="24" y="36" fill="#58a6ff" font-size="18" font-family="monospace" text-anchor="start" font-weight="bold">⚽ 接下来比赛预测 · Elo + 市场共识</text>
 <text x="24" y="58" fill="#8b949e" font-size="12" font-family="monospace" text-anchor="start">Elo + Dixon-Coles 模型 · 混入 Polymarket 赔率 (40/60) · 胜/平/负</text>
-<text x="24" y="88" fill="#8b949e" font-size="10" font-family="monospace" text-anchor="start">6/23</text>
-<text x="100" y="88" fill="#e6edf3" font-size="11" font-family="monospace" text-anchor="start">🇭🇷 克罗地亚  vs  🇬🇭 加纳</text>
-<rect x="300" y="74" width="99" height="14" fill="#3fb950" rx="3"/>
-<rect x="399" y="74" width="42" height="14" fill="#d2991d"/>
-<rect x="442" y="74" width="27" height="14" fill="#f85149" rx="3"/>
-<text x="300" y="98" fill="#e6edf3" font-size="8" font-family="monospace" text-anchor="start">Elo 59% / 25% / 16%</text>
-<text x="24" y="126" fill="#8b949e" font-size="10" font-family="monospace" text-anchor="start">6/23</text>
-<text x="100" y="126" fill="#e6edf3" font-size="11" font-family="monospace" text-anchor="start">🇵🇦 巴拿马  vs  🏴󠁧󠁢󠁥󠁮󠁧󠁿 英格兰</text>
-<rect x="300" y="112" width="7" height="14" fill="#3fb950" rx="3"/>
-<rect x="307" y="112" width="27" height="14" fill="#d2991d"/>
-<rect x="334" y="112" width="135" height="14" fill="#f85149" rx="3"/>
-<text x="300" y="136" fill="#e6edf3" font-size="8" font-family="monospace" text-anchor="start">Elo 4% / 16% / 80%</text>
-<text x="24" y="164" fill="#8b949e" font-size="10" font-family="monospace" text-anchor="start">6/23</text>
-<text x="100" y="164" fill="#e6edf3" font-size="11" font-family="monospace" text-anchor="start">🇨🇴 哥伦比亚  vs  🇵🇹 葡萄牙</text>
-<rect x="300" y="150" width="47" height="14" fill="#3fb950" rx="3"/>
-<rect x="347" y="150" width="48" height="14" fill="#d2991d"/>
-<rect x="396" y="150" width="73" height="14" fill="#f85149" rx="3"/>
-<text x="300" y="174" fill="#e6edf3" font-size="8" font-family="monospace" text-anchor="start">Elo 28% / 29% / 43%</text>
-<text x="24" y="202" fill="#8b949e" font-size="10" font-family="monospace" text-anchor="start">6/23</text>
-<text x="100" y="202" fill="#e6edf3" font-size="11" font-family="monospace" text-anchor="start">🇨🇩 刚果(金)  vs  🇺🇿 乌兹别克斯坦</text>
-<rect x="300" y="188" width="63" height="14" fill="#3fb950" rx="3"/>
-<rect x="363" y="188" width="49" height="14" fill="#d2991d"/>
-<rect x="412" y="188" width="57" height="14" fill="#f85149" rx="3"/>
-<text x="300" y="212" fill="#e6edf3" font-size="8" font-family="monospace" text-anchor="start">Elo 37% / 29% / 34%</text>
-<text x="570" y="380" fill="#8b949e" font-size="9" font-family="monospace" text-anchor="end">更新 2026-06-23 23:52 CST</text>
+<text x="24" y="90" fill="#8b949e" font-size="12" font-family="monospace" text-anchor="start">暂无赛程数据</text>
+<text x="570" y="380" fill="#8b949e" font-size="9" font-family="monospace" text-anchor="end">更新 2026-06-24 02:01 CST</text>
 </svg>
