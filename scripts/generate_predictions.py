@@ -692,6 +692,7 @@ def fetch_match_results():
                     })
     except Exception as e:
         print(f"[record] Failed to fetch openfootball data: {e}")
+    results.sort(key=lambda r: r["date"])  # chronological order
     return results
 
 
