@@ -1,10 +1,10 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 1055" width="750" height="1582">
-<rect x="0" y="0" width="500" height="1055" fill="#0d1117"/>
-<rect x="10" y="8" width="480" height="1039" fill="#161b22" rx="8"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 1075" width="750" height="1612">
+<rect x="0" y="0" width="500" height="1075" fill="#0d1117"/>
+<rect x="10" y="8" width="480" height="1059" fill="#161b22" rx="8"/>
 <text x="24" y="34" fill="#58a6ff" font-size="18" font-family="monospace" text-anchor="start" font-weight="bold">📋 模型战绩 · Model Scorecard</text>
-<text x="24" y="56" fill="#8b949e" font-size="12" font-family="monospace" text-anchor="start">已完赛 47/104 场 · 预测正确 31 场 · 准确率 66%</text>
+<text x="24" y="56" fill="#8b949e" font-size="12" font-family="monospace" text-anchor="start">已完赛 48/104 场 · 预测正确 32 场 · 准确率 67%</text>
 <rect x="24" y="62" width="48" height="18" fill="#3fb950" rx="3"/>
-<text x="48" y="75" fill="#0d1117" font-size="10" font-family="monospace" text-anchor="middle" font-weight="bold">31 ✅</text>
+<text x="48" y="75" fill="#0d1117" font-size="10" font-family="monospace" text-anchor="middle" font-weight="bold">32 ✅</text>
 <rect x="84" y="62" width="48" height="18" fill="#f85149" rx="3"/>
 <text x="108" y="75" fill="#0d1117" font-size="10" font-family="monospace" text-anchor="middle" font-weight="bold">16 ❌</text>
 <text x="24" y="100" fill="#8b949e" font-size="9" font-family="monospace" text-anchor="start" font-weight="bold">日期</text>
@@ -14,113 +14,113 @@
 <text x="315" y="100" fill="#8b949e" font-size="9" font-family="monospace" text-anchor="start" font-weight="bold">模型预测</text>
 <text x="435" y="100" fill="#8b949e" font-size="9" font-family="monospace" text-anchor="middle" font-weight="bold">结果</text>
 <line x1="24" y1="108" x2="476" y2="108" stroke="#30363d" stroke-width="1"/>
-<text x="24" y="120" fill="#8b949e" font-size="9" font-family="monospace" text-anchor="start">06-18</text>
-<text x="68" y="120" fill="#e6edf3" font-size="10" font-family="monospace" text-anchor="start">🇨🇦 加拿大</text>
-<text x="172" y="120" fill="#e6edf3" font-size="10" font-family="monospace" text-anchor="middle" font-weight="bold">6-0</text>
-<text x="220" y="120" fill="#e6edf3" font-size="10" font-family="monospace" text-anchor="start">🇶🇦 卡塔尔</text>
-<text x="315" y="120" fill="#8b949e" font-size="10" font-family="monospace" text-anchor="start">加拿大 56%</text>
+<text x="24" y="120" fill="#8b949e" font-size="9" font-family="monospace" text-anchor="start">06-19</text>
+<text x="68" y="120" fill="#e6edf3" font-size="10" font-family="monospace" text-anchor="start">🏴 苏格兰</text>
+<text x="172" y="120" fill="#e6edf3" font-size="10" font-family="monospace" text-anchor="middle" font-weight="bold">0-1</text>
+<text x="220" y="120" fill="#e6edf3" font-size="10" font-family="monospace" text-anchor="start">🇲🇦 摩洛哥</text>
+<text x="315" y="120" fill="#8b949e" font-size="10" font-family="monospace" text-anchor="start">摩洛哥 59%</text>
 <text x="435" y="120" fill="#3fb950" font-size="11" font-family="monospace" text-anchor="middle">✅</text>
 <text x="24" y="140" fill="#8b949e" font-size="9" font-family="monospace" text-anchor="start">06-19</text>
-<text x="68" y="140" fill="#e6edf3" font-size="10" font-family="monospace" text-anchor="start">🏴 苏格兰</text>
-<text x="172" y="140" fill="#e6edf3" font-size="10" font-family="monospace" text-anchor="middle" font-weight="bold">0-1</text>
-<text x="220" y="140" fill="#e6edf3" font-size="10" font-family="monospace" text-anchor="start">🇲🇦 摩洛哥</text>
-<text x="315" y="140" fill="#8b949e" font-size="10" font-family="monospace" text-anchor="start">摩洛哥 59%</text>
+<text x="68" y="140" fill="#e6edf3" font-size="10" font-family="monospace" text-anchor="start">🇧🇷 巴西</text>
+<text x="172" y="140" fill="#e6edf3" font-size="10" font-family="monospace" text-anchor="middle" font-weight="bold">3-0</text>
+<text x="220" y="140" fill="#e6edf3" font-size="10" font-family="monospace" text-anchor="start">🇭🇹 海地</text>
+<text x="315" y="140" fill="#8b949e" font-size="10" font-family="monospace" text-anchor="start">巴西 84%</text>
 <text x="435" y="140" fill="#3fb950" font-size="11" font-family="monospace" text-anchor="middle">✅</text>
 <text x="24" y="160" fill="#8b949e" font-size="9" font-family="monospace" text-anchor="start">06-19</text>
-<text x="68" y="160" fill="#e6edf3" font-size="10" font-family="monospace" text-anchor="start">🇧🇷 巴西</text>
-<text x="172" y="160" fill="#e6edf3" font-size="10" font-family="monospace" text-anchor="middle" font-weight="bold">3-0</text>
-<text x="220" y="160" fill="#e6edf3" font-size="10" font-family="monospace" text-anchor="start">🇭🇹 海地</text>
-<text x="315" y="160" fill="#8b949e" font-size="10" font-family="monospace" text-anchor="start">巴西 84%</text>
+<text x="68" y="160" fill="#e6edf3" font-size="10" font-family="monospace" text-anchor="start">🇺🇸 美国</text>
+<text x="172" y="160" fill="#e6edf3" font-size="10" font-family="monospace" text-anchor="middle" font-weight="bold">2-0</text>
+<text x="220" y="160" fill="#e6edf3" font-size="10" font-family="monospace" text-anchor="start">🇦🇺 澳大利亚</text>
+<text x="315" y="160" fill="#8b949e" font-size="10" font-family="monospace" text-anchor="start">美国 47%</text>
 <text x="435" y="160" fill="#3fb950" font-size="11" font-family="monospace" text-anchor="middle">✅</text>
 <text x="24" y="180" fill="#8b949e" font-size="9" font-family="monospace" text-anchor="start">06-19</text>
-<text x="68" y="180" fill="#e6edf3" font-size="10" font-family="monospace" text-anchor="start">🇺🇸 美国</text>
-<text x="172" y="180" fill="#e6edf3" font-size="10" font-family="monospace" text-anchor="middle" font-weight="bold">2-0</text>
-<text x="220" y="180" fill="#e6edf3" font-size="10" font-family="monospace" text-anchor="start">🇦🇺 澳大利亚</text>
-<text x="315" y="180" fill="#8b949e" font-size="10" font-family="monospace" text-anchor="start">美国 47%</text>
-<text x="435" y="180" fill="#3fb950" font-size="11" font-family="monospace" text-anchor="middle">✅</text>
-<text x="24" y="200" fill="#8b949e" font-size="9" font-family="monospace" text-anchor="start">06-19</text>
-<text x="68" y="200" fill="#e6edf3" font-size="10" font-family="monospace" text-anchor="start">🇹🇷 土耳其</text>
-<text x="172" y="200" fill="#e6edf3" font-size="10" font-family="monospace" text-anchor="middle" font-weight="bold">0-1</text>
-<text x="220" y="200" fill="#e6edf3" font-size="10" font-family="monospace" text-anchor="start">🇵🇾 巴拉圭</text>
-<text x="315" y="200" fill="#8b949e" font-size="10" font-family="monospace" text-anchor="start">土耳其 39%</text>
-<text x="435" y="200" fill="#f85149" font-size="11" font-family="monospace" text-anchor="middle">❌</text>
+<text x="68" y="180" fill="#e6edf3" font-size="10" font-family="monospace" text-anchor="start">🇹🇷 土耳其</text>
+<text x="172" y="180" fill="#e6edf3" font-size="10" font-family="monospace" text-anchor="middle" font-weight="bold">0-1</text>
+<text x="220" y="180" fill="#e6edf3" font-size="10" font-family="monospace" text-anchor="start">🇵🇾 巴拉圭</text>
+<text x="315" y="180" fill="#8b949e" font-size="10" font-family="monospace" text-anchor="start">土耳其 39%</text>
+<text x="435" y="180" fill="#f85149" font-size="11" font-family="monospace" text-anchor="middle">❌</text>
+<text x="24" y="200" fill="#8b949e" font-size="9" font-family="monospace" text-anchor="start">06-20</text>
+<text x="68" y="200" fill="#e6edf3" font-size="10" font-family="monospace" text-anchor="start">🇩🇪 德国</text>
+<text x="172" y="200" fill="#e6edf3" font-size="10" font-family="monospace" text-anchor="middle" font-weight="bold">2-1</text>
+<text x="220" y="200" fill="#e6edf3" font-size="10" font-family="monospace" text-anchor="start">🇨🇮 科特迪瓦</text>
+<text x="315" y="200" fill="#8b949e" font-size="10" font-family="monospace" text-anchor="start">德国 56%</text>
+<text x="435" y="200" fill="#3fb950" font-size="11" font-family="monospace" text-anchor="middle">✅</text>
 <text x="24" y="220" fill="#8b949e" font-size="9" font-family="monospace" text-anchor="start">06-20</text>
-<text x="68" y="220" fill="#e6edf3" font-size="10" font-family="monospace" text-anchor="start">🇩🇪 德国</text>
-<text x="172" y="220" fill="#e6edf3" font-size="10" font-family="monospace" text-anchor="middle" font-weight="bold">2-1</text>
-<text x="220" y="220" fill="#e6edf3" font-size="10" font-family="monospace" text-anchor="start">🇨🇮 科特迪瓦</text>
-<text x="315" y="220" fill="#8b949e" font-size="10" font-family="monospace" text-anchor="start">德国 56%</text>
-<text x="435" y="220" fill="#3fb950" font-size="11" font-family="monospace" text-anchor="middle">✅</text>
+<text x="68" y="220" fill="#e6edf3" font-size="10" font-family="monospace" text-anchor="start">🇪🇨 厄瓜多尔</text>
+<text x="172" y="220" fill="#e6edf3" font-size="10" font-family="monospace" text-anchor="middle" font-weight="bold">0-0</text>
+<text x="220" y="220" fill="#e6edf3" font-size="10" font-family="monospace" text-anchor="start">🇨🇼 库拉索</text>
+<text x="315" y="220" fill="#8b949e" font-size="10" font-family="monospace" text-anchor="start">厄瓜多尔 66%</text>
+<text x="435" y="220" fill="#f85149" font-size="11" font-family="monospace" text-anchor="middle">❌</text>
 <text x="24" y="240" fill="#8b949e" font-size="9" font-family="monospace" text-anchor="start">06-20</text>
-<text x="68" y="240" fill="#e6edf3" font-size="10" font-family="monospace" text-anchor="start">🇪🇨 厄瓜多尔</text>
-<text x="172" y="240" fill="#e6edf3" font-size="10" font-family="monospace" text-anchor="middle" font-weight="bold">0-0</text>
-<text x="220" y="240" fill="#e6edf3" font-size="10" font-family="monospace" text-anchor="start">🇨🇼 库拉索</text>
-<text x="315" y="240" fill="#8b949e" font-size="10" font-family="monospace" text-anchor="start">厄瓜多尔 66%</text>
-<text x="435" y="240" fill="#f85149" font-size="11" font-family="monospace" text-anchor="middle">❌</text>
+<text x="68" y="240" fill="#e6edf3" font-size="10" font-family="monospace" text-anchor="start">🇳🇱 荷兰</text>
+<text x="172" y="240" fill="#e6edf3" font-size="10" font-family="monospace" text-anchor="middle" font-weight="bold">5-1</text>
+<text x="220" y="240" fill="#e6edf3" font-size="10" font-family="monospace" text-anchor="start">🇸🇪 瑞典</text>
+<text x="315" y="240" fill="#8b949e" font-size="10" font-family="monospace" text-anchor="start">荷兰 46%</text>
+<text x="435" y="240" fill="#3fb950" font-size="11" font-family="monospace" text-anchor="middle">✅</text>
 <text x="24" y="260" fill="#8b949e" font-size="9" font-family="monospace" text-anchor="start">06-20</text>
-<text x="68" y="260" fill="#e6edf3" font-size="10" font-family="monospace" text-anchor="start">🇳🇱 荷兰</text>
-<text x="172" y="260" fill="#e6edf3" font-size="10" font-family="monospace" text-anchor="middle" font-weight="bold">5-1</text>
-<text x="220" y="260" fill="#e6edf3" font-size="10" font-family="monospace" text-anchor="start">🇸🇪 瑞典</text>
-<text x="315" y="260" fill="#8b949e" font-size="10" font-family="monospace" text-anchor="start">荷兰 46%</text>
+<text x="68" y="260" fill="#e6edf3" font-size="10" font-family="monospace" text-anchor="start">🇹🇳 突尼斯</text>
+<text x="172" y="260" fill="#e6edf3" font-size="10" font-family="monospace" text-anchor="middle" font-weight="bold">0-4</text>
+<text x="220" y="260" fill="#e6edf3" font-size="10" font-family="monospace" text-anchor="start">🇯🇵 日本</text>
+<text x="315" y="260" fill="#8b949e" font-size="10" font-family="monospace" text-anchor="start">日本 59%</text>
 <text x="435" y="260" fill="#3fb950" font-size="11" font-family="monospace" text-anchor="middle">✅</text>
-<text x="24" y="280" fill="#8b949e" font-size="9" font-family="monospace" text-anchor="start">06-20</text>
-<text x="68" y="280" fill="#e6edf3" font-size="10" font-family="monospace" text-anchor="start">🇹🇳 突尼斯</text>
-<text x="172" y="280" fill="#e6edf3" font-size="10" font-family="monospace" text-anchor="middle" font-weight="bold">0-4</text>
-<text x="220" y="280" fill="#e6edf3" font-size="10" font-family="monospace" text-anchor="start">🇯🇵 日本</text>
-<text x="315" y="280" fill="#8b949e" font-size="10" font-family="monospace" text-anchor="start">日本 59%</text>
-<text x="435" y="280" fill="#3fb950" font-size="11" font-family="monospace" text-anchor="middle">✅</text>
+<text x="24" y="280" fill="#8b949e" font-size="9" font-family="monospace" text-anchor="start">06-21</text>
+<text x="68" y="280" fill="#e6edf3" font-size="10" font-family="monospace" text-anchor="start">🇧🇪 比利时</text>
+<text x="172" y="280" fill="#e6edf3" font-size="10" font-family="monospace" text-anchor="middle" font-weight="bold">0-0</text>
+<text x="220" y="280" fill="#e6edf3" font-size="10" font-family="monospace" text-anchor="start">🇮🇷 伊朗</text>
+<text x="315" y="280" fill="#8b949e" font-size="10" font-family="monospace" text-anchor="start">比利时 51%</text>
+<text x="435" y="280" fill="#f85149" font-size="11" font-family="monospace" text-anchor="middle">❌</text>
 <text x="24" y="300" fill="#8b949e" font-size="9" font-family="monospace" text-anchor="start">06-21</text>
-<text x="68" y="300" fill="#e6edf3" font-size="10" font-family="monospace" text-anchor="start">🇧🇪 比利时</text>
-<text x="172" y="300" fill="#e6edf3" font-size="10" font-family="monospace" text-anchor="middle" font-weight="bold">0-0</text>
-<text x="220" y="300" fill="#e6edf3" font-size="10" font-family="monospace" text-anchor="start">🇮🇷 伊朗</text>
-<text x="315" y="300" fill="#8b949e" font-size="10" font-family="monospace" text-anchor="start">比利时 51%</text>
-<text x="435" y="300" fill="#f85149" font-size="11" font-family="monospace" text-anchor="middle">❌</text>
+<text x="68" y="300" fill="#e6edf3" font-size="10" font-family="monospace" text-anchor="start">🇳🇿 新西兰</text>
+<text x="172" y="300" fill="#e6edf3" font-size="10" font-family="monospace" text-anchor="middle" font-weight="bold">1-3</text>
+<text x="220" y="300" fill="#e6edf3" font-size="10" font-family="monospace" text-anchor="start">🇪🇬 埃及</text>
+<text x="315" y="300" fill="#8b949e" font-size="10" font-family="monospace" text-anchor="start">埃及 48%</text>
+<text x="435" y="300" fill="#3fb950" font-size="11" font-family="monospace" text-anchor="middle">✅</text>
 <text x="24" y="320" fill="#8b949e" font-size="9" font-family="monospace" text-anchor="start">06-21</text>
-<text x="68" y="320" fill="#e6edf3" font-size="10" font-family="monospace" text-anchor="start">🇳🇿 新西兰</text>
-<text x="172" y="320" fill="#e6edf3" font-size="10" font-family="monospace" text-anchor="middle" font-weight="bold">1-3</text>
-<text x="220" y="320" fill="#e6edf3" font-size="10" font-family="monospace" text-anchor="start">🇪🇬 埃及</text>
-<text x="315" y="320" fill="#8b949e" font-size="10" font-family="monospace" text-anchor="start">埃及 48%</text>
+<text x="68" y="320" fill="#e6edf3" font-size="10" font-family="monospace" text-anchor="start">🇪🇸 西班牙</text>
+<text x="172" y="320" fill="#e6edf3" font-size="10" font-family="monospace" text-anchor="middle" font-weight="bold">4-0</text>
+<text x="220" y="320" fill="#e6edf3" font-size="10" font-family="monospace" text-anchor="start">🇸🇦 沙特</text>
+<text x="315" y="320" fill="#8b949e" font-size="10" font-family="monospace" text-anchor="start">西班牙 73%</text>
 <text x="435" y="320" fill="#3fb950" font-size="11" font-family="monospace" text-anchor="middle">✅</text>
 <text x="24" y="340" fill="#8b949e" font-size="9" font-family="monospace" text-anchor="start">06-21</text>
-<text x="68" y="340" fill="#e6edf3" font-size="10" font-family="monospace" text-anchor="start">🇪🇸 西班牙</text>
-<text x="172" y="340" fill="#e6edf3" font-size="10" font-family="monospace" text-anchor="middle" font-weight="bold">4-0</text>
-<text x="220" y="340" fill="#e6edf3" font-size="10" font-family="monospace" text-anchor="start">🇸🇦 沙特</text>
-<text x="315" y="340" fill="#8b949e" font-size="10" font-family="monospace" text-anchor="start">西班牙 73%</text>
-<text x="435" y="340" fill="#3fb950" font-size="11" font-family="monospace" text-anchor="middle">✅</text>
-<text x="24" y="360" fill="#8b949e" font-size="9" font-family="monospace" text-anchor="start">06-21</text>
-<text x="68" y="360" fill="#e6edf3" font-size="10" font-family="monospace" text-anchor="start">🇺🇾 乌拉圭</text>
-<text x="172" y="360" fill="#e6edf3" font-size="10" font-family="monospace" text-anchor="middle" font-weight="bold">2-2</text>
-<text x="220" y="360" fill="#e6edf3" font-size="10" font-family="monospace" text-anchor="start">🇨🇻 佛得角</text>
-<text x="315" y="360" fill="#8b949e" font-size="10" font-family="monospace" text-anchor="start">乌拉圭 59%</text>
-<text x="435" y="360" fill="#f85149" font-size="11" font-family="monospace" text-anchor="middle">❌</text>
+<text x="68" y="340" fill="#e6edf3" font-size="10" font-family="monospace" text-anchor="start">🇺🇾 乌拉圭</text>
+<text x="172" y="340" fill="#e6edf3" font-size="10" font-family="monospace" text-anchor="middle" font-weight="bold">2-2</text>
+<text x="220" y="340" fill="#e6edf3" font-size="10" font-family="monospace" text-anchor="start">🇨🇻 佛得角</text>
+<text x="315" y="340" fill="#8b949e" font-size="10" font-family="monospace" text-anchor="start">乌拉圭 59%</text>
+<text x="435" y="340" fill="#f85149" font-size="11" font-family="monospace" text-anchor="middle">❌</text>
+<text x="24" y="360" fill="#8b949e" font-size="9" font-family="monospace" text-anchor="start">06-22</text>
+<text x="68" y="360" fill="#e6edf3" font-size="10" font-family="monospace" text-anchor="start">🇫🇷 法国</text>
+<text x="172" y="360" fill="#e6edf3" font-size="10" font-family="monospace" text-anchor="middle" font-weight="bold">3-0</text>
+<text x="220" y="360" fill="#e6edf3" font-size="10" font-family="monospace" text-anchor="start">🇮🇶 伊拉克</text>
+<text x="315" y="360" fill="#8b949e" font-size="10" font-family="monospace" text-anchor="start">法国 85%</text>
+<text x="435" y="360" fill="#3fb950" font-size="11" font-family="monospace" text-anchor="middle">✅</text>
 <text x="24" y="380" fill="#8b949e" font-size="9" font-family="monospace" text-anchor="start">06-22</text>
-<text x="68" y="380" fill="#e6edf3" font-size="10" font-family="monospace" text-anchor="start">🇫🇷 法国</text>
-<text x="172" y="380" fill="#e6edf3" font-size="10" font-family="monospace" text-anchor="middle" font-weight="bold">3-0</text>
-<text x="220" y="380" fill="#e6edf3" font-size="10" font-family="monospace" text-anchor="start">🇮🇶 伊拉克</text>
-<text x="315" y="380" fill="#8b949e" font-size="10" font-family="monospace" text-anchor="start">法国 85%</text>
+<text x="68" y="380" fill="#e6edf3" font-size="10" font-family="monospace" text-anchor="start">🇳🇴 挪威</text>
+<text x="172" y="380" fill="#e6edf3" font-size="10" font-family="monospace" text-anchor="middle" font-weight="bold">3-2</text>
+<text x="220" y="380" fill="#e6edf3" font-size="10" font-family="monospace" text-anchor="start">🇸🇳 塞内加尔</text>
+<text x="315" y="380" fill="#8b949e" font-size="10" font-family="monospace" text-anchor="start">挪威 44%</text>
 <text x="435" y="380" fill="#3fb950" font-size="11" font-family="monospace" text-anchor="middle">✅</text>
 <text x="24" y="400" fill="#8b949e" font-size="9" font-family="monospace" text-anchor="start">06-22</text>
-<text x="68" y="400" fill="#e6edf3" font-size="10" font-family="monospace" text-anchor="start">🇳🇴 挪威</text>
-<text x="172" y="400" fill="#e6edf3" font-size="10" font-family="monospace" text-anchor="middle" font-weight="bold">3-2</text>
-<text x="220" y="400" fill="#e6edf3" font-size="10" font-family="monospace" text-anchor="start">🇸🇳 塞内加尔</text>
-<text x="315" y="400" fill="#8b949e" font-size="10" font-family="monospace" text-anchor="start">挪威 44%</text>
+<text x="68" y="400" fill="#e6edf3" font-size="10" font-family="monospace" text-anchor="start">🇦🇷 阿根廷</text>
+<text x="172" y="400" fill="#e6edf3" font-size="10" font-family="monospace" text-anchor="middle" font-weight="bold">2-0</text>
+<text x="220" y="400" fill="#e6edf3" font-size="10" font-family="monospace" text-anchor="start">🇦🇹 奥地利</text>
+<text x="315" y="400" fill="#8b949e" font-size="10" font-family="monospace" text-anchor="start">阿根廷 66%</text>
 <text x="435" y="400" fill="#3fb950" font-size="11" font-family="monospace" text-anchor="middle">✅</text>
 <text x="24" y="420" fill="#8b949e" font-size="9" font-family="monospace" text-anchor="start">06-22</text>
-<text x="68" y="420" fill="#e6edf3" font-size="10" font-family="monospace" text-anchor="start">🇦🇷 阿根廷</text>
-<text x="172" y="420" fill="#e6edf3" font-size="10" font-family="monospace" text-anchor="middle" font-weight="bold">2-0</text>
-<text x="220" y="420" fill="#e6edf3" font-size="10" font-family="monospace" text-anchor="start">🇦🇹 奥地利</text>
-<text x="315" y="420" fill="#8b949e" font-size="10" font-family="monospace" text-anchor="start">阿根廷 66%</text>
+<text x="68" y="420" fill="#e6edf3" font-size="10" font-family="monospace" text-anchor="start">🇯🇴 约旦</text>
+<text x="172" y="420" fill="#e6edf3" font-size="10" font-family="monospace" text-anchor="middle" font-weight="bold">1-2</text>
+<text x="220" y="420" fill="#e6edf3" font-size="10" font-family="monospace" text-anchor="start">🇩🇿 阿尔及利亚</text>
+<text x="315" y="420" fill="#8b949e" font-size="10" font-family="monospace" text-anchor="start">阿尔及利亚 55%</text>
 <text x="435" y="420" fill="#3fb950" font-size="11" font-family="monospace" text-anchor="middle">✅</text>
-<text x="24" y="440" fill="#8b949e" font-size="9" font-family="monospace" text-anchor="start">06-22</text>
-<text x="68" y="440" fill="#e6edf3" font-size="10" font-family="monospace" text-anchor="start">🇯🇴 约旦</text>
-<text x="172" y="440" fill="#e6edf3" font-size="10" font-family="monospace" text-anchor="middle" font-weight="bold">1-2</text>
-<text x="220" y="440" fill="#e6edf3" font-size="10" font-family="monospace" text-anchor="start">🇩🇿 阿尔及利亚</text>
-<text x="315" y="440" fill="#8b949e" font-size="10" font-family="monospace" text-anchor="start">阿尔及利亚 55%</text>
+<text x="24" y="440" fill="#8b949e" font-size="9" font-family="monospace" text-anchor="start">06-23</text>
+<text x="68" y="440" fill="#e6edf3" font-size="10" font-family="monospace" text-anchor="start">🇵🇹 葡萄牙</text>
+<text x="172" y="440" fill="#e6edf3" font-size="10" font-family="monospace" text-anchor="middle" font-weight="bold">5-0</text>
+<text x="220" y="440" fill="#e6edf3" font-size="10" font-family="monospace" text-anchor="start">🇺🇿 乌兹别克斯坦</text>
+<text x="315" y="440" fill="#8b949e" font-size="10" font-family="monospace" text-anchor="start">葡萄牙 72%</text>
 <text x="435" y="440" fill="#3fb950" font-size="11" font-family="monospace" text-anchor="middle">✅</text>
 <text x="24" y="460" fill="#8b949e" font-size="9" font-family="monospace" text-anchor="start">06-23</text>
-<text x="68" y="460" fill="#e6edf3" font-size="10" font-family="monospace" text-anchor="start">🇵🇹 葡萄牙</text>
-<text x="172" y="460" fill="#e6edf3" font-size="10" font-family="monospace" text-anchor="middle" font-weight="bold">5-0</text>
-<text x="220" y="460" fill="#e6edf3" font-size="10" font-family="monospace" text-anchor="start">🇺🇿 乌兹别克斯坦</text>
-<text x="315" y="460" fill="#8b949e" font-size="10" font-family="monospace" text-anchor="start">葡萄牙 72%</text>
+<text x="68" y="460" fill="#e6edf3" font-size="10" font-family="monospace" text-anchor="start">🇨🇴 哥伦比亚</text>
+<text x="172" y="460" fill="#e6edf3" font-size="10" font-family="monospace" text-anchor="middle" font-weight="bold">1-0</text>
+<text x="220" y="460" fill="#e6edf3" font-size="10" font-family="monospace" text-anchor="start">🇨🇩 刚果(金)</text>
+<text x="315" y="460" fill="#8b949e" font-size="10" font-family="monospace" text-anchor="start">哥伦比亚 63%</text>
 <text x="435" y="460" fill="#3fb950" font-size="11" font-family="monospace" text-anchor="middle">✅</text>
 <text x="24" y="480" fill="#8b949e" font-size="9" font-family="monospace" text-anchor="start">06-23</text>
 <text x="68" y="480" fill="#e6edf3" font-size="10" font-family="monospace" text-anchor="start">🏴󠁧󠁢󠁥󠁮󠁧󠁿 英格兰</text>
@@ -135,6 +135,6 @@
 <text x="315" y="500" fill="#8b949e" font-size="10" font-family="monospace" text-anchor="start">克罗地亚 64%</text>
 <text x="435" y="500" fill="#3fb950" font-size="11" font-family="monospace" text-anchor="middle">✅</text>
 <line x1="24" y1="522" x2="476" y2="522" stroke="#30363d" stroke-width="0.5"/>
-<text x="24" y="1025" fill="#8b949e" font-size="9" font-family="monospace" text-anchor="start">RPS 0.175 · walk-forward 预测 · 数据 openfootball + cup26matches.com</text>
-<text x="476" y="1039" fill="#8b949e" font-size="8" font-family="monospace" text-anchor="end">更新 2026-06-24 11:55 CST</text>
+<text x="24" y="1045" fill="#8b949e" font-size="9" font-family="monospace" text-anchor="start">RPS 0.175 · walk-forward 预测 · 数据 openfootball + cup26matches.com</text>
+<text x="476" y="1059" fill="#8b949e" font-size="8" font-family="monospace" text-anchor="end">更新 2026-06-24 15:48 CST</text>
 </svg>
