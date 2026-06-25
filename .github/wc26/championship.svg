@@ -7,43 +7,43 @@
 <text x="30" y="96" fill="#8b949e" font-size="12" font-family="monospace" text-anchor="end">1.</text>
 <text x="40" y="96" fill="#e6edf3" font-size="12" font-family="monospace" text-anchor="start">🇪🇸 西班牙</text>
 <rect x="170" y="80" width="410" height="22" fill="#58a6ff" rx="3"/>
-<text x="586" y="96" fill="#e6edf3" font-size="13" font-family="monospace" text-anchor="start" font-weight="bold">15.8%</text>
+<text x="586" y="96" fill="#e6edf3" font-size="13" font-family="monospace" text-anchor="start" font-weight="bold">16.0%</text>
 <text x="30" y="128" fill="#8b949e" font-size="12" font-family="monospace" text-anchor="end">2.</text>
 <text x="40" y="128" fill="#e6edf3" font-size="12" font-family="monospace" text-anchor="start">🇫🇷 法国</text>
-<rect x="170" y="112" width="400" height="22" fill="#3fb950" rx="3"/>
-<text x="576" y="128" fill="#e6edf3" font-size="13" font-family="monospace" text-anchor="start" font-weight="bold">15.4%</text>
+<rect x="170" y="112" width="386" height="22" fill="#3fb950" rx="3"/>
+<text x="562" y="128" fill="#e6edf3" font-size="13" font-family="monospace" text-anchor="start" font-weight="bold">15.1%</text>
 <text x="30" y="160" fill="#8b949e" font-size="12" font-family="monospace" text-anchor="end">3.</text>
 <text x="40" y="160" fill="#e6edf3" font-size="12" font-family="monospace" text-anchor="start">🇦🇷 阿根廷</text>
-<rect x="170" y="144" width="339" height="22" fill="#d2991d" rx="3"/>
-<text x="515" y="160" fill="#e6edf3" font-size="13" font-family="monospace" text-anchor="start" font-weight="bold">13.0%</text>
+<rect x="170" y="144" width="325" height="22" fill="#d2991d" rx="3"/>
+<text x="501" y="160" fill="#e6edf3" font-size="13" font-family="monospace" text-anchor="start" font-weight="bold">12.7%</text>
 <text x="30" y="192" fill="#8b949e" font-size="12" font-family="monospace" text-anchor="end">4.</text>
 <text x="40" y="192" fill="#e6edf3" font-size="12" font-family="monospace" text-anchor="start">🏴󠁧󠁢󠁥󠁮󠁧󠁿 英格兰</text>
-<rect x="170" y="176" width="326" height="22" fill="#f78166" rx="3"/>
-<text x="502" y="192" fill="#e6edf3" font-size="13" font-family="monospace" text-anchor="start" font-weight="bold">12.5%</text>
+<rect x="170" y="176" width="319" height="22" fill="#f78166" rx="3"/>
+<text x="495" y="192" fill="#e6edf3" font-size="13" font-family="monospace" text-anchor="start" font-weight="bold">12.5%</text>
 <text x="30" y="224" fill="#8b949e" font-size="12" font-family="monospace" text-anchor="end">5.</text>
 <text x="40" y="224" fill="#e6edf3" font-size="12" font-family="monospace" text-anchor="start">🇵🇹 葡萄牙</text>
-<rect x="170" y="208" width="182" height="22" fill="#a371f7" rx="3"/>
-<text x="358" y="224" fill="#e6edf3" font-size="13" font-family="monospace" text-anchor="start" font-weight="bold">7.0%</text>
+<rect x="170" y="208" width="175" height="22" fill="#a371f7" rx="3"/>
+<text x="351" y="224" fill="#e6edf3" font-size="13" font-family="monospace" text-anchor="start" font-weight="bold">6.9%</text>
 <text x="30" y="256" fill="#8b949e" font-size="12" font-family="monospace" text-anchor="end">6.</text>
 <text x="40" y="256" fill="#e6edf3" font-size="12" font-family="monospace" text-anchor="start">🇧🇷 巴西</text>
 <rect x="170" y="240" width="168" height="22" fill="#79c0ff" rx="3"/>
-<text x="344" y="256" fill="#e6edf3" font-size="13" font-family="monospace" text-anchor="start" font-weight="bold">6.5%</text>
+<text x="344" y="256" fill="#e6edf3" font-size="13" font-family="monospace" text-anchor="start" font-weight="bold">6.6%</text>
 <text x="30" y="288" fill="#8b949e" font-size="12" font-family="monospace" text-anchor="end">7.</text>
 <text x="40" y="288" fill="#e6edf3" font-size="12" font-family="monospace" text-anchor="start">🇩🇪 德国</text>
 <rect x="170" y="272" width="151" height="22" fill="#56d364" rx="3"/>
-<text x="327" y="288" fill="#e6edf3" font-size="13" font-family="monospace" text-anchor="start" font-weight="bold">5.8%</text>
+<text x="327" y="288" fill="#e6edf3" font-size="13" font-family="monospace" text-anchor="start" font-weight="bold">5.9%</text>
 <text x="30" y="320" fill="#8b949e" font-size="12" font-family="monospace" text-anchor="end">8.</text>
 <text x="40" y="320" fill="#e6edf3" font-size="12" font-family="monospace" text-anchor="start">🇨🇴 哥伦比亚</text>
 <rect x="170" y="304" width="75" height="22" fill="#e3b341" rx="3"/>
-<text x="251" y="320" fill="#e6edf3" font-size="13" font-family="monospace" text-anchor="start" font-weight="bold">2.9%</text>
+<text x="251" y="320" fill="#e6edf3" font-size="13" font-family="monospace" text-anchor="start" font-weight="bold">3.0%</text>
 <text x="30" y="352" fill="#8b949e" font-size="12" font-family="monospace" text-anchor="end">9.</text>
 <text x="40" y="352" fill="#e6edf3" font-size="12" font-family="monospace" text-anchor="start">🇺🇸 美国</text>
-<rect x="170" y="336" width="72" height="22" fill="#f0883e" rx="3"/>
-<text x="248" y="352" fill="#e6edf3" font-size="13" font-family="monospace" text-anchor="start" font-weight="bold">2.8%</text>
+<rect x="170" y="336" width="73" height="22" fill="#f0883e" rx="3"/>
+<text x="249" y="352" fill="#e6edf3" font-size="13" font-family="monospace" text-anchor="start" font-weight="bold">2.9%</text>
 <text x="30" y="384" fill="#8b949e" font-size="12" font-family="monospace" text-anchor="end">10.</text>
 <text x="40" y="384" fill="#e6edf3" font-size="12" font-family="monospace" text-anchor="start">🇳🇱 荷兰</text>
 <rect x="170" y="368" width="71" height="22" fill="#bc8cff" rx="3"/>
-<text x="247" y="384" fill="#e6edf3" font-size="13" font-family="monospace" text-anchor="start" font-weight="bold">2.7%</text>
-<text x="630" y="536" fill="#8b949e" font-size="10" font-family="monospace" text-anchor="end">更新 2026-06-26 04:59 CST</text>
+<text x="247" y="384" fill="#e6edf3" font-size="13" font-family="monospace" text-anchor="start" font-weight="bold">2.8%</text>
+<text x="630" y="536" fill="#8b949e" font-size="10" font-family="monospace" text-anchor="end">更新 2026-06-26 06:40 CST</text>
 <text x="30" y="536" fill="#8b949e" font-size="9" font-family="monospace" text-anchor="start">数据来源 cup26matches.com · CC BY 4.0</text>
 </svg>
