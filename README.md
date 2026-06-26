@@ -35,7 +35,7 @@
 
 <img src=".github/wc26/championship.svg?v=06221728" alt="World Cup 2026 — AI championship odds" />
 
-<img src=".github/wc26/path-to-final.svg" alt="World Cup 2026 — path to final" />
+<img src=".github/wc26/path-to-final.svg?v=06261327" alt="World Cup 2026 — path to final" />
 <!-- WC26-PREDICTIONS:END -->
 
 ---
