@@ -582,6 +582,93 @@ HOSTS = {"mexico", "usa", "canada"}
 HOME_ADV = 75
 
 
+def _build_knockout_fixtures(ratings):
+    """Dynamically build knockout fixtures from openfootball group results."""
+    import ssl as _ssl
+    ctx = _ssl.create_default_context()
+    ctx.check_hostname = False
+    ctx.verify_mode = _ssl.CERT_NONE
+
+    url = "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json"
+    req = urllib.request.Request(url, headers={"User-Agent": "wc-widget/1.0"})
+    with urllib.request.urlopen(req, timeout=30, context=ctx) as resp:
+        data = json.loads(resp.read())
+
+    # Compute group standings
+    from collections import defaultdict as _dd
+    group_matches = _dd(list)
+    for m in data.get("matches", []):
+        grp = m.get("group", "")
+        if grp:
+            group_matches[grp].append(m)
+
+    standings = {}
+    for grp_name, matches in group_matches.items():
+        letter = grp_name.replace("Group ", "").strip()
+        teams = _dd(lambda: {"pts": 0, "gf": 0, "ga": 0})
+        for m in matches:
+            t1, t2 = m.get("team1", ""), m.get("team2", "")
+            score = m.get("score", {}).get("ft")
+            if not score or not t1 or not t2: continue
+            g1, g2 = score[0], score[1]
+            teams[t1]["gf"] += g1; teams[t1]["ga"] += g2
+            teams[t2]["gf"] += g2; teams[t2]["ga"] += g1
+            if g1 > g2: teams[t1]["pts"] += 3
+            elif g2 > g1: teams[t2]["pts"] += 3
+            else: teams[t1]["pts"] += 1; teams[t2]["pts"] += 1
+        sorted_teams = sorted(teams.items(),
+            key=lambda x: (x[1]["pts"], x[1]["gf"] - x[1]["ga"], x[1]["gf"]),
+            reverse=True)
+        standings[letter] = []
+        for name, stats in sorted_teams:
+            slug = OF_NAME_MAP.get(name, name.lower().replace(" ", "-"))
+            standings[letter].append(slug)
+
+    # Build R32 pairings: 1A vs 2B, 1C vs 2D, etc.
+    w = {l: standings[l][0] for l in sorted(standings) if len(standings[l]) >= 1}
+    r = {l: standings[l][1] for l in sorted(standings) if len(standings[l]) >= 2}
+
+    r32_pairs = [
+        (w.get("A","?"), r.get("B","?")), (w.get("C","?"), r.get("D","?")),
+        (w.get("E","?"), r.get("F","?")), (w.get("G","?"), r.get("H","?")),
+        (w.get("I","?"), r.get("J","?")), (w.get("K","?"), r.get("L","?")),
+        (w.get("B","?"), r.get("A","?")), (w.get("D","?"), r.get("C","?")),
+        (w.get("F","?"), r.get("E","?")), (w.get("H","?"), r.get("G","?")),
+        (w.get("J","?"), r.get("I","?")), (w.get("L","?"), r.get("K","?")),
+    ]
+
+    # 8 best 3rd place teams
+    thirds = []
+    for l in sorted(standings):
+        if len(standings[l]) >= 3:
+            thirds.append((standings[l][2], l))
+    # Approximate 3rd place allocation to remaining R32 slots
+    for t, _ in thirds[:4]:
+        if len(r32_pairs) < 16:
+            # Pair unassigned group winners with 3rd place teams
+            for wl in sorted(w):
+                if w[wl] not in [p[0] for p in r32_pairs] and w[wl] != t:
+                    r32_pairs.append((w[wl], t))
+                    break
+
+    # Assign dates (June 28 - July 1 for R32)
+    dates = [
+        ("6/28", "00:00"), ("6/28", "03:00"), ("6/28", "06:00"), ("6/28", "09:00"),
+        ("6/29", "00:00"), ("6/29", "03:00"), ("6/29", "06:00"), ("6/29", "09:00"),
+        ("6/30", "00:00"), ("6/30", "03:00"), ("6/30", "06:00"), ("6/30", "09:00"),
+        ("7/01", "00:00"), ("7/01", "03:00"), ("7/01", "06:00"), ("7/01", "09:00"),
+    ]
+
+    fixtures = []
+    for i, (home, away) in enumerate(r32_pairs):
+        if home == "?" or away == "?":
+            continue
+        if i < len(dates):
+            fixtures.append((*dates[i], home, away, "R32"))
+
+    return fixtures
+
+
 def generate_match_data(teams_data: list[dict]):
     """Use calibrated Elo from cup26matches data to predict upcoming fixtures."""
     # Build Elo lookup — we approximate from the probabilities.json data
@@ -611,12 +698,10 @@ def generate_match_data(teams_data: list[dict]):
 
     matches = []
     for date_str, time_str, home, away, group in FIXTURES:
-        # Convert to comparable format
         match_month = int(date_str.split("/")[0])
         match_day = int(date_str.split("/")[1])
         match_date = datetime(2026, match_month, match_day, tzinfo=TZ)
 
-        # Only include fixtures from today onward
         if match_date.date() < now.date():
             continue
 
@@ -626,16 +711,27 @@ def generate_match_data(teams_data: list[dict]):
         wa, d, wb = match_prob(ra, rb, hb)
 
         matches.append({
-            "home": home,
-            "away": away,
-            "date": f"{date_str} {time_str} CST",
-            "date_short": f"{date_str}",
-            "time": time_str,
-            "group": group,
-            "winA": wa,
-            "draw": d,
-            "winB": wb,
+            "home": home, "away": away,
+            "date": f"{date_str} {time_str} CST", "date_short": f"{date_str}",
+            "time": time_str, "group": group,
+            "winA": wa, "draw": d, "winB": wb,
         })
+
+    # If no upcoming group-stage fixtures, generate knockout fixtures
+    if not matches:
+        print("[predictions] No group fixtures remaining — building knockout bracket...")
+        knockout = _build_knockout_fixtures(ratings)
+        for date_str, time_str, home, away, round_name in knockout:
+            ra = ratings.get(home, 1500)
+            rb = ratings.get(away, 1500)
+            wa, d, wb = match_prob(ra, rb)
+            matches.append({
+                "home": home, "away": away,
+                "date": f"{date_str} {time_str} CST", "date_short": f"{date_str}",
+                "time": time_str, "group": round_name,
+                "winA": wa, "draw": d, "winB": wb,
+            })
+        print(f"[predictions] Added {len(knockout)} knockout fixtures")
 
     return matches
 
