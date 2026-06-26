@@ -3,6 +3,41 @@
 <rect x="12" y="10" width="576" height="380" fill="#161b22" rx="8"/>
 <text x="24" y="36" fill="#58a6ff" font-size="18" font-family="monospace" text-anchor="start" font-weight="bold">⚽ 接下来比赛预测 · Elo + 市场共识</text>
 <text x="24" y="58" fill="#8b949e" font-size="12" font-family="monospace" text-anchor="start">Elo + Dixon-Coles 模型 · 混入 Polymarket 赔率 (40/60) · 胜/平/负</text>
-<text x="24" y="90" fill="#8b949e" font-size="12" font-family="monospace" text-anchor="start">小组赛已结束 · 淘汰赛数据待发布</text>
-<text x="570" y="380" fill="#8b949e" font-size="9" font-family="monospace" text-anchor="end">更新 2026-06-26 10:36 CST</text>
+<text x="24" y="88" fill="#8b949e" font-size="10" font-family="monospace" text-anchor="start">6/28</text>
+<text x="100" y="88" fill="#e6edf3" font-size="11" font-family="monospace" text-anchor="start">🇲🇽 墨西哥  vs  🇨🇦 加拿大</text>
+<rect x="300" y="74" width="79" height="14" fill="#3fb950" rx="3"/>
+<rect x="379" y="74" width="47" height="14" fill="#d2991d"/>
+<rect x="427" y="74" width="42" height="14" fill="#f85149" rx="3"/>
+<text x="300" y="98" fill="#e6edf3" font-size="8" font-family="monospace" text-anchor="start">Elo 47% / 28% / 25%</text>
+<text x="24" y="126" fill="#8b949e" font-size="10" font-family="monospace" text-anchor="start">6/28</text>
+<text x="100" y="126" fill="#e6edf3" font-size="11" font-family="monospace" text-anchor="start">🇧🇷 巴西  vs  🇦🇺 澳大利亚</text>
+<rect x="300" y="112" width="97" height="14" fill="#3fb950" rx="3"/>
+<rect x="397" y="112" width="43" height="14" fill="#d2991d"/>
+<rect x="441" y="112" width="28" height="14" fill="#f85149" rx="3"/>
+<text x="300" y="136" fill="#e6edf3" font-size="8" font-family="monospace" text-anchor="start">Elo 58% / 26% / 17%</text>
+<text x="24" y="164" fill="#8b949e" font-size="10" font-family="monospace" text-anchor="start">6/28</text>
+<text x="100" y="164" fill="#e6edf3" font-size="11" font-family="monospace" text-anchor="start">🇩🇪 德国  vs  🇯🇵 日本</text>
+<rect x="300" y="150" width="80" height="14" fill="#3fb950" rx="3"/>
+<rect x="380" y="150" width="47" height="14" fill="#d2991d"/>
+<rect x="428" y="150" width="41" height="14" fill="#f85149" rx="3"/>
+<text x="300" y="174" fill="#e6edf3" font-size="8" font-family="monospace" text-anchor="start">Elo 48% / 28% / 25%</text>
+<text x="24" y="202" fill="#8b949e" font-size="10" font-family="monospace" text-anchor="start">6/28</text>
+<text x="100" y="202" fill="#e6edf3" font-size="11" font-family="monospace" text-anchor="start">🇪🇬 埃及  vs  🇺🇾 乌拉圭</text>
+<rect x="300" y="188" width="35" height="14" fill="#3fb950" rx="3"/>
+<rect x="335" y="188" width="46" height="14" fill="#d2991d"/>
+<rect x="381" y="188" width="88" height="14" fill="#f85149" rx="3"/>
+<text x="300" y="212" fill="#e6edf3" font-size="8" font-family="monospace" text-anchor="start">Elo 21% / 27% / 52%</text>
+<text x="24" y="240" fill="#8b949e" font-size="10" font-family="monospace" text-anchor="start">6/29</text>
+<text x="100" y="240" fill="#e6edf3" font-size="11" font-family="monospace" text-anchor="start">🇫🇷 法国  vs  🇦🇹 奥地利</text>
+<rect x="300" y="226" width="119" height="14" fill="#3fb950" rx="3"/>
+<rect x="419" y="226" width="35" height="14" fill="#d2991d"/>
+<rect x="455" y="226" width="14" height="14" fill="#f85149" rx="3"/>
+<text x="300" y="250" fill="#e6edf3" font-size="8" font-family="monospace" text-anchor="start">Elo 70% / 21% / 9%</text>
+<text x="24" y="278" fill="#8b949e" font-size="10" font-family="monospace" text-anchor="start">6/29</text>
+<text x="100" y="278" fill="#e6edf3" font-size="11" font-family="monospace" text-anchor="start">🇨🇴 哥伦比亚  vs  🇬🇭 加纳</text>
+<rect x="300" y="264" width="105" height="14" fill="#3fb950" rx="3"/>
+<rect x="405" y="264" width="41" height="14" fill="#d2991d"/>
+<rect x="446" y="264" width="23" height="14" fill="#f85149" rx="3"/>
+<text x="300" y="288" fill="#e6edf3" font-size="8" font-family="monospace" text-anchor="start">Elo 62% / 24% / 14%</text>
+<text x="570" y="380" fill="#8b949e" font-size="9" font-family="monospace" text-anchor="end">更新 2026-06-26 10:41 CST</text>
 </svg>
