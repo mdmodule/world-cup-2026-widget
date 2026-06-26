@@ -1050,10 +1050,6 @@ def main():
     with open(os.path.join(OUT_DIR, "path-to-final.svg"), "w", encoding="utf-8") as f:
         f.write(generate_path_to_final(teams))
 
-    print("[predictions] Generating upcoming.svg...")
-    with open(os.path.join(OUT_DIR, "upcoming.svg"), "w", encoding="utf-8") as f:
-        f.write(generate_upcoming(teams, upcoming))
-
     print("[predictions] Generating day-tracker.svg...")
     with open(os.path.join(OUT_DIR, "day-tracker.svg"), "w", encoding="utf-8") as f:
         f.write(generate_day_tracker())
@@ -1073,7 +1069,7 @@ def main():
         f.write(record_svg)
 
     print(f"[predictions] ✅ All SVGs generated in {OUT_DIR}")
-    for fname in ["day-tracker.svg", "record.svg", "next-match.svg", "championship.svg", "path-to-final.svg", "upcoming.svg"]:
+    for fname in ["day-tracker.svg", "record.svg", "bracket.svg", "next-match.svg", "championship.svg", "path-to-final.svg"]:
         fpath = os.path.join(OUT_DIR, fname)
         if os.path.exists(fpath):
             size = os.path.getsize(fpath)
