@@ -11,68 +11,68 @@
 <text x="531" y="92" fill="#8b949e" font-size="11" font-family="monospace" text-anchor="middle">决赛</text>
 <text x="609" y="92" fill="#8b949e" font-size="11" font-family="monospace" text-anchor="middle">🏆冠军</text>
 <line x1="30" y1="100" x2="648" y2="100" stroke="#30363d" stroke-width="1"/>
-<text x="30" y="125" fill="#e6edf3" font-size="12" font-family="monospace" text-anchor="start">🇪🇸 西班牙</text>
+<text x="30" y="125" fill="#e6edf3" font-size="12" font-family="monospace" text-anchor="start">🇫🇷 法国</text>
 <text x="219" y="125" fill="#e6edf3" font-size="11" font-family="monospace" text-anchor="middle">100.0%</text>
-<text x="297" y="125" fill="#e6edf3" font-size="11" font-family="monospace" text-anchor="middle">82.1%</text>
-<text x="375" y="125" fill="#e6edf3" font-size="11" font-family="monospace" text-anchor="middle">54.9%</text>
+<text x="297" y="125" fill="#e6edf3" font-size="11" font-family="monospace" text-anchor="middle">85.6%</text>
+<text x="375" y="125" fill="#e6edf3" font-size="11" font-family="monospace" text-anchor="middle">57.4%</text>
 <text x="453" y="125" fill="#e6edf3" font-size="11" font-family="monospace" text-anchor="middle">41.5%</text>
-<text x="531" y="125" fill="#e6edf3" font-size="11" font-family="monospace" text-anchor="middle">25.8%</text>
-<text x="609" y="125" fill="#d2991d" font-size="12" font-family="monospace" text-anchor="middle" font-weight="bold">15.7%</text>
+<text x="531" y="125" fill="#e6edf3" font-size="11" font-family="monospace" text-anchor="middle">26.2%</text>
+<text x="609" y="125" fill="#d2991d" font-size="12" font-family="monospace" text-anchor="middle" font-weight="bold">15.9%</text>
 <line x1="30" y1="131" x2="648" y2="131" stroke="#30363d" stroke-width="0.5"/>
-<text x="30" y="155" fill="#e6edf3" font-size="12" font-family="monospace" text-anchor="start">🇫🇷 法国</text>
+<text x="30" y="155" fill="#e6edf3" font-size="12" font-family="monospace" text-anchor="start">🇪🇸 西班牙</text>
 <text x="219" y="155" fill="#e6edf3" font-size="11" font-family="monospace" text-anchor="middle">100.0%</text>
-<text x="297" y="155" fill="#e6edf3" font-size="11" font-family="monospace" text-anchor="middle">85.5%</text>
-<text x="375" y="155" fill="#e6edf3" font-size="11" font-family="monospace" text-anchor="middle">57.1%</text>
-<text x="453" y="155" fill="#e6edf3" font-size="11" font-family="monospace" text-anchor="middle">40.3%</text>
-<text x="531" y="155" fill="#e6edf3" font-size="11" font-family="monospace" text-anchor="middle">25.3%</text>
+<text x="297" y="155" fill="#e6edf3" font-size="11" font-family="monospace" text-anchor="middle">82.4%</text>
+<text x="375" y="155" fill="#e6edf3" font-size="11" font-family="monospace" text-anchor="middle">55.2%</text>
+<text x="453" y="155" fill="#e6edf3" font-size="11" font-family="monospace" text-anchor="middle">41.5%</text>
+<text x="531" y="155" fill="#e6edf3" font-size="11" font-family="monospace" text-anchor="middle">25.2%</text>
 <text x="609" y="155" fill="#d2991d" font-size="12" font-family="monospace" text-anchor="middle" font-weight="bold">15.5%</text>
 <line x1="30" y1="161" x2="648" y2="161" stroke="#30363d" stroke-width="0.5"/>
 <text x="30" y="185" fill="#e6edf3" font-size="12" font-family="monospace" text-anchor="start">🇦🇷 阿根廷</text>
 <text x="219" y="185" fill="#e6edf3" font-size="11" font-family="monospace" text-anchor="middle">100.0%</text>
 <text x="297" y="185" fill="#e6edf3" font-size="11" font-family="monospace" text-anchor="middle">84.2%</text>
-<text x="375" y="185" fill="#e6edf3" font-size="11" font-family="monospace" text-anchor="middle">62.7%</text>
-<text x="453" y="185" fill="#e6edf3" font-size="11" font-family="monospace" text-anchor="middle">42.5%</text>
-<text x="531" y="185" fill="#e6edf3" font-size="11" font-family="monospace" text-anchor="middle">23.9%</text>
-<text x="609" y="185" fill="#d2991d" font-size="12" font-family="monospace" text-anchor="middle" font-weight="bold">13.3%</text>
+<text x="375" y="185" fill="#e6edf3" font-size="11" font-family="monospace" text-anchor="middle">62.5%</text>
+<text x="453" y="185" fill="#e6edf3" font-size="11" font-family="monospace" text-anchor="middle">42.2%</text>
+<text x="531" y="185" fill="#e6edf3" font-size="11" font-family="monospace" text-anchor="middle">24.5%</text>
+<text x="609" y="185" fill="#d2991d" font-size="12" font-family="monospace" text-anchor="middle" font-weight="bold">13.1%</text>
 <line x1="30" y1="191" x2="648" y2="191" stroke="#30363d" stroke-width="0.5"/>
 <text x="30" y="215" fill="#e6edf3" font-size="12" font-family="monospace" text-anchor="start">🏴󠁧󠁢󠁥󠁮󠁧󠁿 英格兰</text>
 <text x="219" y="215" fill="#e6edf3" font-size="11" font-family="monospace" text-anchor="middle">100.0%</text>
-<text x="297" y="215" fill="#e6edf3" font-size="11" font-family="monospace" text-anchor="middle">80.2%</text>
-<text x="375" y="215" fill="#e6edf3" font-size="11" font-family="monospace" text-anchor="middle">55.3%</text>
-<text x="453" y="215" fill="#e6edf3" font-size="11" font-family="monospace" text-anchor="middle">34.7%</text>
-<text x="531" y="215" fill="#e6edf3" font-size="11" font-family="monospace" text-anchor="middle">21.2%</text>
-<text x="609" y="215" fill="#d2991d" font-size="12" font-family="monospace" text-anchor="middle" font-weight="bold">12.4%</text>
+<text x="297" y="215" fill="#e6edf3" font-size="11" font-family="monospace" text-anchor="middle">78.8%</text>
+<text x="375" y="215" fill="#e6edf3" font-size="11" font-family="monospace" text-anchor="middle">53.5%</text>
+<text x="453" y="215" fill="#e6edf3" font-size="11" font-family="monospace" text-anchor="middle">34.9%</text>
+<text x="531" y="215" fill="#e6edf3" font-size="11" font-family="monospace" text-anchor="middle">21.1%</text>
+<text x="609" y="215" fill="#d2991d" font-size="12" font-family="monospace" text-anchor="middle" font-weight="bold">12.1%</text>
 <line x1="30" y1="221" x2="648" y2="221" stroke="#30363d" stroke-width="0.5"/>
 <text x="30" y="245" fill="#e6edf3" font-size="12" font-family="monospace" text-anchor="start">🇧🇷 巴西</text>
 <text x="219" y="245" fill="#e6edf3" font-size="11" font-family="monospace" text-anchor="middle">100.0%</text>
-<text x="297" y="245" fill="#e6edf3" font-size="11" font-family="monospace" text-anchor="middle">68.8%</text>
-<text x="375" y="245" fill="#e6edf3" font-size="11" font-family="monospace" text-anchor="middle">42.9%</text>
-<text x="453" y="245" fill="#e6edf3" font-size="11" font-family="monospace" text-anchor="middle">23.9%</text>
-<text x="531" y="245" fill="#e6edf3" font-size="11" font-family="monospace" text-anchor="middle">13.4%</text>
-<text x="609" y="245" fill="#d2991d" font-size="12" font-family="monospace" text-anchor="middle" font-weight="bold">7.0%</text>
+<text x="297" y="245" fill="#e6edf3" font-size="11" font-family="monospace" text-anchor="middle">69.1%</text>
+<text x="375" y="245" fill="#e6edf3" font-size="11" font-family="monospace" text-anchor="middle">46.4%</text>
+<text x="453" y="245" fill="#e6edf3" font-size="11" font-family="monospace" text-anchor="middle">25.8%</text>
+<text x="531" y="245" fill="#e6edf3" font-size="11" font-family="monospace" text-anchor="middle">14.2%</text>
+<text x="609" y="245" fill="#d2991d" font-size="12" font-family="monospace" text-anchor="middle" font-weight="bold">7.3%</text>
 <line x1="30" y1="251" x2="648" y2="251" stroke="#30363d" stroke-width="0.5"/>
 <text x="30" y="275" fill="#e6edf3" font-size="12" font-family="monospace" text-anchor="start">🇵🇹 葡萄牙</text>
 <text x="219" y="275" fill="#e6edf3" font-size="11" font-family="monospace" text-anchor="middle">100.0%</text>
 <text x="297" y="275" fill="#e6edf3" font-size="11" font-family="monospace" text-anchor="middle">72.4%</text>
-<text x="375" y="275" fill="#e6edf3" font-size="11" font-family="monospace" text-anchor="middle">44.3%</text>
-<text x="453" y="275" fill="#e6edf3" font-size="11" font-family="monospace" text-anchor="middle">26.4%</text>
-<text x="531" y="275" fill="#e6edf3" font-size="11" font-family="monospace" text-anchor="middle">13.9%</text>
+<text x="375" y="275" fill="#e6edf3" font-size="11" font-family="monospace" text-anchor="middle">44.2%</text>
+<text x="453" y="275" fill="#e6edf3" font-size="11" font-family="monospace" text-anchor="middle">26.1%</text>
+<text x="531" y="275" fill="#e6edf3" font-size="11" font-family="monospace" text-anchor="middle">13.6%</text>
 <text x="609" y="275" fill="#d2991d" font-size="12" font-family="monospace" text-anchor="middle" font-weight="bold">6.9%</text>
 <line x1="30" y1="281" x2="648" y2="281" stroke="#30363d" stroke-width="0.5"/>
 <text x="30" y="305" fill="#e6edf3" font-size="12" font-family="monospace" text-anchor="start">🇩🇪 德国</text>
 <text x="219" y="305" fill="#e6edf3" font-size="11" font-family="monospace" text-anchor="middle">100.0%</text>
-<text x="297" y="305" fill="#e6edf3" font-size="11" font-family="monospace" text-anchor="middle">82.0%</text>
-<text x="375" y="305" fill="#e6edf3" font-size="11" font-family="monospace" text-anchor="middle">38.2%</text>
-<text x="453" y="305" fill="#e6edf3" font-size="11" font-family="monospace" text-anchor="middle">23.7%</text>
-<text x="531" y="305" fill="#e6edf3" font-size="11" font-family="monospace" text-anchor="middle">12.0%</text>
-<text x="609" y="305" fill="#d2991d" font-size="12" font-family="monospace" text-anchor="middle" font-weight="bold">5.7%</text>
+<text x="297" y="305" fill="#e6edf3" font-size="11" font-family="monospace" text-anchor="middle">81.8%</text>
+<text x="375" y="305" fill="#e6edf3" font-size="11" font-family="monospace" text-anchor="middle">35.1%</text>
+<text x="453" y="305" fill="#e6edf3" font-size="11" font-family="monospace" text-anchor="middle">21.4%</text>
+<text x="531" y="305" fill="#e6edf3" font-size="11" font-family="monospace" text-anchor="middle">10.8%</text>
+<text x="609" y="305" fill="#d2991d" font-size="12" font-family="monospace" text-anchor="middle" font-weight="bold">5.2%</text>
 <line x1="30" y1="311" x2="648" y2="311" stroke="#30363d" stroke-width="0.5"/>
 <text x="30" y="335" fill="#e6edf3" font-size="12" font-family="monospace" text-anchor="start">🇳🇱 荷兰</text>
 <text x="219" y="335" fill="#e6edf3" font-size="11" font-family="monospace" text-anchor="middle">100.0%</text>
-<text x="297" y="335" fill="#e6edf3" font-size="11" font-family="monospace" text-anchor="middle">52.9%</text>
-<text x="375" y="335" fill="#e6edf3" font-size="11" font-family="monospace" text-anchor="middle">38.5%</text>
-<text x="453" y="335" fill="#e6edf3" font-size="11" font-family="monospace" text-anchor="middle">16.2%</text>
-<text x="531" y="335" fill="#e6edf3" font-size="11" font-family="monospace" text-anchor="middle">7.5%</text>
+<text x="297" y="335" fill="#e6edf3" font-size="11" font-family="monospace" text-anchor="middle">53.2%</text>
+<text x="375" y="335" fill="#e6edf3" font-size="11" font-family="monospace" text-anchor="middle">39.1%</text>
+<text x="453" y="335" fill="#e6edf3" font-size="11" font-family="monospace" text-anchor="middle">15.7%</text>
+<text x="531" y="335" fill="#e6edf3" font-size="11" font-family="monospace" text-anchor="middle">7.2%</text>
 <text x="609" y="335" fill="#d2991d" font-size="12" font-family="monospace" text-anchor="middle" font-weight="bold">3.2%</text>
-<text x="648" y="326" fill="#8b949e" font-size="9" font-family="monospace" text-anchor="end">更新 2026-06-27 03:54 CST · cup26matches.com</text>
+<text x="648" y="326" fill="#8b949e" font-size="9" font-family="monospace" text-anchor="end">更新 2026-06-27 05:22 CST · cup26matches.com</text>
 </svg>
