@@ -914,6 +914,94 @@ def generate_record(match_results):
 
 
 # ═══════════════════════════════════════════════════════════════
+# BRACKET — knockout tournament tree
+# ═══════════════════════════════════════════════════════════════
+
+def generate_bracket(teams):
+    """Generate a knockout bracket tree SVG with real qualified teams."""
+    # Get knockout fixtures (reuse the builder)
+    ratings = {}
+    for t in teams:
+        ratings[t["slug"]] = 2000  # placeholder — we just need fixtures not predictions
+    knockout = _build_knockout_fixtures(ratings)
+
+    if not knockout:
+        return '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 80"><rect width="500" height="80" fill="#0d1117"/><text x="20" y="40" fill="#8b949e" font-size="14" font-family="monospace">暂无淘汰赛数据</text></svg>'
+
+    r32 = knockout[:16]  # first 16 are R32
+
+    # Layout constants
+    col_w = 140
+    row_h = 42
+    name_x = 10
+    header_h = 80
+    W = name_x + col_w * 5 + 30
+    H = header_h + min(len(r32), 16) * row_h // 2 + 40
+
+    parts = [svg_header(W, H)]
+    parts.append(svg_rect(0, 0, W, H, DARK_BG))
+    parts.append(svg_rect(8, 6, W - 16, H - 12, CARD_BG, 8))
+
+    # Title
+    parts.append(svg_text(20, 28, "🌲 淘汰赛对阵图 · Knockout Bracket", GOLD, 16, bold=True))
+    parts.append(svg_text(20, 46, "R32 对阵 · 真实小组排名自动生成", TEXT_SECONDARY, 10))
+
+    # Column headers
+    rounds = ["32强", "16强", "8强", "半决赛", "决赛"]
+    for ci, label in enumerate(rounds):
+        cx = name_x + 60 + ci * col_w
+        parts.append(svg_text(cx, 72, label, ACCENT, 10, "middle", True))
+
+    # Draw R32 slots (leftmost column)
+    # Each row is a match: home vs away
+    y0 = 90
+    for i in range(0, len(r32), 2):
+        if i + 1 >= len(r32):
+            break
+        match_a = r32[i]
+        match_b = r32[i + 1]
+        row = i // 2
+        
+        y_top = y0 + row * row_h * 2
+        y_bot = y_top + row_h
+
+        # Home team
+        ha = TEAM_NAMES.get(match_a[2], (match_a[2], ""))
+        parts.append(svg_text(name_x + 60, y_top + 14, f"{ha[1]} {ha[0]}", TEXT_PRIMARY, 10, "end"))
+        # Away team
+        hb = TEAM_NAMES.get(match_a[3], (match_a[3], ""))
+        parts.append(svg_text(name_x + 60, y_bot + 14, f"{hb[1]} {hb[0]}", TEXT_PRIMARY, 10, "end"))
+        
+        # Date
+        parts.append(svg_text(name_x + 68, y_top, match_a[0], TEXT_SECONDARY, 8))
+
+        # Connector lines to R16 column
+        cx1 = name_x + 100
+        my = (y_top + y_bot + row_h) // 2
+        parts.append(f'<line x1="{cx1}" y1="{y_top + 14}" x2="{cx1 + 20}" y2="{y_top + 14}" stroke="{BORDER}" stroke-width="1"/>')
+        parts.append(f'<line x1="{cx1}" y1="{y_bot + 14}" x2="{cx1 + 20}" y2="{y_bot + 14}" stroke="{BORDER}" stroke-width="1"/>')
+        parts.append(f'<path d="M{cx1 + 20} {y_top + 14} L{cx1 + 35} {y_top + 14} Q{cx1 + 40} {y_top + 14} {cx1 + 40} {my} L{cx1 + 40} {my}" fill="none" stroke="{BORDER}" stroke-width="1"/>')
+        parts.append(f'<path d="M{cx1 + 20} {y_bot + 14} L{cx1 + 35} {y_bot + 14} Q{cx1 + 40} {y_bot + 14} {cx1 + 40} {my}" fill="none" stroke="{BORDER}" stroke-width="1"/>')
+
+        # Winner slot in R16
+        parts.append(svg_text(cx1 + 55, my + 5, "?", TEXT_SECONDARY, 10, "middle"))
+        
+        # R16 connector
+        if row % 4 == 0 and row + 2 < len(r32) // 2:
+            next_my = y0 + (row + 2) * row_h * 2
+            gmy = (my + next_my) // 2
+            parts.append(f'<path d="M{cx1 + 80} {my} L{cx1 + 95} {my} Q{cx1 + 100} {my} {cx1 + 100} {gmy}" fill="none" stroke="{BORDER}" stroke-width="1"/>')
+            parts.append(f'<path d="M{cx1 + 80} {next_my} L{cx1 + 95} {next_my} Q{cx1 + 100} {next_my} {cx1 + 100} {gmy}" fill="none" stroke="{BORDER}" stroke-width="1"/>')
+
+    # Footer
+    now_str = datetime.now(TZ).strftime("%Y-%m-%d %H:%M")
+    parts.append(svg_text(W - 20, H - 12, f"更新 {now_str} CST · 自动生成", TEXT_SECONDARY, 8, "end"))
+
+    parts.append("</svg>")
+    return "\n".join(parts)
+
+
+# ═══════════════════════════════════════════════════════════════
 # MAIN
 # ═══════════════════════════════════════════════════════════════
 
@@ -973,6 +1061,11 @@ def main():
     print("[predictions] Generating day-tracker.svg...")
     with open(os.path.join(OUT_DIR, "day-tracker.svg"), "w", encoding="utf-8") as f:
         f.write(generate_day_tracker())
+
+    print("[predictions] Generating bracket.svg...")
+    bracket_svg = generate_bracket(teams)
+    with open(os.path.join(OUT_DIR, "bracket.svg"), "w", encoding="utf-8") as f:
+        f.write(bracket_svg)
 
     print("[predictions] Fetching match results from openfootball...")
     results = fetch_match_results()

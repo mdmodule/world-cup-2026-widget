@@ -10,9 +10,11 @@
 ## 📊 世界杯进度 / World Cup Progress
 
 <!-- WC26:START -->
-<img src=".github/wc26/day-tracker.svg?v=06221728" alt="World Cup 2026 — day tracker" />
+<img src=".github/wc26/day-tracker.svg" alt="World Cup 2026 — day tracker" />
 
-<img src=".github/wc26/record.svg?v=06221728" alt="World Cup 2026 — model scorecard" />
+<img src=".github/wc26/bracket.svg" alt="World Cup 2026 — knockout bracket" />
+
+<img src=".github/wc26/record.svg" alt="World Cup 2026 — model scorecard" />
 <!-- WC26:END -->
 
 ---
