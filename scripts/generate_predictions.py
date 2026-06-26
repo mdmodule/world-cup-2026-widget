@@ -928,15 +928,18 @@ def generate_bracket(teams):
     if not knockout:
         return '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 80"><rect width="500" height="80" fill="#0d1117"/><text x="20" y="40" fill="#8b949e" font-size="14" font-family="monospace">暂无淘汰赛数据</text></svg>'
 
-    r32 = knockout[:16]  # first 16 are R32
+    r32 = knockout  # all R32 fixtures
+    num_matches = len(r32)
+    num_rows = (num_matches + 1) // 2  # 2 matches per row
 
     # Layout constants
-    col_w = 140
-    row_h = 42
-    name_x = 10
+    col_w = 120
+    match_h = 36
+    gap = 8
+    pair_h = match_h * 2 + gap
     header_h = 80
-    W = name_x + col_w * 5 + 30
-    H = header_h + min(len(r32), 16) * row_h // 2 + 40
+    W = 400
+    H = header_h + num_rows * (pair_h + 12) + 50
 
     parts = [svg_header(W, H)]
     parts.append(svg_rect(0, 0, W, H, DARK_BG))
@@ -944,54 +947,47 @@ def generate_bracket(teams):
 
     # Title
     parts.append(svg_text(20, 28, "🌲 淘汰赛对阵图 · Knockout Bracket", GOLD, 16, bold=True))
-    parts.append(svg_text(20, 46, "R32 对阵 · 真实小组排名自动生成", TEXT_SECONDARY, 10))
+    parts.append(svg_text(20, 48, "R32 对阵 · 小组排名自动生成    每组前2晋级 → R16", TEXT_SECONDARY, 10))
 
-    # Column headers
-    rounds = ["32强", "16强", "8强", "半决赛", "决赛"]
-    for ci, label in enumerate(rounds):
-        cx = name_x + 60 + ci * col_w
-        parts.append(svg_text(cx, 72, label, ACCENT, 10, "middle", True))
-
-    # Draw R32 slots (leftmost column)
-    # Each row is a match: home vs away
-    y0 = 90
-    for i in range(0, len(r32), 2):
-        if i + 1 >= len(r32):
-            break
+    # Draw R32 slots: each match pair feeds into R16
+    y0 = 70
+    for i in range(0, num_matches, 2):
         match_a = r32[i]
-        match_b = r32[i + 1]
-        row = i // 2
-        
-        y_top = y0 + row * row_h * 2
-        y_bot = y_top + row_h
+        pair_idx = i // 2
+        py = y0 + pair_idx * (pair_h + 12)  # y for this pair
 
-        # Home team
+        # --- Left match (match_a) ---
         ha = TEAM_NAMES.get(match_a[2], (match_a[2], ""))
-        parts.append(svg_text(name_x + 60, y_top + 14, f"{ha[1]} {ha[0]}", TEXT_PRIMARY, 10, "end"))
-        # Away team
         hb = TEAM_NAMES.get(match_a[3], (match_a[3], ""))
-        parts.append(svg_text(name_x + 60, y_bot + 14, f"{hb[1]} {hb[0]}", TEXT_PRIMARY, 10, "end"))
+        parts.append(svg_text(20, py + 16, f"{ha[1]} {ha[0]}", TEXT_PRIMARY, 11, "start"))
+        parts.append(svg_text(20, py + 34, f"{hb[1]} {hb[0]}", TEXT_PRIMARY, 11, "start"))
+        parts.append(svg_text(180, py + 16, match_a[0], TEXT_SECONDARY, 8, "end"))
         
-        # Date
-        parts.append(svg_text(name_x + 68, y_top, match_a[0], TEXT_SECONDARY, 8))
-
-        # Connector lines to R16 column
-        cx1 = name_x + 100
-        my = (y_top + y_bot + row_h) // 2
-        parts.append(f'<line x1="{cx1}" y1="{y_top + 14}" x2="{cx1 + 20}" y2="{y_top + 14}" stroke="{BORDER}" stroke-width="1"/>')
-        parts.append(f'<line x1="{cx1}" y1="{y_bot + 14}" x2="{cx1 + 20}" y2="{y_bot + 14}" stroke="{BORDER}" stroke-width="1"/>')
-        parts.append(f'<path d="M{cx1 + 20} {y_top + 14} L{cx1 + 35} {y_top + 14} Q{cx1 + 40} {y_top + 14} {cx1 + 40} {my} L{cx1 + 40} {my}" fill="none" stroke="{BORDER}" stroke-width="1"/>')
-        parts.append(f'<path d="M{cx1 + 20} {y_bot + 14} L{cx1 + 35} {y_bot + 14} Q{cx1 + 40} {y_bot + 14} {cx1 + 40} {my}" fill="none" stroke="{BORDER}" stroke-width="1"/>')
-
-        # Winner slot in R16
-        parts.append(svg_text(cx1 + 55, my + 5, "?", TEXT_SECONDARY, 10, "middle"))
+        if i + 1 < num_matches:
+            match_b = r32[i + 1]
+            hc = TEAM_NAMES.get(match_b[2], (match_b[2], ""))
+            hd = TEAM_NAMES.get(match_b[3], (match_b[3], ""))
+            parts.append(svg_text(20, py + 58, f"{hc[1]} {hc[0]}", TEXT_PRIMARY, 11, "start"))
+            parts.append(svg_text(20, py + 76, f"{hd[1]} {hd[0]}", TEXT_PRIMARY, 11, "start"))
+            parts.append(svg_text(180, py + 58, match_b[0], TEXT_SECONDARY, 8, "end"))
         
-        # R16 connector
-        if row % 4 == 0 and row + 2 < len(r32) // 2:
-            next_my = y0 + (row + 2) * row_h * 2
-            gmy = (my + next_my) // 2
-            parts.append(f'<path d="M{cx1 + 80} {my} L{cx1 + 95} {my} Q{cx1 + 100} {my} {cx1 + 100} {gmy}" fill="none" stroke="{BORDER}" stroke-width="1"/>')
-            parts.append(f'<path d="M{cx1 + 80} {next_my} L{cx1 + 95} {next_my} Q{cx1 + 100} {next_my} {cx1 + 100} {gmy}" fill="none" stroke="{BORDER}" stroke-width="1"/>')
+        # Brackets around the pair
+        mid = py + pair_h // 2
+        parts.append(f'<line x1="195" y1="{py + 16}" x2="210" y2="{py + 16}" stroke="{BORDER}" stroke-width="1"/>')
+        parts.append(f'<line x1="195" y1="{py + 34}" x2="210" y2="{py + 34}" stroke="{BORDER}" stroke-width="1"/>')
+        if i + 1 < num_matches:
+            parts.append(f'<line x1="195" y1="{py + 58}" x2="210" y2="{py + 58}" stroke="{BORDER}" stroke-width="1"/>')
+            parts.append(f'<line x1="195" y1="{py + 76}" x2="210" y2="{py + 76}" stroke="{BORDER}" stroke-width="1"/>')
+            parts.append(f'<path d="M210 {py + 16} L225 {py + 16} Q230 {py + 16} 230 {mid} L230 {mid}" fill="none" stroke="{BORDER}" stroke-width="1"/>')
+            parts.append(f'<path d="M210 {py + 34} L225 {py + 34} Q230 {py + 34} 230 {mid}" fill="none" stroke="{BORDER}" stroke-width="1"/>')
+            parts.append(f'<path d="M210 {py + 58} L225 {py + 58} Q230 {py + 58} 230 {mid}" fill="none" stroke="{BORDER}" stroke-width="1"/>')
+            parts.append(f'<path d="M210 {py + 76} L225 {py + 76} Q230 {py + 76} 230 {mid}" fill="none" stroke="{BORDER}" stroke-width="1"/>')
+        else:
+            parts.append(f'<path d="M210 {py + 16} L225 {py + 16} Q230 {py + 16} 230 {mid}" fill="none" stroke="{BORDER}" stroke-width="1"/>')
+            parts.append(f'<path d="M210 {py + 34} L225 {py + 34} Q230 {py + 34} 230 {mid}" fill="none" stroke="{BORDER}" stroke-width="1"/>')
+        
+        # Arrow to R16
+        parts.append(svg_text(240, mid + 5, "→ R16", TEXT_SECONDARY, 9, "start"))
 
     # Footer
     now_str = datetime.now(TZ).strftime("%Y-%m-%d %H:%M")
