@@ -256,7 +256,7 @@ def generate_next_match(teams, match_data=None, pm_odds=None):
     parts.append(svg_text(24, 58, "Elo + Dixon-Coles 模型 · 混入 Polymarket 赔率 (40/60) · 胜/平/负", TEXT_SECONDARY, 12))
 
     if not match_data:
-        parts.append(svg_text(24, 90, "暂无赛程数据", TEXT_SECONDARY, 12))
+        parts.append(svg_text(24, 90, "小组赛已结束 · 淘汰赛数据待发布", TEXT_SECONDARY, 12))
     else:
         sy = 72
         for i, m in enumerate(match_data[:6]):
@@ -301,7 +301,7 @@ def generate_upcoming(teams, match_data=None):
     parts.append(svg_text(30, 38, "📅 即将到来 / Upcoming Predictions", ACCENT, 18, bold=True))
 
     if not match_data or len(match_data) < 2:
-        parts.append(svg_text(30, 80, "暂无赛程数据", TEXT_SECONDARY, 13))
+        parts.append(svg_text(30, 80, "小组赛已结束 · 淘汰赛数据待发布", TEXT_SECONDARY, 13))
     else:
         upcoming = match_data[1:6]  # next 5 after the current one
         row_h = 38
