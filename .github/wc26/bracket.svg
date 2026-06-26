@@ -1,62 +1,97 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 740 372" width="1110" height="558">
-<rect x="0" y="0" width="740" height="372" fill="#0d1117"/>
-<rect x="8" y="6" width="724" height="360" fill="#161b22" rx="8"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 682" width="600" height="1023">
+<rect x="0" y="0" width="400" height="682" fill="#0d1117"/>
+<rect x="8" y="6" width="384" height="670" fill="#161b22" rx="8"/>
 <text x="20" y="28" fill="#d2991d" font-size="16" font-family="monospace" text-anchor="start" font-weight="bold">🌲 淘汰赛对阵图 · Knockout Bracket</text>
-<text x="20" y="46" fill="#8b949e" font-size="10" font-family="monospace" text-anchor="start">R32 对阵 · 真实小组排名自动生成</text>
-<text x="70" y="72" fill="#58a6ff" font-size="10" font-family="monospace" text-anchor="middle" font-weight="bold">32强</text>
-<text x="210" y="72" fill="#58a6ff" font-size="10" font-family="monospace" text-anchor="middle" font-weight="bold">16强</text>
-<text x="350" y="72" fill="#58a6ff" font-size="10" font-family="monospace" text-anchor="middle" font-weight="bold">8强</text>
-<text x="490" y="72" fill="#58a6ff" font-size="10" font-family="monospace" text-anchor="middle" font-weight="bold">半决赛</text>
-<text x="630" y="72" fill="#58a6ff" font-size="10" font-family="monospace" text-anchor="middle" font-weight="bold">决赛</text>
-<text x="70" y="104" fill="#e6edf3" font-size="10" font-family="monospace" text-anchor="end">🇲🇽 墨西哥</text>
-<text x="70" y="146" fill="#e6edf3" font-size="10" font-family="monospace" text-anchor="end">🇨🇦 加拿大</text>
-<text x="78" y="90" fill="#8b949e" font-size="8" font-family="monospace" text-anchor="start">6/28</text>
-<line x1="110" y1="104" x2="130" y2="104" stroke="#30363d" stroke-width="1"/>
-<line x1="110" y1="146" x2="130" y2="146" stroke="#30363d" stroke-width="1"/>
-<path d="M130 104 L145 104 Q150 104 150 132 L150 132" fill="none" stroke="#30363d" stroke-width="1"/>
-<path d="M130 146 L145 146 Q150 146 150 132" fill="none" stroke="#30363d" stroke-width="1"/>
-<text x="165" y="137" fill="#8b949e" font-size="10" font-family="monospace" text-anchor="middle">?</text>
-<path d="M190 132 L205 132 Q210 132 210 195" fill="none" stroke="#30363d" stroke-width="1"/>
-<path d="M190 258 L205 258 Q210 258 210 195" fill="none" stroke="#30363d" stroke-width="1"/>
-<text x="70" y="188" fill="#e6edf3" font-size="10" font-family="monospace" text-anchor="end">🇩🇪 德国</text>
-<text x="70" y="230" fill="#e6edf3" font-size="10" font-family="monospace" text-anchor="end">🇯🇵 日本</text>
-<text x="78" y="174" fill="#8b949e" font-size="8" font-family="monospace" text-anchor="start">6/28</text>
-<line x1="110" y1="188" x2="130" y2="188" stroke="#30363d" stroke-width="1"/>
-<line x1="110" y1="230" x2="130" y2="230" stroke="#30363d" stroke-width="1"/>
-<path d="M130 188 L145 188 Q150 188 150 216 L150 216" fill="none" stroke="#30363d" stroke-width="1"/>
-<path d="M130 230 L145 230 Q150 230 150 216" fill="none" stroke="#30363d" stroke-width="1"/>
-<text x="165" y="221" fill="#8b949e" font-size="10" font-family="monospace" text-anchor="middle">?</text>
-<text x="70" y="272" fill="#e6edf3" font-size="10" font-family="monospace" text-anchor="end">🇫🇷 法国</text>
-<text x="70" y="314" fill="#e6edf3" font-size="10" font-family="monospace" text-anchor="end">🇦🇹 奥地利</text>
-<text x="78" y="258" fill="#8b949e" font-size="8" font-family="monospace" text-anchor="start">6/29</text>
-<line x1="110" y1="272" x2="130" y2="272" stroke="#30363d" stroke-width="1"/>
-<line x1="110" y1="314" x2="130" y2="314" stroke="#30363d" stroke-width="1"/>
-<path d="M130 272 L145 272 Q150 272 150 300 L150 300" fill="none" stroke="#30363d" stroke-width="1"/>
-<path d="M130 314 L145 314 Q150 314 150 300" fill="none" stroke="#30363d" stroke-width="1"/>
-<text x="165" y="305" fill="#8b949e" font-size="10" font-family="monospace" text-anchor="middle">?</text>
-<text x="70" y="356" fill="#e6edf3" font-size="10" font-family="monospace" text-anchor="end">🇨🇭 瑞士</text>
-<text x="70" y="398" fill="#e6edf3" font-size="10" font-family="monospace" text-anchor="end">🇿🇦 南非</text>
-<text x="78" y="342" fill="#8b949e" font-size="8" font-family="monospace" text-anchor="start">6/29</text>
-<line x1="110" y1="356" x2="130" y2="356" stroke="#30363d" stroke-width="1"/>
-<line x1="110" y1="398" x2="130" y2="398" stroke="#30363d" stroke-width="1"/>
-<path d="M130 356 L145 356 Q150 356 150 384 L150 384" fill="none" stroke="#30363d" stroke-width="1"/>
-<path d="M130 398 L145 398 Q150 398 150 384" fill="none" stroke="#30363d" stroke-width="1"/>
-<text x="165" y="389" fill="#8b949e" font-size="10" font-family="monospace" text-anchor="middle">?</text>
-<text x="70" y="440" fill="#e6edf3" font-size="10" font-family="monospace" text-anchor="end">🇳🇱 荷兰</text>
-<text x="70" y="482" fill="#e6edf3" font-size="10" font-family="monospace" text-anchor="end">🇨🇮 科特迪瓦</text>
-<text x="78" y="426" fill="#8b949e" font-size="8" font-family="monospace" text-anchor="start">6/30</text>
-<line x1="110" y1="440" x2="130" y2="440" stroke="#30363d" stroke-width="1"/>
-<line x1="110" y1="482" x2="130" y2="482" stroke="#30363d" stroke-width="1"/>
-<path d="M130 440 L145 440 Q150 440 150 468 L150 468" fill="none" stroke="#30363d" stroke-width="1"/>
-<path d="M130 482 L145 482 Q150 482 150 468" fill="none" stroke="#30363d" stroke-width="1"/>
-<text x="165" y="473" fill="#8b949e" font-size="10" font-family="monospace" text-anchor="middle">?</text>
-<text x="70" y="524" fill="#e6edf3" font-size="10" font-family="monospace" text-anchor="end">🇦🇷 阿根廷</text>
-<text x="70" y="566" fill="#e6edf3" font-size="10" font-family="monospace" text-anchor="end">🇳🇴 挪威</text>
-<text x="78" y="510" fill="#8b949e" font-size="8" font-family="monospace" text-anchor="start">6/30</text>
-<line x1="110" y1="524" x2="130" y2="524" stroke="#30363d" stroke-width="1"/>
-<line x1="110" y1="566" x2="130" y2="566" stroke="#30363d" stroke-width="1"/>
-<path d="M130 524 L145 524 Q150 524 150 552 L150 552" fill="none" stroke="#30363d" stroke-width="1"/>
-<path d="M130 566 L145 566 Q150 566 150 552" fill="none" stroke="#30363d" stroke-width="1"/>
-<text x="165" y="557" fill="#8b949e" font-size="10" font-family="monospace" text-anchor="middle">?</text>
-<text x="720" y="360" fill="#8b949e" font-size="8" font-family="monospace" text-anchor="end">更新 2026-06-26 11:18 CST · 自动生成</text>
+<text x="20" y="48" fill="#8b949e" font-size="10" font-family="monospace" text-anchor="start">R32 对阵 · 小组排名自动生成    每组前2晋级 → R16</text>
+<text x="20" y="86" fill="#e6edf3" font-size="11" font-family="monospace" text-anchor="start">🇲🇽 墨西哥</text>
+<text x="20" y="104" fill="#e6edf3" font-size="11" font-family="monospace" text-anchor="start">🇨🇦 加拿大</text>
+<text x="180" y="86" fill="#8b949e" font-size="8" font-family="monospace" text-anchor="end">6/28</text>
+<text x="20" y="128" fill="#e6edf3" font-size="11" font-family="monospace" text-anchor="start">🇧🇷 巴西</text>
+<text x="20" y="146" fill="#e6edf3" font-size="11" font-family="monospace" text-anchor="start">🇦🇺 澳大利亚</text>
+<text x="180" y="128" fill="#8b949e" font-size="8" font-family="monospace" text-anchor="end">6/28</text>
+<line x1="195" y1="86" x2="210" y2="86" stroke="#30363d" stroke-width="1"/>
+<line x1="195" y1="104" x2="210" y2="104" stroke="#30363d" stroke-width="1"/>
+<line x1="195" y1="128" x2="210" y2="128" stroke="#30363d" stroke-width="1"/>
+<line x1="195" y1="146" x2="210" y2="146" stroke="#30363d" stroke-width="1"/>
+<path d="M210 86 L225 86 Q230 86 230 110 L230 110" fill="none" stroke="#30363d" stroke-width="1"/>
+<path d="M210 104 L225 104 Q230 104 230 110" fill="none" stroke="#30363d" stroke-width="1"/>
+<path d="M210 128 L225 128 Q230 128 230 110" fill="none" stroke="#30363d" stroke-width="1"/>
+<path d="M210 146 L225 146 Q230 146 230 110" fill="none" stroke="#30363d" stroke-width="1"/>
+<text x="240" y="115" fill="#8b949e" font-size="9" font-family="monospace" text-anchor="start">→ R16</text>
+<text x="20" y="178" fill="#e6edf3" font-size="11" font-family="monospace" text-anchor="start">🇩🇪 德国</text>
+<text x="20" y="196" fill="#e6edf3" font-size="11" font-family="monospace" text-anchor="start">🇯🇵 日本</text>
+<text x="180" y="178" fill="#8b949e" font-size="8" font-family="monospace" text-anchor="end">6/28</text>
+<text x="20" y="220" fill="#e6edf3" font-size="11" font-family="monospace" text-anchor="start">🇪🇬 埃及</text>
+<text x="20" y="238" fill="#e6edf3" font-size="11" font-family="monospace" text-anchor="start">🇺🇾 乌拉圭</text>
+<text x="180" y="220" fill="#8b949e" font-size="8" font-family="monospace" text-anchor="end">6/28</text>
+<line x1="195" y1="178" x2="210" y2="178" stroke="#30363d" stroke-width="1"/>
+<line x1="195" y1="196" x2="210" y2="196" stroke="#30363d" stroke-width="1"/>
+<line x1="195" y1="220" x2="210" y2="220" stroke="#30363d" stroke-width="1"/>
+<line x1="195" y1="238" x2="210" y2="238" stroke="#30363d" stroke-width="1"/>
+<path d="M210 178 L225 178 Q230 178 230 202 L230 202" fill="none" stroke="#30363d" stroke-width="1"/>
+<path d="M210 196 L225 196 Q230 196 230 202" fill="none" stroke="#30363d" stroke-width="1"/>
+<path d="M210 220 L225 220 Q230 220 230 202" fill="none" stroke="#30363d" stroke-width="1"/>
+<path d="M210 238 L225 238 Q230 238 230 202" fill="none" stroke="#30363d" stroke-width="1"/>
+<text x="240" y="207" fill="#8b949e" font-size="9" font-family="monospace" text-anchor="start">→ R16</text>
+<text x="20" y="270" fill="#e6edf3" font-size="11" font-family="monospace" text-anchor="start">🇫🇷 法国</text>
+<text x="20" y="288" fill="#e6edf3" font-size="11" font-family="monospace" text-anchor="start">🇦🇹 奥地利</text>
+<text x="180" y="270" fill="#8b949e" font-size="8" font-family="monospace" text-anchor="end">6/29</text>
+<text x="20" y="312" fill="#e6edf3" font-size="11" font-family="monospace" text-anchor="start">🇨🇴 哥伦比亚</text>
+<text x="20" y="330" fill="#e6edf3" font-size="11" font-family="monospace" text-anchor="start">🇬🇭 加纳</text>
+<text x="180" y="312" fill="#8b949e" font-size="8" font-family="monospace" text-anchor="end">6/29</text>
+<line x1="195" y1="270" x2="210" y2="270" stroke="#30363d" stroke-width="1"/>
+<line x1="195" y1="288" x2="210" y2="288" stroke="#30363d" stroke-width="1"/>
+<line x1="195" y1="312" x2="210" y2="312" stroke="#30363d" stroke-width="1"/>
+<line x1="195" y1="330" x2="210" y2="330" stroke="#30363d" stroke-width="1"/>
+<path d="M210 270 L225 270 Q230 270 230 294 L230 294" fill="none" stroke="#30363d" stroke-width="1"/>
+<path d="M210 288 L225 288 Q230 288 230 294" fill="none" stroke="#30363d" stroke-width="1"/>
+<path d="M210 312 L225 312 Q230 312 230 294" fill="none" stroke="#30363d" stroke-width="1"/>
+<path d="M210 330 L225 330 Q230 330 230 294" fill="none" stroke="#30363d" stroke-width="1"/>
+<text x="240" y="299" fill="#8b949e" font-size="9" font-family="monospace" text-anchor="start">→ R16</text>
+<text x="20" y="362" fill="#e6edf3" font-size="11" font-family="monospace" text-anchor="start">🇨🇭 瑞士</text>
+<text x="20" y="380" fill="#e6edf3" font-size="11" font-family="monospace" text-anchor="start">🇿🇦 南非</text>
+<text x="180" y="362" fill="#8b949e" font-size="8" font-family="monospace" text-anchor="end">6/29</text>
+<text x="20" y="404" fill="#e6edf3" font-size="11" font-family="monospace" text-anchor="start">🇺🇸 美国</text>
+<text x="20" y="422" fill="#e6edf3" font-size="11" font-family="monospace" text-anchor="start">🇲🇦 摩洛哥</text>
+<text x="180" y="404" fill="#8b949e" font-size="8" font-family="monospace" text-anchor="end">6/29</text>
+<line x1="195" y1="362" x2="210" y2="362" stroke="#30363d" stroke-width="1"/>
+<line x1="195" y1="380" x2="210" y2="380" stroke="#30363d" stroke-width="1"/>
+<line x1="195" y1="404" x2="210" y2="404" stroke="#30363d" stroke-width="1"/>
+<line x1="195" y1="422" x2="210" y2="422" stroke="#30363d" stroke-width="1"/>
+<path d="M210 362 L225 362 Q230 362 230 386 L230 386" fill="none" stroke="#30363d" stroke-width="1"/>
+<path d="M210 380 L225 380 Q230 380 230 386" fill="none" stroke="#30363d" stroke-width="1"/>
+<path d="M210 404 L225 404 Q230 404 230 386" fill="none" stroke="#30363d" stroke-width="1"/>
+<path d="M210 422 L225 422 Q230 422 230 386" fill="none" stroke="#30363d" stroke-width="1"/>
+<text x="240" y="391" fill="#8b949e" font-size="9" font-family="monospace" text-anchor="start">→ R16</text>
+<text x="20" y="454" fill="#e6edf3" font-size="11" font-family="monospace" text-anchor="start">🇳🇱 荷兰</text>
+<text x="20" y="472" fill="#e6edf3" font-size="11" font-family="monospace" text-anchor="start">🇨🇮 科特迪瓦</text>
+<text x="180" y="454" fill="#8b949e" font-size="8" font-family="monospace" text-anchor="end">6/30</text>
+<text x="20" y="496" fill="#e6edf3" font-size="11" font-family="monospace" text-anchor="start">🇪🇸 西班牙</text>
+<text x="20" y="514" fill="#e6edf3" font-size="11" font-family="monospace" text-anchor="start">🇮🇷 伊朗</text>
+<text x="180" y="496" fill="#8b949e" font-size="8" font-family="monospace" text-anchor="end">6/30</text>
+<line x1="195" y1="454" x2="210" y2="454" stroke="#30363d" stroke-width="1"/>
+<line x1="195" y1="472" x2="210" y2="472" stroke="#30363d" stroke-width="1"/>
+<line x1="195" y1="496" x2="210" y2="496" stroke="#30363d" stroke-width="1"/>
+<line x1="195" y1="514" x2="210" y2="514" stroke="#30363d" stroke-width="1"/>
+<path d="M210 454 L225 454 Q230 454 230 478 L230 478" fill="none" stroke="#30363d" stroke-width="1"/>
+<path d="M210 472 L225 472 Q230 472 230 478" fill="none" stroke="#30363d" stroke-width="1"/>
+<path d="M210 496 L225 496 Q230 496 230 478" fill="none" stroke="#30363d" stroke-width="1"/>
+<path d="M210 514 L225 514 Q230 514 230 478" fill="none" stroke="#30363d" stroke-width="1"/>
+<text x="240" y="483" fill="#8b949e" font-size="9" font-family="monospace" text-anchor="start">→ R16</text>
+<text x="20" y="546" fill="#e6edf3" font-size="11" font-family="monospace" text-anchor="start">🇦🇷 阿根廷</text>
+<text x="20" y="564" fill="#e6edf3" font-size="11" font-family="monospace" text-anchor="start">🇳🇴 挪威</text>
+<text x="180" y="546" fill="#8b949e" font-size="8" font-family="monospace" text-anchor="end">6/30</text>
+<text x="20" y="588" fill="#e6edf3" font-size="11" font-family="monospace" text-anchor="start">🏴󠁧󠁢󠁥󠁮󠁧󠁿 英格兰</text>
+<text x="20" y="606" fill="#e6edf3" font-size="11" font-family="monospace" text-anchor="start">🇵🇹 葡萄牙</text>
+<text x="180" y="588" fill="#8b949e" font-size="8" font-family="monospace" text-anchor="end">6/30</text>
+<line x1="195" y1="546" x2="210" y2="546" stroke="#30363d" stroke-width="1"/>
+<line x1="195" y1="564" x2="210" y2="564" stroke="#30363d" stroke-width="1"/>
+<line x1="195" y1="588" x2="210" y2="588" stroke="#30363d" stroke-width="1"/>
+<line x1="195" y1="606" x2="210" y2="606" stroke="#30363d" stroke-width="1"/>
+<path d="M210 546 L225 546 Q230 546 230 570 L230 570" fill="none" stroke="#30363d" stroke-width="1"/>
+<path d="M210 564 L225 564 Q230 564 230 570" fill="none" stroke="#30363d" stroke-width="1"/>
+<path d="M210 588 L225 588 Q230 588 230 570" fill="none" stroke="#30363d" stroke-width="1"/>
+<path d="M210 606 L225 606 Q230 606 230 570" fill="none" stroke="#30363d" stroke-width="1"/>
+<text x="240" y="575" fill="#8b949e" font-size="9" font-family="monospace" text-anchor="start">→ R16</text>
+<text x="380" y="670" fill="#8b949e" font-size="8" font-family="monospace" text-anchor="end">更新 2026-06-26 13:10 CST · 自动生成</text>
 </svg>
