@@ -1,43 +1,49 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="900" height="600">
-<rect x="0" y="0" width="600" height="400" fill="#0d1117"/>
-<rect x="12" y="10" width="576" height="380" fill="#161b22" rx="8"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 420" width="900" height="630">
+<rect x="0" y="0" width="600" height="420" fill="#0d1117"/>
+<rect x="12" y="10" width="576" height="400" fill="#161b22" rx="8"/>
 <text x="24" y="36" fill="#58a6ff" font-size="18" font-family="monospace" text-anchor="start" font-weight="bold">⚽ 接下来比赛预测 · Elo + 市场共识</text>
 <text x="24" y="58" fill="#8b949e" font-size="12" font-family="monospace" text-anchor="start">Elo + Dixon-Coles 模型 · 混入 Polymarket 赔率 (40/60) · 胜/平/负</text>
-<text x="24" y="88" fill="#8b949e" font-size="10" font-family="monospace" text-anchor="start">6/28</text>
-<text x="100" y="88" fill="#e6edf3" font-size="11" font-family="monospace" text-anchor="start">🇲🇽 墨西哥  vs  🇨🇦 加拿大</text>
-<rect x="300" y="74" width="79" height="14" fill="#3fb950" rx="3"/>
-<rect x="379" y="74" width="47" height="14" fill="#d2991d"/>
-<rect x="427" y="74" width="42" height="14" fill="#f85149" rx="3"/>
-<text x="300" y="98" fill="#e6edf3" font-size="8" font-family="monospace" text-anchor="start">Elo 47% / 28% / 25%</text>
-<text x="24" y="126" fill="#8b949e" font-size="10" font-family="monospace" text-anchor="start">6/28</text>
-<text x="100" y="126" fill="#e6edf3" font-size="11" font-family="monospace" text-anchor="start">🇧🇷 巴西  vs  🇦🇺 澳大利亚</text>
-<rect x="300" y="112" width="97" height="14" fill="#3fb950" rx="3"/>
-<rect x="397" y="112" width="43" height="14" fill="#d2991d"/>
-<rect x="441" y="112" width="28" height="14" fill="#f85149" rx="3"/>
-<text x="300" y="136" fill="#e6edf3" font-size="8" font-family="monospace" text-anchor="start">Elo 58% / 26% / 17%</text>
-<text x="24" y="164" fill="#8b949e" font-size="10" font-family="monospace" text-anchor="start">6/28</text>
-<text x="100" y="164" fill="#e6edf3" font-size="11" font-family="monospace" text-anchor="start">🇩🇪 德国  vs  🇯🇵 日本</text>
-<rect x="300" y="150" width="80" height="14" fill="#3fb950" rx="3"/>
-<rect x="380" y="150" width="47" height="14" fill="#d2991d"/>
-<rect x="428" y="150" width="41" height="14" fill="#f85149" rx="3"/>
-<text x="300" y="174" fill="#e6edf3" font-size="8" font-family="monospace" text-anchor="start">Elo 48% / 28% / 25%</text>
-<text x="24" y="202" fill="#8b949e" font-size="10" font-family="monospace" text-anchor="start">6/28</text>
-<text x="100" y="202" fill="#e6edf3" font-size="11" font-family="monospace" text-anchor="start">🇪🇬 埃及  vs  🇺🇾 乌拉圭</text>
-<rect x="300" y="188" width="35" height="14" fill="#3fb950" rx="3"/>
-<rect x="335" y="188" width="46" height="14" fill="#d2991d"/>
-<rect x="381" y="188" width="88" height="14" fill="#f85149" rx="3"/>
-<text x="300" y="212" fill="#e6edf3" font-size="8" font-family="monospace" text-anchor="start">Elo 21% / 27% / 52%</text>
-<text x="24" y="240" fill="#8b949e" font-size="10" font-family="monospace" text-anchor="start">6/29</text>
-<text x="100" y="240" fill="#e6edf3" font-size="11" font-family="monospace" text-anchor="start">🇫🇷 法国  vs  🇦🇹 奥地利</text>
-<rect x="300" y="226" width="119" height="14" fill="#3fb950" rx="3"/>
-<rect x="419" y="226" width="35" height="14" fill="#d2991d"/>
-<rect x="455" y="226" width="14" height="14" fill="#f85149" rx="3"/>
-<text x="300" y="250" fill="#e6edf3" font-size="8" font-family="monospace" text-anchor="start">Elo 70% / 21% / 9%</text>
+<text x="24" y="86" fill="#8b949e" font-size="10" font-family="monospace" text-anchor="start">6/28</text>
+<text x="100" y="86" fill="#e6edf3" font-size="11" font-family="monospace" text-anchor="start">🇲🇽 墨西哥  vs  🇨🇦 加拿大</text>
+<rect x="300" y="73" width="79" height="12" fill="#3fb950" rx="3"/>
+<rect x="379" y="73" width="47" height="12" fill="#d2991d"/>
+<rect x="427" y="73" width="42" height="12" fill="#f85149" rx="3"/>
+<text x="300" y="95" fill="#e6edf3" font-size="8" font-family="monospace" text-anchor="start">Elo 47% / 28% / 25%</text>
+<text x="300" y="107" fill="#8b949e" font-size="8" font-family="monospace" text-anchor="start">预测比分: 1-1 (13%)  ·  2-1 (9%)  ·  1-0 (9%)</text>
+<text x="24" y="134" fill="#8b949e" font-size="10" font-family="monospace" text-anchor="start">6/28</text>
+<text x="100" y="134" fill="#e6edf3" font-size="11" font-family="monospace" text-anchor="start">🇧🇷 巴西  vs  🇦🇺 澳大利亚</text>
+<rect x="300" y="121" width="97" height="12" fill="#3fb950" rx="3"/>
+<rect x="397" y="121" width="43" height="12" fill="#d2991d"/>
+<rect x="441" y="121" width="28" height="12" fill="#f85149" rx="3"/>
+<text x="300" y="143" fill="#e6edf3" font-size="8" font-family="monospace" text-anchor="start">Elo 58% / 26% / 17%</text>
+<text x="300" y="155" fill="#8b949e" font-size="8" font-family="monospace" text-anchor="start">预测比分: 1-1 (12%)  ·  2-0 (11%)  ·  1-0 (11%)</text>
+<text x="24" y="182" fill="#8b949e" font-size="10" font-family="monospace" text-anchor="start">6/28</text>
+<text x="100" y="182" fill="#e6edf3" font-size="11" font-family="monospace" text-anchor="start">🇩🇪 德国  vs  🇯🇵 日本</text>
+<rect x="300" y="169" width="80" height="12" fill="#3fb950" rx="3"/>
+<rect x="380" y="169" width="47" height="12" fill="#d2991d"/>
+<rect x="428" y="169" width="41" height="12" fill="#f85149" rx="3"/>
+<text x="300" y="191" fill="#e6edf3" font-size="8" font-family="monospace" text-anchor="start">Elo 48% / 28% / 25%</text>
+<text x="300" y="203" fill="#8b949e" font-size="8" font-family="monospace" text-anchor="start">预测比分: 1-1 (13%)  ·  2-1 (9%)  ·  1-0 (9%)</text>
+<text x="24" y="230" fill="#8b949e" font-size="10" font-family="monospace" text-anchor="start">6/28</text>
+<text x="100" y="230" fill="#e6edf3" font-size="11" font-family="monospace" text-anchor="start">🇪🇬 埃及  vs  🇺🇾 乌拉圭</text>
+<rect x="300" y="217" width="35" height="12" fill="#3fb950" rx="3"/>
+<rect x="335" y="217" width="46" height="12" fill="#d2991d"/>
+<rect x="381" y="217" width="88" height="12" fill="#f85149" rx="3"/>
+<text x="300" y="239" fill="#e6edf3" font-size="8" font-family="monospace" text-anchor="start">Elo 21% / 27% / 52%</text>
+<text x="300" y="251" fill="#8b949e" font-size="8" font-family="monospace" text-anchor="start">预测比分: 1-1 (13%)  ·  0-1 (10%)  ·  1-2 (10%)</text>
 <text x="24" y="278" fill="#8b949e" font-size="10" font-family="monospace" text-anchor="start">6/29</text>
-<text x="100" y="278" fill="#e6edf3" font-size="11" font-family="monospace" text-anchor="start">🇨🇴 哥伦比亚  vs  🇬🇭 加纳</text>
-<rect x="300" y="264" width="105" height="14" fill="#3fb950" rx="3"/>
-<rect x="405" y="264" width="41" height="14" fill="#d2991d"/>
-<rect x="446" y="264" width="23" height="14" fill="#f85149" rx="3"/>
-<text x="300" y="288" fill="#e6edf3" font-size="8" font-family="monospace" text-anchor="start">Elo 62% / 24% / 14%</text>
-<text x="570" y="380" fill="#8b949e" font-size="9" font-family="monospace" text-anchor="end">更新 2026-06-26 13:27 CST</text>
+<text x="100" y="278" fill="#e6edf3" font-size="11" font-family="monospace" text-anchor="start">🇫🇷 法国  vs  🇦🇹 奥地利</text>
+<rect x="300" y="265" width="119" height="12" fill="#3fb950" rx="3"/>
+<rect x="419" y="265" width="35" height="12" fill="#d2991d"/>
+<rect x="455" y="265" width="14" height="12" fill="#f85149" rx="3"/>
+<text x="300" y="287" fill="#e6edf3" font-size="8" font-family="monospace" text-anchor="start">Elo 70% / 21% / 9%</text>
+<text x="300" y="299" fill="#8b949e" font-size="8" font-family="monospace" text-anchor="start">预测比分: 2-0 (15%)  ·  1-0 (13%)  ·  3-0 (10%)</text>
+<text x="24" y="326" fill="#8b949e" font-size="10" font-family="monospace" text-anchor="start">6/29</text>
+<text x="100" y="326" fill="#e6edf3" font-size="11" font-family="monospace" text-anchor="start">🇨🇴 哥伦比亚  vs  🇬🇭 加纳</text>
+<rect x="300" y="313" width="105" height="12" fill="#3fb950" rx="3"/>
+<rect x="405" y="313" width="41" height="12" fill="#d2991d"/>
+<rect x="446" y="313" width="23" height="12" fill="#f85149" rx="3"/>
+<text x="300" y="335" fill="#e6edf3" font-size="8" font-family="monospace" text-anchor="start">Elo 62% / 24% / 14%</text>
+<text x="300" y="347" fill="#8b949e" font-size="8" font-family="monospace" text-anchor="start">预测比分: 2-0 (12%)  ·  1-1 (12%)  ·  1-0 (11%)</text>
+<text x="570" y="400" fill="#8b949e" font-size="9" font-family="monospace" text-anchor="end">更新 2026-06-26 15:01 CST</text>
 </svg>
