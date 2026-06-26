@@ -246,7 +246,7 @@ def generate_next_match(teams, match_data=None, pm_odds=None):
     """Match data: list of {home, away, winA, draw, winB, blendA, blendD, blendB, ...}"""
     if not match_data:
         match_data = []
-    W, H = 600, 400
+    W, H = 600, 420  # taller for score line
 
     parts = [svg_header(W, H)]
     parts.append(svg_rect(0, 0, W, H, DARK_BG))
@@ -260,26 +260,29 @@ def generate_next_match(teams, match_data=None, pm_odds=None):
     else:
         sy = 72
         for i, m in enumerate(match_data[:6]):
-            y = sy + i * 38
+            y = sy + i * 48  # taller row for score line
             wa = m.get("blendA", m.get("winA", 0))
             wd = m.get("blendD", m.get("draw", 0))
             wb = m.get("blendB", m.get("winB", 0))
             has_blend = "blendA" in m
 
-            parts.append(svg_text(24, y + 16, m.get("date_short", ""), TEXT_SECONDARY, 10))
-            parts.append(svg_text(100, y + 16, f"{team_label(m['home'])}  vs  {team_label(m['away'])}", TEXT_PRIMARY, 11))
+            parts.append(svg_text(24, y + 14, m.get("date_short", ""), TEXT_SECONDARY, 10))
+            parts.append(svg_text(100, y + 14, f"{team_label(m['home'])}  vs  {team_label(m['away'])}", TEXT_PRIMARY, 11))
 
             # Bar: home | draw | away
-            bx, bw, bh = 300, 170, 14
-            parts.append(svg_rect(bx, y + 2, int(bw * wa), bh, GREEN, 3))
-            parts.append(svg_rect(bx + int(bw * wa), y + 2, int(bw * wd), bh, GOLD, 0))
-            parts.append(svg_rect(bx + int(bw * (wa + wd)), y + 2, int(bw * wb), bh, RED, 3))
+            bx, bw, bh = 300, 170, 12
+            parts.append(svg_rect(bx, y + 1, int(bw * wa), bh, GREEN, 3))
+            parts.append(svg_rect(bx + int(bw * wa), y + 1, int(bw * wd), bh, GOLD, 0))
+            parts.append(svg_rect(bx + int(bw * (wa + wd)), y + 1, int(bw * wb), bh, RED, 3))
 
             label = f"混{wa*100:.0f}% / {wd*100:.0f}% / {wb*100:.0f}%" if has_blend else f"Elo {wa*100:.0f}% / {wd*100:.0f}% / {wb*100:.0f}%"
-            parts.append(svg_text(bx, y + 26, label, TEXT_PRIMARY, 8))
+            parts.append(svg_text(bx, y + 23, label, TEXT_PRIMARY, 8))
 
-            if has_blend:
-                parts.append(svg_text(bx + bw + 8, y + 26, "← 混", GOLD, 8))
+            # Score predictions
+            scores = m.get("scores", [])
+            if scores:
+                score_text = "  ·  ".join(f"{a}-{b} ({p*100:.0f}%)" for a, b, p in scores[:3])
+                parts.append(svg_text(bx, y + 35, f"预测比分: {score_text}", TEXT_SECONDARY, 8))
 
     now_str = datetime.now(TZ).strftime("%Y-%m-%d %H:%M")
     parts.append(svg_text(W - 30, H - 20, f"更新 {now_str} CST", TEXT_SECONDARY, 9, "end"))
@@ -397,6 +400,21 @@ def match_prob(rating_a, rating_b, home_bonus=0):
                 draw += p
     total = win_a + draw + win_b
     return win_a / total, draw / total, win_b / total
+
+
+def predict_scores(rating_a, rating_b, home_bonus=0):
+    """Return top 3 most likely scorelines with probabilities."""
+    lam = expected_goals(rating_a, rating_b, home_bonus)
+    mu = expected_goals(rating_b, rating_a, -home_bonus / 2)
+    scores = []
+    for a in range(7):
+        pa = poisson_pmf(a, lam)
+        for b in range(7):
+            tau = dc_tau(a, b, lam, mu, DC_RHO)
+            p = pa * poisson_pmf(b, mu) * tau
+            scores.append((p, a, b))
+    scores.sort(reverse=True)
+    return [(a, b, p) for p, a, b in scores[:3]]
 
 
 POLYMARKET_GAMMA = "https://gamma-api.polymarket.com"
@@ -709,12 +727,14 @@ def generate_match_data(teams_data: list[dict]):
         rb = ratings.get(away, 1500)
         hb = HOME_ADV if home in HOSTS else 0
         wa, d, wb = match_prob(ra, rb, hb)
+        scores = predict_scores(ra, rb, hb)
 
         matches.append({
             "home": home, "away": away,
             "date": f"{date_str} {time_str} CST", "date_short": f"{date_str}",
             "time": time_str, "group": group,
             "winA": wa, "draw": d, "winB": wb,
+            "scores": scores,
         })
 
     # If no upcoming group-stage fixtures, generate knockout fixtures
@@ -725,11 +745,13 @@ def generate_match_data(teams_data: list[dict]):
             ra = ratings.get(home, 1500)
             rb = ratings.get(away, 1500)
             wa, d, wb = match_prob(ra, rb)
+            scores = predict_scores(ra, rb)
             matches.append({
                 "home": home, "away": away,
                 "date": f"{date_str} {time_str} CST", "date_short": f"{date_str}",
                 "time": time_str, "group": round_name,
                 "winA": wa, "draw": d, "winB": wb,
+                "scores": scores,
             })
         print(f"[predictions] Added {len(knockout)} knockout fixtures")
 
