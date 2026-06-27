@@ -945,11 +945,28 @@ def generate_bracket(teams):
     # Get knockout fixtures (reuse the builder)
     ratings = {}
     for t in teams:
-        ratings[t["slug"]] = 2000  # placeholder — we just need fixtures not predictions
+        ratings[t["slug"]] = 2000
     knockout = _build_knockout_fixtures(ratings)
 
     if not knockout:
         return '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 80"><rect width="500" height="80" fill="#0d1117"/><text x="20" y="40" fill="#8b949e" font-size="14" font-family="monospace">暂无淘汰赛数据</text></svg>'
+
+    # Check if group stage is still ongoing
+    fixtures = fetch_upcoming_fixtures()
+    has_group_matches = any(g in "ABCDEFGHIJKL" for _, _, _, _, g in fixtures)
+    if has_group_matches:
+        # Show group stage progress instead
+        group_count = sum(1 for _, _, _, _, g in fixtures if g in "ABCDEFGHIJKL")
+        W, H = 500, 120
+        parts = [svg_header(W, H)]
+        parts.append(svg_rect(0, 0, W, H, DARK_BG))
+        parts.append(svg_rect(10, 8, W - 20, H - 16, CARD_BG, 8))
+        parts.append(svg_text(24, 38, "🌲 淘汰赛对阵图 — 小组赛进行中", GOLD, 16, bold=True))
+        parts.append(svg_text(24, 70, f"小组赛尚未结束 · 剩余 {group_count} 场 · 淘汰赛对阵待发布", TEXT_SECONDARY, 12))
+        now_str = datetime.now(TZ).strftime("%Y-%m-%d %H:%M")
+        parts.append(svg_text(W - 24, H - 16, f"更新 {now_str} CST", TEXT_SECONDARY, 8, "end"))
+        parts.append("</svg>")
+        return "\n".join(parts)
 
     r32 = knockout  # all R32 fixtures
     num_matches = len(r32)
