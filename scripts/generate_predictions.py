@@ -831,12 +831,19 @@ def generate_record(match_results):
     items = []
     temp_ratings = dict(ratings)  # start from pre-tournament ratings
     hit, miss = 0, 0
+    score_hit = 0  # exact score matches
 
     for m in match_results:
         ra = temp_ratings.get(m["home"], 1500)
         rb = temp_ratings.get(m["away"], 1500)
         hb = HOME_ADV if m["home"] in HOSTS else 0
         wa, d, wb = match_prob(ra, rb, hb)
+
+        # Score prediction — check if actual score is in top 3
+        top_scores = predict_scores(ra, rb, hb)
+        score_preds = [(a, b) for a, b, _ in top_scores]
+        if (m["hg"], m["ag"]) in score_preds:
+            score_hit += 1
 
         # Determine model's pick (highest probability)
         probs = [("home", wa), ("draw", d), ("away", wb)]
@@ -886,28 +893,32 @@ def generate_record(match_results):
 
     total = hit + miss
     pct = hit / total * 100 if total > 0 else 0
+    score_pct = score_hit / total * 100 if total > 0 else 0
 
     # Build SVG
     row_h = 20
-    header_h = 50
+    header_h = 70
     H = header_h + len(items) * row_h + 65
-    W = 500
+    W = 520
 
     parts = [svg_header(W, H)]
     parts.append(svg_rect(0, 0, W, H, DARK_BG))
     parts.append(svg_rect(10, 8, W - 20, H - 16, CARD_BG, 8))
 
     parts.append(svg_text(24, 34, "📋 模型战绩 · Model Scorecard", ACCENT, 18, bold=True))
-    parts.append(svg_text(24, 56, f"已完赛 {total}/104 场 · 预测正确 {hit} 场 · 准确率 {pct:.0f}%", TEXT_SECONDARY, 12))
+    parts.append(svg_text(24, 56, f"胜负预测: {total}场中{hit}场 · {pct:.0f}%准确", TEXT_SECONDARY, 11))
+    parts.append(svg_text(24, 72, f"比分预测: {total}场中{score_hit}场命中 · {score_pct:.0f}% (Top3内)", GOLD, 10))
 
     # Summary badges
-    parts.append(svg_rect(24, 62, 48, 18, GREEN, 3))
-    parts.append(svg_text(48, 75, f"{hit} ✅", DARK_BG, 10, "middle", bold=True))
-    parts.append(svg_rect(84, 62, 48, 18, RED, 3))
-    parts.append(svg_text(108, 75, f"{miss} ❌", DARK_BG, 10, "middle", bold=True))
+    parts.append(svg_rect(24, 82, 48, 18, GREEN, 3))
+    parts.append(svg_text(48, 95, f"{hit} ✅", DARK_BG, 10, "middle", bold=True))
+    parts.append(svg_rect(84, 82, 48, 18, RED, 3))
+    parts.append(svg_text(108, 95, f"{miss} ❌", DARK_BG, 10, "middle", bold=True))
+    parts.append(svg_rect(144, 82, 60, 18, GOLD, 3))
+    parts.append(svg_text(174, 95, f"{score_hit} ⚽", DARK_BG, 10, "middle", bold=True))
 
     # Table header
-    ty = 100
+    ty = 120
     parts.append(svg_text(24, ty, "日期", TEXT_SECONDARY, 9, bold=True))
     parts.append(svg_text(68, ty, "主队", TEXT_SECONDARY, 9, bold=True))
     parts.append(svg_text(172, ty, "比分", TEXT_SECONDARY, 9, "middle", bold=True))
