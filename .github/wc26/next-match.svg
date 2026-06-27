@@ -5,10 +5,10 @@
 <text x="24" y="58" fill="#8b949e" font-size="12" font-family="monospace" text-anchor="start">Elo + Dixon-Coles 模型 · 混入 Polymarket 赔率 (40/60) · 胜/平/负</text>
 <text x="24" y="86" fill="#8b949e" font-size="10" font-family="monospace" text-anchor="start">6/27</text>
 <text x="100" y="86" fill="#e6edf3" font-size="11" font-family="monospace" text-anchor="start">🇩🇿 阿尔及利亚  vs  🇦🇹 奥地利</text>
-<rect x="300" y="73" width="45" height="12" fill="#3fb950" rx="3"/>
-<rect x="345" y="73" width="67" height="12" fill="#d2991d"/>
-<rect x="412" y="73" width="57" height="12" fill="#f85149" rx="3"/>
-<text x="300" y="95" fill="#e6edf3" font-size="8" font-family="monospace" text-anchor="start">混27% / 40% / 34%</text>
+<rect x="300" y="73" width="47" height="12" fill="#3fb950" rx="3"/>
+<rect x="347" y="73" width="67" height="12" fill="#d2991d"/>
+<rect x="414" y="73" width="55" height="12" fill="#f85149" rx="3"/>
+<text x="300" y="95" fill="#e6edf3" font-size="8" font-family="monospace" text-anchor="start">混28% / 40% / 33%</text>
 <text x="300" y="107" fill="#8b949e" font-size="8" font-family="monospace" text-anchor="start">预测比分: 1-1 (14%)  ·  1-2 (8%)  ·  0-0 (8%)</text>
 <text x="24" y="134" fill="#8b949e" font-size="10" font-family="monospace" text-anchor="start">6/27</text>
 <text x="100" y="134" fill="#e6edf3" font-size="11" font-family="monospace" text-anchor="start">🇯🇴 约旦  vs  🇦🇷 阿根廷</text>
@@ -26,24 +26,24 @@
 <text x="300" y="203" fill="#8b949e" font-size="8" font-family="monospace" text-anchor="start">预测比分: 1-1 (14%)  ·  1-2 (9%)  ·  0-1 (9%)</text>
 <text x="24" y="230" fill="#8b949e" font-size="10" font-family="monospace" text-anchor="start">6/27</text>
 <text x="100" y="230" fill="#e6edf3" font-size="11" font-family="monospace" text-anchor="start">🇨🇩 刚果(金)  vs  🇺🇿 乌兹别克斯坦</text>
-<rect x="300" y="217" width="87" height="12" fill="#3fb950" rx="3"/>
-<rect x="387" y="217" width="42" height="12" fill="#d2991d"/>
-<rect x="430" y="217" width="39" height="12" fill="#f85149" rx="3"/>
-<text x="300" y="239" fill="#e6edf3" font-size="8" font-family="monospace" text-anchor="start">混52% / 25% / 23%</text>
+<rect x="300" y="217" width="85" height="12" fill="#3fb950" rx="3"/>
+<rect x="385" y="217" width="43" height="12" fill="#d2991d"/>
+<rect x="429" y="217" width="40" height="12" fill="#f85149" rx="3"/>
+<text x="300" y="239" fill="#e6edf3" font-size="8" font-family="monospace" text-anchor="start">混51% / 26% / 24%</text>
 <text x="300" y="251" fill="#8b949e" font-size="8" font-family="monospace" text-anchor="start">预测比分: 1-1 (14%)  ·  2-1 (9%)  ·  0-0 (8%)</text>
 <text x="24" y="278" fill="#8b949e" font-size="10" font-family="monospace" text-anchor="start">6/27</text>
 <text x="100" y="278" fill="#e6edf3" font-size="11" font-family="monospace" text-anchor="start">🇵🇦 巴拿马  vs  🏴󠁧󠁢󠁥󠁮󠁧󠁿 英格兰</text>
 <rect x="300" y="265" width="7" height="12" fill="#3fb950" rx="3"/>
-<rect x="307" y="265" width="21" height="12" fill="#d2991d"/>
-<rect x="329" y="265" width="140" height="12" fill="#f85149" rx="3"/>
-<text x="300" y="287" fill="#e6edf3" font-size="8" font-family="monospace" text-anchor="start">混4% / 13% / 83%</text>
+<rect x="307" y="265" width="20" height="12" fill="#d2991d"/>
+<rect x="328" y="265" width="141" height="12" fill="#f85149" rx="3"/>
+<text x="300" y="287" fill="#e6edf3" font-size="8" font-family="monospace" text-anchor="start">混4% / 12% / 83%</text>
 <text x="300" y="299" fill="#8b949e" font-size="8" font-family="monospace" text-anchor="start">预测比分: 0-2 (18%)  ·  0-1 (15%)  ·  0-3 (14%)</text>
 <text x="24" y="326" fill="#8b949e" font-size="10" font-family="monospace" text-anchor="start">6/27</text>
 <text x="100" y="326" fill="#e6edf3" font-size="11" font-family="monospace" text-anchor="start">🇭🇷 克罗地亚  vs  🇬🇭 加纳</text>
-<rect x="300" y="313" width="92" height="12" fill="#3fb950" rx="3"/>
-<rect x="392" y="313" width="48" height="12" fill="#d2991d"/>
-<rect x="440" y="313" width="29" height="12" fill="#f85149" rx="3"/>
-<text x="300" y="335" fill="#e6edf3" font-size="8" font-family="monospace" text-anchor="start">混54% / 28% / 17%</text>
+<rect x="300" y="313" width="93" height="12" fill="#3fb950" rx="3"/>
+<rect x="393" y="313" width="48" height="12" fill="#d2991d"/>
+<rect x="441" y="313" width="28" height="12" fill="#f85149" rx="3"/>
+<text x="300" y="335" fill="#e6edf3" font-size="8" font-family="monospace" text-anchor="start">混55% / 28% / 17%</text>
 <text x="300" y="347" fill="#8b949e" font-size="8" font-family="monospace" text-anchor="start">预测比分: 1-1 (12%)  ·  2-0 (11%)  ·  1-0 (11%)</text>
-<text x="570" y="400" fill="#8b949e" font-size="9" font-family="monospace" text-anchor="end">更新 2026-06-27 19:37 CST</text>
+<text x="570" y="400" fill="#8b949e" font-size="9" font-family="monospace" text-anchor="end">更新 2026-06-27 21:50 CST</text>
 </svg>
