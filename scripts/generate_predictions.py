@@ -528,73 +528,60 @@ def blend_odds(elo_h, elo_d, elo_a, market_h, market_d, market_a, elo_weight=0.4
 
 
 # ═══════════════════════════════════════════════════════════════
-# FIXTURE SCHEDULE (2026 World Cup — first round group stage)
+# FIXTURE SCHEDULE — fetched dynamically from openfootball
 # ═══════════════════════════════════════════════════════════════
-# Format: (date_str, time_str, home_slug, away_slug, group)
 
-FIXTURES = [
-    # June 11
-    ("6/11", "03:00", "mexico", "south-africa", "A"),
-    ("6/11", "10:00", "south-korea", "czech-republic", "A"),
-    # June 12
-    ("6/12", "03:00", "canada", "bosnia-and-herzegovina", "B"),
-    ("6/12", "10:00", "qatar", "switzerland", "B"),
-    # June 13
-    ("6/13", "03:00", "brazil", "morocco", "C"),
-    ("6/13", "06:00", "usa", "paraguay", "D"),
-    ("6/13", "09:00", "haiti", "scotland", "C"),
-    # June 14
-    ("6/14", "01:00", "germany", "curacao", "E"),
-    ("6/14", "04:00", "netherlands", "japan", "F"),
-    ("6/14", "07:00", "ivory-coast", "ecuador", "E"),
-    ("6/14", "09:00", "australia", "turkey", "D"),
-    ("6/14", "12:00", "sweden", "tunisia", "F"),
-    # June 15
-    ("6/15", "00:00", "spain", "cape-verde", "H"),
-    ("6/15", "03:00", "belgium", "egypt", "G"),
-    ("6/15", "06:00", "saudi-arabia", "uruguay", "H"),
-    ("6/15", "10:00", "iran", "new-zealand", "G"),
-    # June 16
-    ("6/16", "03:00", "france", "senegal", "I"),
-    ("6/16", "06:00", "iraq", "norway", "I"),
-    ("6/16", "09:00", "argentina", "algeria", "J"),
-    # June 17
-    ("6/17", "00:00", "austria", "jordan", "J"),
-    ("6/17", "03:00", "portugal", "dr-congo", "K"),
-    ("6/17", "06:00", "england", "croatia", "L"),
-    ("6/17", "09:00", "ghana", "panama", "L"),
-    ("6/17", "12:00", "uzbekistan", "colombia", "K"),
-    # June 18
-    ("6/18", "00:00", "czech-republic", "south-africa", "A"),
-    ("6/18", "03:00", "switzerland", "bosnia-and-herzegovina", "B"),
-    ("6/18", "06:00", "canada", "qatar", "B"),
-    ("6/18", "09:00", "mexico", "south-korea", "A"),
-    # June 19
-    ("6/19", "00:00", "scotland", "morocco", "C"),
-    ("6/19", "03:00", "haiti", "brazil", "C"),
-    ("6/19", "06:00", "turkey", "usa", "D"),
-    ("6/19", "09:00", "paraguay", "australia", "D"),
-    # June 20
-    ("6/20", "00:00", "ecuador", "germany", "E"),
-    ("6/20", "03:00", "curacao", "ivory-coast", "E"),
-    ("6/20", "06:00", "japan", "sweden", "F"),
-    ("6/20", "09:00", "tunisia", "netherlands", "F"),
-    # June 21
-    ("6/21", "00:00", "egypt", "iran", "G"),
-    ("6/21", "03:00", "new-zealand", "belgium", "G"),
-    ("6/21", "06:00", "uruguay", "spain", "H"),
-    ("6/21", "09:00", "cape-verde", "saudi-arabia", "H"),
-    # June 22
-    ("6/22", "00:00", "senegal", "iraq", "I"),
-    ("6/22", "03:00", "norway", "france", "I"),
-    ("6/22", "06:00", "jordan", "argentina", "J"),
-    ("6/22", "09:00", "algeria", "austria", "J"),
-    # June 23
-    ("6/23", "00:00", "croatia", "ghana", "L"),
-    ("6/23", "03:00", "panama", "england", "L"),
-    ("6/23", "06:00", "colombia", "portugal", "K"),
-    ("6/23", "09:00", "dr-congo", "uzbekistan", "K"),
-]
+OPENFOOTBALL_URL = "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json"
+
+
+def fetch_upcoming_fixtures():
+    """Fetch ALL upcoming fixtures from openfootball (group + knockout).
+    Returns list of (date_str, time_str, home_slug, away_slug, group)."""
+    import ssl as _ssl
+    ctx = _ssl.create_default_context()
+    ctx.check_hostname = False
+    ctx.verify_mode = _ssl.CERT_NONE
+    
+    req = urllib.request.Request(OPENFOOTBALL_URL, headers={"User-Agent": "wc-widget/1.0"})
+    with urllib.request.urlopen(req, timeout=30, context=ctx) as resp:
+        data = json.loads(resp.read())
+    
+    now = datetime.now(TZ)
+    fixtures = []
+    
+    for m in data.get("matches", []):
+        date_str = m.get("date", "")
+        time_str = m.get("time", "00:00")
+        # Skip matches that already have scores (completed)
+        if m.get("score", {}).get("ft"):
+            continue
+        
+        # Parse date
+        try:
+            parts = date_str.split("-")
+            match_date = datetime(2026, int(parts[1]), int(parts[2]), tzinfo=TZ)
+        except (ValueError, IndexError):
+            continue
+        
+        # Only future matches
+        if match_date.date() < now.date():
+            continue
+        
+        home_name = m.get("team1", "")
+        away_name = m.get("team2", "")
+        home_slug = OF_NAME_MAP.get(home_name)
+        away_slug = OF_NAME_MAP.get(away_name)
+        
+        if not home_slug or not away_slug:
+            continue
+        
+        round_name = m.get("round", "")
+        group = m.get("group", round_name)
+        date_short = f"{int(parts[1])}/{int(parts[2])}"
+        
+        fixtures.append((date_short, time_str[:5], home_slug, away_slug, group))
+    
+    return fixtures
 
 HOSTS = {"mexico", "usa", "canada"}
 HOME_ADV = 75
@@ -710,12 +697,15 @@ def generate_match_data(teams_data: list[dict]):
         for i, t in enumerate(sorted_teams):
             ratings[t["slug"]] = 2100 - i * 12
 
-    # Find upcoming fixtures (date >= today in CST)
+    # Find upcoming fixtures dynamically from openfootball
     now = datetime.now(TZ)
     today_str = now.strftime("%m/%d")
 
+    fixtures = fetch_upcoming_fixtures()
+    print(f"[predictions] Got {len(fixtures)} upcoming fixtures from openfootball")
+
     matches = []
-    for date_str, time_str, home, away, group in FIXTURES:
+    for date_str, time_str, home, away, group in fixtures:
         match_month = int(date_str.split("/")[0])
         match_day = int(date_str.split("/")[1])
         match_date = datetime(2026, match_month, match_day, tzinfo=TZ)
