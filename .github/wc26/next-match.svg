@@ -5,10 +5,10 @@
 <text x="24" y="58" fill="#8b949e" font-size="12" font-family="monospace" text-anchor="start">Elo + Dixon-Coles 模型 · 混入 Polymarket 赔率 (40/60) · 胜/平/负</text>
 <text x="24" y="86" fill="#8b949e" font-size="10" font-family="monospace" text-anchor="start">6/29</text>
 <text x="100" y="86" fill="#e6edf3" font-size="11" font-family="monospace" text-anchor="start">🇩🇪 德国  vs  🇵🇾 巴拉圭</text>
-<rect x="300" y="73" width="118" height="12" fill="#3fb950" rx="3"/>
-<rect x="418" y="73" width="34" height="12" fill="#d2991d"/>
-<rect x="453" y="73" width="16" height="12" fill="#f85149" rx="3"/>
-<text x="300" y="95" fill="#e6edf3" font-size="8" font-family="monospace" text-anchor="start">混70% / 20% / 10%</text>
+<rect x="300" y="73" width="117" height="12" fill="#3fb950" rx="3"/>
+<rect x="417" y="73" width="34" height="12" fill="#d2991d"/>
+<rect x="452" y="73" width="17" height="12" fill="#f85149" rx="3"/>
+<text x="300" y="95" fill="#e6edf3" font-size="8" font-family="monospace" text-anchor="start">混69% / 20% / 10%</text>
 <text x="300" y="107" fill="#8b949e" font-size="8" font-family="monospace" text-anchor="start">预测比分: 2-0 (13%)  ·  1-0 (12%)  ·  1-1 (11%)</text>
 <text x="24" y="134" fill="#8b949e" font-size="10" font-family="monospace" text-anchor="start">6/29</text>
 <text x="100" y="134" fill="#e6edf3" font-size="11" font-family="monospace" text-anchor="start">🇳🇱 荷兰  vs  🇲🇦 摩洛哥</text>
@@ -40,10 +40,10 @@
 <text x="300" y="299" fill="#8b949e" font-size="8" font-family="monospace" text-anchor="start">预测比分: 1-1 (13%)  ·  0-1 (10%)  ·  0-2 (10%)</text>
 <text x="24" y="326" fill="#8b949e" font-size="10" font-family="monospace" text-anchor="start">6/30</text>
 <text x="100" y="326" fill="#e6edf3" font-size="11" font-family="monospace" text-anchor="start">🇲🇽 墨西哥  vs  🇪🇨 厄瓜多尔</text>
-<rect x="300" y="313" width="72" height="12" fill="#3fb950" rx="3"/>
-<rect x="372" y="313" width="52" height="12" fill="#d2991d"/>
-<rect x="425" y="313" width="44" height="12" fill="#f85149" rx="3"/>
+<rect x="300" y="313" width="73" height="12" fill="#3fb950" rx="3"/>
+<rect x="373" y="313" width="52" height="12" fill="#d2991d"/>
+<rect x="426" y="313" width="43" height="12" fill="#f85149" rx="3"/>
 <text x="300" y="335" fill="#e6edf3" font-size="8" font-family="monospace" text-anchor="start">混43% / 31% / 26%</text>
 <text x="300" y="347" fill="#8b949e" font-size="8" font-family="monospace" text-anchor="start">预测比分: 1-1 (13%)  ·  2-1 (9%)  ·  1-0 (8%)</text>
-<text x="570" y="400" fill="#8b949e" font-size="9" font-family="monospace" text-anchor="end">更新 2026-06-29 12:17 CST</text>
+<text x="570" y="400" fill="#8b949e" font-size="9" font-family="monospace" text-anchor="end">更新 2026-06-29 17:50 CST</text>
 </svg>
