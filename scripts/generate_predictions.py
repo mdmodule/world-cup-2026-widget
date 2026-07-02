@@ -917,7 +917,7 @@ def generate_record(match_results):
     parts.append(svg_text(435, ty, "结果", TEXT_SECONDARY, 9, "middle", bold=True))
     parts.append(f'<line x1="24" y1="{ty+8}" x2="{W-24}" y2="{ty+8}" stroke="{BORDER}" stroke-width="1"/>')
 
-    for i, item in enumerate(items[-20:]):  # show last 20
+    for i, item in enumerate(items):  # show all matches
         y = ty + 20 + i * row_h
         parts.append(svg_text(24, y, item["date"], TEXT_SECONDARY, 9))
         parts.append(svg_text(68, y, lbl(item["home"]), TEXT_PRIMARY, 10))
