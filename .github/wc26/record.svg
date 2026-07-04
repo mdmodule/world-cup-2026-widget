@@ -1,11 +1,11 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 1895" width="780" height="2842">
-<rect x="0" y="0" width="520" height="1895" fill="#0d1117"/>
-<rect x="10" y="8" width="500" height="1879" fill="#161b22" rx="8"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 1915" width="780" height="2872">
+<rect x="0" y="0" width="520" height="1915" fill="#0d1117"/>
+<rect x="10" y="8" width="500" height="1899" fill="#161b22" rx="8"/>
 <text x="24" y="34" fill="#58a6ff" font-size="18" font-family="monospace" text-anchor="start" font-weight="bold">📋 模型战绩 · Model Scorecard</text>
-<text x="24" y="56" fill="#8b949e" font-size="11" font-family="monospace" text-anchor="start">胜负预测: 88场中58场 · 66%准确</text>
-<text x="24" y="72" fill="#d2991d" font-size="10" font-family="monospace" text-anchor="start">比分预测: 88场中38场命中 · 43% (Top3内)</text>
+<text x="24" y="56" fill="#8b949e" font-size="11" font-family="monospace" text-anchor="start">胜负预测: 89场中59场 · 66%准确</text>
+<text x="24" y="72" fill="#d2991d" font-size="10" font-family="monospace" text-anchor="start">比分预测: 89场中38场命中 · 43% (Top3内)</text>
 <rect x="24" y="82" width="48" height="18" fill="#3fb950" rx="3"/>
-<text x="48" y="95" fill="#0d1117" font-size="10" font-family="monospace" text-anchor="middle" font-weight="bold">58 ✅</text>
+<text x="48" y="95" fill="#0d1117" font-size="10" font-family="monospace" text-anchor="middle" font-weight="bold">59 ✅</text>
 <rect x="84" y="82" width="48" height="18" fill="#f85149" rx="3"/>
 <text x="108" y="95" fill="#0d1117" font-size="10" font-family="monospace" text-anchor="middle" font-weight="bold">30 ❌</text>
 <rect x="144" y="82" width="60" height="18" fill="#d2991d" rx="3"/>
@@ -545,7 +545,13 @@
 <text x="220" y="1880" fill="#e6edf3" font-size="10" font-family="monospace" text-anchor="start">🇪🇬 埃及</text>
 <text x="315" y="1880" fill="#8b949e" font-size="10" font-family="monospace" text-anchor="start">澳大利亚 39%</text>
 <text x="435" y="1880" fill="#f85149" font-size="11" font-family="monospace" text-anchor="middle">❌</text>
+<text x="24" y="1900" fill="#8b949e" font-size="9" font-family="monospace" text-anchor="start">07-04</text>
+<text x="68" y="1900" fill="#e6edf3" font-size="10" font-family="monospace" text-anchor="start">🇨🇦 加拿大</text>
+<text x="172" y="1900" fill="#e6edf3" font-size="10" font-family="monospace" text-anchor="middle" font-weight="bold">0-3</text>
+<text x="220" y="1900" fill="#e6edf3" font-size="10" font-family="monospace" text-anchor="start">🇲🇦 摩洛哥</text>
+<text x="315" y="1900" fill="#8b949e" font-size="10" font-family="monospace" text-anchor="start">摩洛哥 47%</text>
+<text x="435" y="1900" fill="#3fb950" font-size="11" font-family="monospace" text-anchor="middle">✅</text>
 <line x1="24" y1="542" x2="496" y2="542" stroke="#30363d" stroke-width="0.5"/>
-<text x="24" y="1865" fill="#8b949e" font-size="9" font-family="monospace" text-anchor="start">RPS 0.175 · walk-forward 预测 · 数据 openfootball + cup26matches.com</text>
-<text x="496" y="1879" fill="#8b949e" font-size="8" font-family="monospace" text-anchor="end">更新 2026-07-05 01:09 CST</text>
+<text x="24" y="1885" fill="#8b949e" font-size="9" font-family="monospace" text-anchor="start">RPS 0.175 · walk-forward 预测 · 数据 openfootball + cup26matches.com</text>
+<text x="496" y="1899" fill="#8b949e" font-size="8" font-family="monospace" text-anchor="end">更新 2026-07-05 03:19 CST</text>
 </svg>
