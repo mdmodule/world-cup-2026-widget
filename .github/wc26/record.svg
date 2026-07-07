@@ -1,13 +1,13 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 1995" width="780" height="2992">
-<rect x="0" y="0" width="520" height="1995" fill="#0d1117"/>
-<rect x="10" y="8" width="500" height="1979" fill="#161b22" rx="8"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 2015" width="780" height="3022">
+<rect x="0" y="0" width="520" height="2015" fill="#0d1117"/>
+<rect x="10" y="8" width="500" height="1999" fill="#161b22" rx="8"/>
 <text x="24" y="34" fill="#58a6ff" font-size="18" font-family="monospace" text-anchor="start" font-weight="bold">📋 模型战绩 · Model Scorecard</text>
-<text x="24" y="56" fill="#8b949e" font-size="11" font-family="monospace" text-anchor="start">胜负预测: 93场中62场 · 67%准确</text>
-<text x="24" y="72" fill="#d2991d" font-size="10" font-family="monospace" text-anchor="start">比分预测: 93场中40场命中 · 43% (Top3内)</text>
+<text x="24" y="56" fill="#8b949e" font-size="11" font-family="monospace" text-anchor="start">胜负预测: 94场中62场 · 66%准确</text>
+<text x="24" y="72" fill="#d2991d" font-size="10" font-family="monospace" text-anchor="start">比分预测: 94场中40场命中 · 43% (Top3内)</text>
 <rect x="24" y="82" width="48" height="18" fill="#3fb950" rx="3"/>
 <text x="48" y="95" fill="#0d1117" font-size="10" font-family="monospace" text-anchor="middle" font-weight="bold">62 ✅</text>
 <rect x="84" y="82" width="48" height="18" fill="#f85149" rx="3"/>
-<text x="108" y="95" fill="#0d1117" font-size="10" font-family="monospace" text-anchor="middle" font-weight="bold">31 ❌</text>
+<text x="108" y="95" fill="#0d1117" font-size="10" font-family="monospace" text-anchor="middle" font-weight="bold">32 ❌</text>
 <rect x="144" y="82" width="60" height="18" fill="#d2991d" rx="3"/>
 <text x="174" y="95" fill="#0d1117" font-size="10" font-family="monospace" text-anchor="middle" font-weight="bold">40 ⚽</text>
 <text x="24" y="120" fill="#8b949e" font-size="9" font-family="monospace" text-anchor="start" font-weight="bold">日期</text>
@@ -575,7 +575,13 @@
 <text x="220" y="1980" fill="#e6edf3" font-size="10" font-family="monospace" text-anchor="start">🇪🇸 西班牙</text>
 <text x="315" y="1980" fill="#8b949e" font-size="10" font-family="monospace" text-anchor="start">西班牙 44%</text>
 <text x="435" y="1980" fill="#3fb950" font-size="11" font-family="monospace" text-anchor="middle">✅</text>
+<text x="24" y="2000" fill="#8b949e" font-size="9" font-family="monospace" text-anchor="start">07-06</text>
+<text x="68" y="2000" fill="#e6edf3" font-size="10" font-family="monospace" text-anchor="start">🇺🇸 美国</text>
+<text x="172" y="2000" fill="#e6edf3" font-size="10" font-family="monospace" text-anchor="middle" font-weight="bold">1-4</text>
+<text x="220" y="2000" fill="#e6edf3" font-size="10" font-family="monospace" text-anchor="start">🇧🇪 比利时</text>
+<text x="315" y="2000" fill="#8b949e" font-size="10" font-family="monospace" text-anchor="start">美国 40%</text>
+<text x="435" y="2000" fill="#f85149" font-size="11" font-family="monospace" text-anchor="middle">❌</text>
 <line x1="24" y1="542" x2="496" y2="542" stroke="#30363d" stroke-width="0.5"/>
-<text x="24" y="1965" fill="#8b949e" font-size="9" font-family="monospace" text-anchor="start">RPS 0.175 · walk-forward 预测 · 数据 openfootball + cup26matches.com</text>
-<text x="496" y="1979" fill="#8b949e" font-size="8" font-family="monospace" text-anchor="end">更新 2026-07-07 08:11 CST</text>
+<text x="24" y="1985" fill="#8b949e" font-size="9" font-family="monospace" text-anchor="start">RPS 0.175 · walk-forward 预测 · 数据 openfootball + cup26matches.com</text>
+<text x="496" y="1999" fill="#8b949e" font-size="8" font-family="monospace" text-anchor="end">更新 2026-07-07 12:55 CST</text>
 </svg>
