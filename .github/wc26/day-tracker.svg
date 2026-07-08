@@ -2,10 +2,10 @@
 <rect x="0" y="0" width="600" height="150" fill="#0d1117"/>
 <rect x="10" y="8" width="580" height="134" fill="#161b22" rx="8"/>
 <text x="24" y="36" fill="#58a6ff" font-size="18" font-family="monospace" text-anchor="start" font-weight="bold">🗓️ 世界杯进行中 · World Cup 2026</text>
-<text x="24" y="60" fill="#e6edf3" font-size="20" font-family="monospace" text-anchor="start" font-weight="bold">第 28 天 / 共 39 天  ·  Day 28 of 39</text>
+<text x="24" y="60" fill="#e6edf3" font-size="20" font-family="monospace" text-anchor="start" font-weight="bold">第 29 天 / 共 39 天  ·  Day 29 of 39</text>
 <rect x="24" y="76" width="452" height="14" fill="#30363d" rx="3"/>
-<rect x="24" y="76" width="324" height="14" fill="#58a6ff" rx="3"/>
-<text x="186" y="86" fill="#0d1117" font-size="10" font-family="monospace" text-anchor="middle">72%</text>
+<rect x="24" y="76" width="336" height="14" fill="#58a6ff" rx="3"/>
+<text x="192" y="86" fill="#0d1117" font-size="10" font-family="monospace" text-anchor="middle">74%</text>
 <text x="24" y="106" fill="#8b949e" font-size="9" font-family="monospace" text-anchor="start">6/11 开幕 — 7/19 决赛</text>
-<text x="576" y="138" fill="#8b949e" font-size="8" font-family="monospace" text-anchor="end">更新 2026-07-08 23:23 CST</text>
+<text x="576" y="138" fill="#8b949e" font-size="8" font-family="monospace" text-anchor="end">更新 2026-07-09 01:40 CST</text>
 </svg>
