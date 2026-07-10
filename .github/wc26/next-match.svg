@@ -5,10 +5,10 @@
 <text x="24" y="58" fill="#8b949e" font-size="12" font-family="monospace" text-anchor="start">Elo + Dixon-Coles 模型 · 混入 Polymarket 赔率 (40/60) · 胜/平/负</text>
 <text x="24" y="86" fill="#8b949e" font-size="10" font-family="monospace" text-anchor="start">7/10</text>
 <text x="100" y="86" fill="#e6edf3" font-size="11" font-family="monospace" text-anchor="start">🇪🇸 西班牙  vs  🇧🇪 比利时</text>
-<rect x="300" y="73" width="95" height="12" fill="#3fb950" rx="3"/>
-<rect x="395" y="73" width="43" height="12" fill="#d2991d"/>
-<rect x="438" y="73" width="31" height="12" fill="#f85149" rx="3"/>
-<text x="300" y="95" fill="#e6edf3" font-size="8" font-family="monospace" text-anchor="start">混56% / 25% / 19%</text>
+<rect x="300" y="73" width="96" height="12" fill="#3fb950" rx="3"/>
+<rect x="396" y="73" width="43" height="12" fill="#d2991d"/>
+<rect x="439" y="73" width="30" height="12" fill="#f85149" rx="3"/>
+<text x="300" y="95" fill="#e6edf3" font-size="8" font-family="monospace" text-anchor="start">混57% / 25% / 18%</text>
 <text x="300" y="107" fill="#8b949e" font-size="8" font-family="monospace" text-anchor="start">预测比分: 1-1 (13%)  ·  1-0 (10%)  ·  2-1 (10%)</text>
 <text x="24" y="134" fill="#8b949e" font-size="10" font-family="monospace" text-anchor="start">7/11</text>
 <text x="100" y="134" fill="#e6edf3" font-size="11" font-family="monospace" text-anchor="start">🇳🇴 挪威  vs  🏴󠁧󠁢󠁥󠁮󠁧󠁿 英格兰</text>
@@ -24,5 +24,5 @@
 <rect x="441" y="169" width="28" height="12" fill="#f85149" rx="3"/>
 <text x="300" y="191" fill="#e6edf3" font-size="8" font-family="monospace" text-anchor="start">混56% / 27% / 17%</text>
 <text x="300" y="203" fill="#8b949e" font-size="8" font-family="monospace" text-anchor="start">预测比分: 1-1 (13%)  ·  2-0 (10%)  ·  1-0 (10%)</text>
-<text x="570" y="400" fill="#8b949e" font-size="9" font-family="monospace" text-anchor="end">更新 2026-07-10 16:26 CST</text>
+<text x="570" y="400" fill="#8b949e" font-size="9" font-family="monospace" text-anchor="end">更新 2026-07-10 19:55 CST</text>
 </svg>
