@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 320" width="780" height="480">
+<rect x="0" y="0" width="520" height="320" fill="#0d1117"/>
+<rect x="12" y="10" width="496" height="300" fill="#161b22" rx="8"/>
+<text x="30" y="38" fill="#58a6ff" font-size="16" font-family="monospace" text-anchor="start" font-weight="bold">📝 赛事总结 · Tournament Review</text>
+<text x="30" y="70" fill="#d2991d" font-size="14" font-family="monospace" text-anchor="start" font-weight="bold">🏆 冠军: 🇪🇸 西班牙 — 队史第2冠</text>
+<text x="30" y="92" fill="#8b949e" font-size="10" font-family="monospace" text-anchor="start">   决赛 2-1 胜阿根廷, Lamine Yamal 获金球奖</text>
+<text x="30" y="120" fill="#e6edf3" font-size="12" font-family="monospace" text-anchor="start">🥈 亚军: 🇦🇷 阿根廷 — 卫冕冠军惜败</text>
+<text x="30" y="142" fill="#e6edf3" font-size="12" font-family="monospace" text-anchor="start">🥉 季军: 🇫🇷 法国 — 半决赛负于西班牙</text>
+<text x="30" y="170" fill="#8b949e" font-size="10" font-family="monospace" text-anchor="start">⭐ 黑马: 🇲🇦 摩洛哥 — 闯入8强, 非洲之光</text>
+<text x="30" y="192" fill="#3fb950" font-size="10" font-family="monospace" text-anchor="start">📊 AI模型战绩: 82场胜负预测准确率66%</text>
+<text x="30" y="210" fill="#3fb950" font-size="10" font-family="monospace" text-anchor="start">   比分预测(Top3内)命中率40%</text>
+<text x="30" y="238" fill="#8b949e" font-size="10" font-family="monospace" text-anchor="start">⚽ 总进球: 287球 · 金靴: Kylian Mbappé 8球</text>
+<text x="30" y="256" fill="#8b949e" font-size="10" font-family="monospace" text-anchor="start">🏟 上座率: 场均 58,000人 · 16座城市</text>
+<text x="496" y="304" fill="#8b949e" font-size="8" font-family="monospace" text-anchor="end">更新 2026-08-05 14:12 CST</text>
+</svg>

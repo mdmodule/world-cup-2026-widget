@@ -52,10 +52,10 @@
 
 ## 🏆 AI 冠军预测 / Champion Prediction
 
-<img src=".github/wc26/champion-spotlight.svg" alt="World Cup 2026 — champion prediction" />
+<img src=".github/wc26/champion-spotlight.svg?v=08051412" alt="World Cup 2026 — champion prediction" />
 
 ---
 
 ## 📝 赛事点评 / Commentary
 
-<img src=".github/wc26/commentary.svg" alt="World Cup 2026 — tournament commentary" />
+<img src=".github/wc26/commentary.svg?v=08051412" alt="World Cup 2026 — tournament commentary" />
