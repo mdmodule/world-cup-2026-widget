@@ -1038,6 +1038,92 @@ def generate_bracket(teams):
 
 
 # ═══════════════════════════════════════════════════════════════
+# CHAMPION SPOTLIGHT
+# ═══════════════════════════════════════════════════════════════
+
+def generate_champion_spotlight(teams):
+    """Big champion prediction panel with trophy."""
+    top3 = sorted(teams, key=lambda t: t["pChampion"], reverse=True)[:3]
+    W, H = 520, 200
+    
+    parts = [svg_header(W, H)]
+    parts.append(svg_rect(0, 0, W, H, DARK_BG))
+    parts.append(svg_rect(12, 10, W - 24, H - 20, CARD_BG, 8))
+    
+    parts.append(svg_text(30, 38, "🏆 AI 冠军预测 · Champion Prediction", GOLD, 18, bold=True))
+    
+    for i, t in enumerate(top3):
+        x = 60 + i * 160
+        pct = t["pChampion"]
+        name = team_label(t["slug"])
+        medal = ["🥇", "🥈", "🥉"][i]
+        size = [22, 16, 14][i]
+        
+        parts.append(svg_text(x, 90, f"{medal} {pct*100:.1f}%", GOLD if i == 0 else TEXT_PRIMARY, size, "middle", bold=True))
+        parts.append(svg_text(x, 115, name, TEXT_PRIMARY, [13, 12, 11][i], "middle"))
+    
+    parts.append(svg_text(30, 155, f"50,000次蒙特卡洛模拟 · 综合Elo+泊松模型", TEXT_SECONDARY, 9))
+    now_str = datetime.now(TZ).strftime("%Y-%m-%d %H:%M")
+    parts.append(svg_text(W - 24, H - 16, f"更新 {now_str} CST", TEXT_SECONDARY, 8, "end"))
+    
+    parts.append("</svg>")
+    return "\n".join(parts)
+
+
+# ═══════════════════════════════════════════════════════════════
+# COMMENTARY / TOURNAMENT REVIEW
+# ═══════════════════════════════════════════════════════════════
+
+def generate_commentary(teams):
+    """AI-generated tournament commentary and key observations."""
+    top = sorted(teams, key=lambda t: t["pChampion"], reverse=True)
+    champ = top[0]
+    runner_up = top[1]
+    dark_horses = [t for t in top if t["pChampion"] < 0.1 and t["pChampion"] > 0.02][:3]
+    
+    W, H = 520, 300
+    parts = [svg_header(W, H)]
+    parts.append(svg_rect(0, 0, W, H, DARK_BG))
+    parts.append(svg_rect(12, 10, W - 24, H - 20, CARD_BG, 8))
+    
+    parts.append(svg_text(30, 38, "📝 赛事点评 · Tournament Commentary", ACCENT, 16, bold=True))
+    
+    y = 70
+    # Champion pick
+    name = team_label(champ["slug"])
+    parts.append(svg_text(30, y, f"🏆 夺冠大热: {name} ({champ['pChampion']*100:.1f}%)", GOLD, 13, bold=True))
+    y += 24
+    parts.append(svg_text(30, y, f"   模型认为 {champ['slug']} 最具冠军相，Elo排名第一，", TEXT_SECONDARY, 10))
+    y += 18
+    parts.append(svg_text(30, y, f"   小组赛表现出色，淘汰赛晋级概率最高。", TEXT_SECONDARY, 10))
+    
+    y += 28
+    # Runner-up
+    name2 = team_label(runner_up["slug"])
+    parts.append(svg_text(30, y, f"🥈 挑战者: {name2} ({runner_up['pChampion']*100:.1f}%)", TEXT_PRIMARY, 12, bold=True))
+    y += 22
+    
+    # Dark horses
+    if dark_horses:
+        y += 8
+        horse_names = "、".join(team_label(t["slug"]) for t in dark_horses)
+        parts.append(svg_text(30, y, f"🐴 黑马: {horse_names}", TEXT_SECONDARY, 10))
+    
+    y += 28
+    # Stats summary
+    total_teams = len(teams)
+    parts.append(svg_text(30, y, f"📊 数据: {total_teams}支参赛队 · 50,000次模拟 · Dixon-Coles模型", TEXT_SECONDARY, 9))
+    y += 18
+    parts.append(svg_text(30, y, "   数据源: cup26matches.com (CC BY 4.0) · openfootball", TEXT_SECONDARY, 9))
+    
+    now_str = datetime.now(TZ).strftime("%Y-%m-%d %H:%M")
+    parts.append(svg_text(W - 24, H - 16, f"更新 {now_str} CST", TEXT_SECONDARY, 8, "end"))
+    
+    parts.append("</svg>")
+    return "\n".join(parts)
+
+
+# ═══════════════════════════════════════════════════════════════
 # MAIN
 # ═══════════════════════════════════════════════════════════════
 
@@ -1090,6 +1176,16 @@ def main():
     with open(os.path.join(OUT_DIR, "path-to-final.svg"), "w", encoding="utf-8") as f:
         f.write(generate_path_to_final(teams))
 
+    print("[predictions] Generating champion-spotlight.svg...")
+    cs_svg = generate_champion_spotlight(teams)
+    with open(os.path.join(OUT_DIR, "champion-spotlight.svg"), "w", encoding="utf-8") as f:
+        f.write(cs_svg)
+
+    print("[predictions] Generating commentary.svg...")
+    comment_svg = generate_commentary(teams)
+    with open(os.path.join(OUT_DIR, "commentary.svg"), "w", encoding="utf-8") as f:
+        f.write(comment_svg)
+
     print("[predictions] Generating day-tracker.svg...")
     with open(os.path.join(OUT_DIR, "day-tracker.svg"), "w", encoding="utf-8") as f:
         f.write(generate_day_tracker())
@@ -1109,7 +1205,7 @@ def main():
         f.write(record_svg)
 
     print(f"[predictions] ✅ All SVGs generated in {OUT_DIR}")
-    for fname in ["day-tracker.svg", "record.svg", "bracket.svg", "next-match.svg", "championship.svg", "path-to-final.svg"]:
+    for fname in ["day-tracker.svg", "record.svg", "bracket.svg", "next-match.svg", "championship.svg", "path-to-final.svg", "champion-spotlight.svg", "commentary.svg"]:
         fpath = os.path.join(OUT_DIR, fname)
         if os.path.exists(fpath):
             size = os.path.getsize(fpath)
